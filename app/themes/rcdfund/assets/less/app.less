@@ -33,9 +33,18 @@ section {
 
 body { }
 
-img {
-   max-width: 100%;
-   height: auto;
+section {
+  padding-top: @line-height-computed;
+  padding-bottom: @line-height-computed;
+}
+
+figure figcaption {
+  .text-muted;
+
+  margin-top: (.5 * @line-height-computed);
+
+  font-weight: bold;
+  text-align: center;
 }
 
 
@@ -44,28 +53,27 @@ img {
    ========================================================================== */
 
 .banner {
-   padding-bottom: (2 * @line-height-computed);
 }
 
 .banner .logo {
-   max-width: 70%;
-   max-height: 255px;
-   height: auto;
-   margin: (2 * @line-height-computed) auto;
+  max-width: 70%;
+  max-height: 255px;
+  height: auto;
+  margin: (2 * @line-height-computed) auto;
 }
 
 .banner .tagline {
-   margin-top: (2 * @line-height-computed);
-   margin-bottom: (2 * @line-height-computed);
+  margin-top: (2 * @line-height-computed);
+  margin-bottom: (2 * @line-height-computed);
 
-   font-size: ceil(@font-size-base * 1.70);
-   font-weight: bold;
+  font-size: ceil(@font-size-base * 1.70);
+  font-weight: bold;
 
-   @media (min-width: @container-desktop) {
-      margin-top: (4 * @line-height-computed);
+  @media (min-width: @container-desktop) {
+    margin-top: (4 * @line-height-computed);
 
-      font-size: floor(@font-size-base * 2.60);
-   }
+    font-size: floor(@font-size-base * 2.60);
+  }
 }
 
 
@@ -75,16 +83,28 @@ img {
    ========================================================================== */
 
 .connors-run {
-   padding-bottom: (2 * @line-height-computed);
 
-   .section-title {
+  .section-title {
+    background-color: rgba(0,0,200,.1);
+    margin-top: -(1.5 * @line-height-computed);
+    span {
       background-color: rgba(0,0,200,.1);
-      margin-top: -(.5 * @line-height-computed);
-      span {
-         background-color: rgba(0,0,200,.1);
-         padding: .25em .75em .1em;
-      }
-   }
+      padding: .25em .75em .1em;
+    }
+  }
+}
+
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+.about {
+
+  .areas {
+    margin-top: @line-height-computed;
+    margin-bottom: @line-height-computed;
+  }
 }
 
 
