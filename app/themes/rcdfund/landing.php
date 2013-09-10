@@ -69,7 +69,8 @@ Template Name: Landing Page
 <section class="donate">
   <div class="container">
     <div class="row">
-      <div class="alert alert-info clearfix"><strong>Make a donation</strong>&emsp;A bit of love and support goes a long way. Thank you. <a href="#" class="btn btn-primary btn-lg pull-right"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Donate now</a></div>
+      <a href="#" class="btn btn-primary btn-lg pull-right"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Donate now</a>
+      <h2>Make a donation&ensp;<small>A bit of love and support goes a long way. Thank you.</small></h2>
     </div>
   </div>
 </section>
@@ -127,6 +128,26 @@ Template Name: Landing Page
             <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
           </figcaption>
         </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <h3>Feed your brain</h3>
+        <p>We’ll be building out this site with exciting content and stories over the coming months. Join the brainfood newsletter to be informed about these and other happenings. It’ll go out every month or so.</p>
+      </div>
+      <div class="col-md-4 col-md-offset-1">
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button">Subscribe!</button>
+          </span>
+        </div>
+        <a href="#" class="help-block">Privacy policy</a>
       </div>
     </div>
   </div>
