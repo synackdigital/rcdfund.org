@@ -45,7 +45,7 @@ Template Name: Landing Page
       <div class="col-md-4 col-md-offset-1 text-center">
         <figure>
           <img class="img-circle img-responsive" src="/assets/img/robert-connor-dawes.jpg" alt="Photo of Robert">
-          <figcaption>Robert Connor Dawes</figcaption>
+          <figcaption><strong>Robert Connor Dawes</strong></figcaption>
         </figure>
       </div>
     </div>
@@ -70,6 +70,64 @@ Template Name: Landing Page
   <div class="container">
     <div class="row">
       <div class="alert alert-info clearfix"><strong>Make a donation</strong>&emsp;A bit of love and support goes a long way. Thank you. <a href="#" class="btn btn-primary btn-lg pull-right"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Donate now</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="board text-center">
+  <div class="container">
+    <div class="row">
+      <h1 class="section-title">Our Board &amp; Team <small class="block">Supported by five big hearts &amp; brains</small></h1>
+      <div class="col-md-2 col-md-offset-1">
+        <figure>
+          <img src="http://dummyimage.com/300" class="img-responsive img-circle" alt="Board Member">
+          <figcaption>
+            <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
+            <p>Connor’s mum. Business woman. World-mover.</p>
+            <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-2">
+        <figure>
+          <img src="http://dummyimage.com/300" class="img-responsive img-circle" alt="Board Member">
+          <figcaption>
+            <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
+            <p>Connor’s mum. Business woman. World-mover.</p>
+            <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-2">
+        <figure>
+          <img src="http://dummyimage.com/300" class="img-responsive img-circle" alt="Board Member">
+          <figcaption>
+            <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
+            <p>Connor’s mum. Business woman. World-mover.</p>
+            <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-2">
+        <figure>
+          <img src="http://dummyimage.com/300" class="img-responsive img-circle" alt="Board Member">
+          <figcaption>
+            <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
+            <p>Connor’s mum. Business woman. World-mover.</p>
+            <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-2">
+        <figure>
+          <img src="http://dummyimage.com/300" class="img-responsive img-circle" alt="Board Member">
+          <figcaption>
+            <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
+            <p>Connor’s mum. Business woman. World-mover.</p>
+            <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
