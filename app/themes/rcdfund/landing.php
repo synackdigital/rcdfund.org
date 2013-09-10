@@ -4,7 +4,7 @@ Template Name: Landing Page
 */
 ?>
 
-<section class="banner text-center">
+<header class="banner text-center">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -16,7 +16,7 @@ Template Name: Landing Page
       </div>
     </div>
   </div>
-</section>
+</header>
 
 <section class="connors-run text-center">
   <div class="container">
@@ -156,11 +156,35 @@ Template Name: Landing Page
 <section class="supporters text-center">
   <div class="container">
     <div class="row">
-      <h1 class="section-title">The RCD Fund is supported by these big hearts and brains</h1>
-      <img src="http://dummyimage.com/80x80.png/fff/666" alt="">
-      <img src="http://dummyimage.com/180x80.png/fff/666" alt="">
-      <img src="http://dummyimage.com/240x80.png/fff/666" alt="">
-      <img src="http://dummyimage.com/160x80.png/fff/666" alt="">
+      <h3 class="section-title">The RCD Fund is supported by these big hearts and brains</h3>
+      <img src="http://dummyimage.com/80x80.png/eee/999" alt="">
+      <img src="http://dummyimage.com/180x80.png/eee/999" alt="">
+      <img src="http://dummyimage.com/240x80.png/eee/999" alt="">
+      <img src="http://dummyimage.com/160x80.png/eee/999" alt="">
     </div>
   </div>
 </section>
+
+<footer class="content-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h6 class="section-title">The Robert Connor Dawes Fund</h6>
+      </div>
+      <div class="col-md-4">
+        <p>ABN: XXXYZYZZYXY<br>
+          Registered as a lorem ipsum isum charity<br>
+          39 Royal Av, Sandringham, 3191, Vic
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>o get in touch regarding information about our works, volun- teering, sponsorship or partnerships, email Liz Dawes: <a href="mailto:info@rcdfund.org">info@rcdfund.org</a></p>
+      </div>
+      <div class="col-md-4">
+        <p>Join us on <a href="#">FACEBOOK</a><br>
+          Follow us on <a href="#">TWITTER</a><br>
+          Snap & #tag us on <a href="#">INSTAGRAM</a> #RCDFUND #AETERNUMFORTIS</p>
+      </div>
+    </div>
+  </div>
+</footer>

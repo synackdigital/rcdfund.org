@@ -11,6 +11,10 @@
    Debug
    ========================================================================== */
 
+header,
+footer {
+   background-color: rgba(0,100,0,.1);
+}
 section {
    background-color: rgba(100,0,0,.1);
    &:nth-child(even) {
@@ -39,7 +43,9 @@ section {
 
 body { }
 
-section {
+header,
+section,
+footer {
   padding-top: @line-height-computed;
   padding-bottom: @line-height-computed;
 }
@@ -173,7 +179,9 @@ figure figcaption {
    Footer
    ========================================================================== */
 
-.content-info { }
+.content-info {
+
+}
 
 
 
