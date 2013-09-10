@@ -152,3 +152,15 @@ Template Name: Landing Page
     </div>
   </div>
 </section>
+
+<section class="supporters text-center">
+  <div class="container">
+    <div class="row">
+      <h1 class="section-title">The RCD Fund is supported by these big hearts and brains</h1>
+      <img src="http://dummyimage.com/80x80.png/fff/666" alt="">
+      <img src="http://dummyimage.com/180x80.png/fff/666" alt="">
+      <img src="http://dummyimage.com/240x80.png/fff/666" alt="">
+      <img src="http://dummyimage.com/160x80.png/fff/666" alt="">
+    </div>
+  </div>
+</section>
