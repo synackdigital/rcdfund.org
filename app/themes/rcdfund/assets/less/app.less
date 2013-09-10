@@ -6,19 +6,65 @@
 
 @import "bootstrap/bootstrap";
 
+
+/* ==========================================================================
+   Debug
+   ========================================================================== */
+
+section {
+   background-color: rgba(100,0,0,.1);
+}
+.container {
+   background-color: rgba(100,50,0,.1);
+}
+.row {
+   background-color: rgba(0,100,100,.1);
+}
+[class^='col-'] {
+   background-color: rgba(0,100,50,.1);
+}
+
 /* ==========================================================================
    Base
    ========================================================================== */
 
 body { }
 
+img {
+   max-width: 100%;
+   height: auto;
+}
 
 
 /* ==========================================================================
    Header
    ========================================================================== */
 
-.banner { }
+.banner {
+
+}
+
+.banner .logo {
+   display: block;
+   max-width: 70%;
+   max-height: 255px;
+   height: auto;
+   margin: (2 * @line-height-computed) auto;
+}
+
+.banner .tagline {
+   margin-top: (2 * @line-height-computed);
+
+   font-size: ceil(@font-size-base * 1.70);
+   font-weight: bold;
+   text-align: center;
+
+   @media (min-width: @container-desktop) {
+      margin-top: (4 * @line-height-computed);
+
+      font-size: floor(@font-size-base * 2.60);
+   }
+}
 
 
 
@@ -79,6 +125,15 @@ body { }
 .alignright { float: right; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
 
+
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+.block {
+   display: block;
+}
 
 
 /* ==========================================================================
