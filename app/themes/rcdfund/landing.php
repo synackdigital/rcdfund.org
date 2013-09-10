@@ -65,3 +65,11 @@ Template Name: Landing Page
     </div>
   </div>
 </section>
+
+<section class="donate">
+  <div class="container">
+    <div class="row">
+      <div class="alert alert-info clearfix"><strong>Make a donation</strong>&emsp;A bit of love and support goes a long way. Thank you. <a href="#" class="btn btn-primary btn-lg pull-right"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Donate now</a></div>
+    </div>
+  </div>
+</section>
