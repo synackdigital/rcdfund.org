@@ -13,6 +13,9 @@
 
 section {
    background-color: rgba(100,0,0,.1);
+   &:nth-child(odd) {
+      background-color: rgba(0,0,100,.1);
+   }
 }
 .container {
    background-color: rgba(100,50,0,.1);
@@ -41,11 +44,10 @@ img {
    ========================================================================== */
 
 .banner {
-
+   padding-bottom: (2 * @line-height-computed);
 }
 
 .banner .logo {
-   display: block;
    max-width: 70%;
    max-height: 255px;
    height: auto;
@@ -54,10 +56,10 @@ img {
 
 .banner .tagline {
    margin-top: (2 * @line-height-computed);
+   margin-bottom: (2 * @line-height-computed);
 
    font-size: ceil(@font-size-base * 1.70);
    font-weight: bold;
-   text-align: center;
 
    @media (min-width: @container-desktop) {
       margin-top: (4 * @line-height-computed);
@@ -66,6 +68,24 @@ img {
    }
 }
 
+
+
+/* ==========================================================================
+   Connor's Run
+   ========================================================================== */
+
+.connors-run {
+   padding-bottom: (2 * @line-height-computed);
+
+   .section-title {
+      background-color: rgba(0,0,200,.1);
+      margin-top: -(.5 * @line-height-computed);
+      span {
+         background-color: rgba(0,0,200,.1);
+         padding: .25em .75em .1em;
+      }
+   }
+}
 
 
 /* ==========================================================================
