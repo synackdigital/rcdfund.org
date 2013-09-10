@@ -80,7 +80,7 @@ Template Name: Landing Page
       <h1 class="section-title">Our Board &amp; Team <small class="block">Supported by five big hearts &amp; brains</small></h1>
       <div class="col-md-2 col-md-offset-1">
         <figure>
-          <img src="http://dummyimage.com/300" class="img-responsive img-circle" alt="Board Member">
+          <img src="http://lorempixel.com/300/300/abstract/2/" class="img-responsive img-circle" alt="Board Member">
           <figcaption>
             <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
             <p>Connor’s mum. Business woman. World-mover.</p>
@@ -90,7 +90,7 @@ Template Name: Landing Page
       </div>
       <div class="col-md-2">
         <figure>
-          <img src="http://dummyimage.com/300" class="img-responsive img-circle" alt="Board Member">
+          <img src="http://lorempixel.com/300/300/abstract/3/" class="img-responsive img-circle" alt="Board Member">
           <figcaption>
             <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
             <p>Connor’s mum. Business woman. World-mover.</p>
@@ -100,7 +100,7 @@ Template Name: Landing Page
       </div>
       <div class="col-md-2">
         <figure>
-          <img src="http://dummyimage.com/300" class="img-responsive img-circle" alt="Board Member">
+          <img src="http://lorempixel.com/300/300/abstract/4/" class="img-responsive img-circle" alt="Board Member">
           <figcaption>
             <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
             <p>Connor’s mum. Business woman. World-mover.</p>
@@ -110,7 +110,7 @@ Template Name: Landing Page
       </div>
       <div class="col-md-2">
         <figure>
-          <img src="http://dummyimage.com/300" class="img-responsive img-circle" alt="Board Member">
+          <img src="http://lorempixel.com/300/300/abstract/5/" class="img-responsive img-circle" alt="Board Member">
           <figcaption>
             <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
             <p>Connor’s mum. Business woman. World-mover.</p>
@@ -120,7 +120,7 @@ Template Name: Landing Page
       </div>
       <div class="col-md-2">
         <figure>
-          <img src="http://dummyimage.com/300" class="img-responsive img-circle" alt="Board Member">
+          <img src="http://lorempixel.com/300/300/abstract/6/" class="img-responsive img-circle" alt="Board Member">
           <figcaption>
             <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
             <p>Connor’s mum. Business woman. World-mover.</p>
