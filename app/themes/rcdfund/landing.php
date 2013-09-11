@@ -14,7 +14,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
       </div>
       <div class="col-md-8">
         <p class="tagline"><small class="block">Supporting brain matters in areas of</small> Research, Care and Development. <small class="block">In memory of Robert Connor Dawes</small></p>
-        <p><a href="#" class="btn btn-success btn-lg" title="Make a donation"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Make a donation</a></p>
+        <p><a href="#" class="btn btn-primary btn-lg" title="Make a donation"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Make a donation</a></p>
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <h1 class="section-title"><span>Connor's Run</span></h1>
+        <h2 class="section-title"><span>Connor's Run</span></h2>
         <p class="lead">Our first event was a smashing success with 1,500 big hearted and big brained participants. Together we raised $75,000 for Research, Care &amp; Development projects. Connor would be proud.</p>
         <p class="lead"><strong>Thank you.</strong></p>
         <p>Event photos are up on our <a href="#">Facebook page</a> <small>(p.s you don’t need an account to view them)</small></p>

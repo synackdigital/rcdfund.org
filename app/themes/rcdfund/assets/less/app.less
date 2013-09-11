@@ -61,7 +61,7 @@ figure figcaption {
 
 .banner {
   background: url('../img/gauze.png') bottom center;
-  border-bottom: @padding-base-vertical solid darken(@body-bg, 6.5%);
+  border-bottom: @padding-base-vertical solid @sand;
 
   padding-top: (6 * @line-height-computed);
   padding-bottom: (6 * @line-height-computed);
@@ -116,11 +116,28 @@ figure figcaption {
    ========================================================================== */
 
 .connors-run {
+  background: @teal url('../img/map.png') bottom center no-repeat;
+  border-bottom: @line-height-computed solid @teal;
+  color: @prussian;
+
+  padding-bottom: (2 * @line-height-computed);
+
+  a {
+    color: @firebrick;
+  }
 
   .section-title {
-    margin-top: -(1.5 * @line-height-computed);
+    margin-top: -(2 * @line-height-computed);
+    margin-bottom: (2 * @line-height-computed);
+
     span {
-      padding: .25em .75em .1em;
+      background-color: @teal;
+      border-radius: @border-radius-large;
+
+      padding: .5em .75em .25em;
+
+      text-transform: uppercase;
+      letter-spacing: .1em;
     }
   }
 }
