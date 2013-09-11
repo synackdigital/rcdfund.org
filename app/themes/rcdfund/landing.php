@@ -14,7 +14,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
       </div>
       <div class="col-md-8">
         <p class="tagline"><small class="block">Supporting brain matters in areas of</small> Research, Care and Development. <small class="block">In memory of Robert Connor Dawes</small></p>
-        <p><a href="#" class="btn btn-primary btn-lg" title="Make a donation"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Make a donation</a></p>
+        <p><a href="#" class="btn btn-success btn-lg" title="Make a donation"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Make a donation</a></p>
       </div>
     </div>
   </div>

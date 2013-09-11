@@ -60,16 +60,42 @@ figure figcaption {
    ========================================================================== */
 
 .banner {
+  background: url('../img/gauze.png') bottom center;
+  border-bottom: @padding-base-vertical solid darken(@body-bg, 6.5%);
+
+  padding-top: (6 * @line-height-computed);
+  padding-bottom: (6 * @line-height-computed);
+
+  // Apply transformations to the background image
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: 0;
+    background: url('../img/pattern.png') 0 0 repeat;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
 }
 
 .banner .logo {
-  max-width: 70%;
-  max-height: 255px;
+  max-width: 80%;
+  max-height: 295px;
   height: auto;
   margin: (2 * @line-height-computed) auto;
 }
 
 .banner .tagline {
+  color: @prussian;
+
   margin-top: (2 * @line-height-computed);
   margin-bottom: (2 * @line-height-computed);
 
@@ -107,9 +133,9 @@ figure figcaption {
 .about {
 
   .areas {
-    background-color: mix(white, @body-bg, 80%);
+    background: url('../img/gauze.png') top center;
     border-radius: @border-radius-large;
-    .box-shadow(~"0 1px rgba(0,0,0,.1)");
+    .box-shadow(~"0 1px 2px rgba(0,0,0,.1)");
 
     margin-top: @line-height-computed;
     margin-bottom: @line-height-computed;
@@ -125,8 +151,8 @@ figure figcaption {
     }
 
     .area-research h4 {
-      color: @cyan;
-      border-bottom: 1px solid mix(white, @cyan, 50%);
+      color: @teal;
+      border-bottom: 1px solid mix(white, @teal, 50%);
     }
     .area-care h4 {
       color: @banana;
