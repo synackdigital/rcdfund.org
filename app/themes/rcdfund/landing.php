@@ -2,13 +2,15 @@
 /*
 Template Name: Landing Page
 */
+
+$img_path = get_template_directory_uri() . '/assets/img';
 ?>
 
 <header class="banner text-center">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img class="logo img-responsive" src="/assets/img/rcdfund-blue-sbm.png" alt="RCD Fund – Supporting Brain Matters">
+        <img class="logo img-responsive" src="<?php echo $img_path; ?>/rcdfund-blue-sbm.png" alt="RCD Fund – Supporting Brain Matters">
       </div>
       <div class="col-md-8">
         <p class="tagline"><small class="block">Supporting brain matters in areas of</small> Research, Care and Development. <small class="block">In memory of Robert Connor Dawes</small></p>
@@ -34,7 +36,7 @@ Template Name: Landing Page
 <section class="about">
   <div class="container">
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-sm-7">
         <h1 class="section-title">The RCD Fund</h1>
         <p>Inspired by a big heart and brain, the RCD Fund was created in memory of Robert Connor Dawes in June 2013.</p>
         <p>For 16 months, Connor's brilliant mind, strong body and gentle soul faced off against an ependymoma. Like many others, his brains and brawn gave it all to fight against the poor odds. But on April 20, 2013, Connor's own battle ended.</p>
@@ -42,25 +44,40 @@ Template Name: Landing Page
         <h2>Our Mission</h2>
         <p>Brain tumours are the most fatal of all childhood cancers. Current clinical treatments only help 50% of children, and leave 90% with lifelong physical and mental impairments. We're all about changing the odds. To make brain tumours go the way of the dinosaurs. To support the science and in the meatime the patients. Our fundraising goals are captured by Connor’s initials RCD.</p>
       </div>
-      <div class="col-md-4 col-md-offset-1 text-center">
+      <div class="col-sm-4 col-sm-offset-1 text-center">
         <figure>
-          <img class="img-circle img-responsive" src="/assets/img/robert-connor-dawes.jpg" alt="Photo of Robert">
+          <img class="img-circle img-responsive" src="<?php echo $img_path; ?>/robert-connor-dawes.jpg" alt="Photo of Robert">
           <figcaption><strong>Robert Connor Dawes</strong></figcaption>
         </figure>
       </div>
     </div>
     <div class="areas row text-center">
-      <div class="col-md-4">
-        <h3>Reseach</h3>
-        <p>Contributing funds to enable researchers to further understand and more completely treat brain tumours, including earlier detection, surgery and post surgery treatments.</p>
+      <div class="col-sm-4">
+        <figure>
+          <img class="img-circle img-responsive" src="<?php echo $img_path; ?>/badge-research.png" alt="Research">
+          <figcaption>
+            <h3>Research</h3>
+            <p>Contributing funds to enable researchers to further understand and more completely treat brain tumours, including earlier detection, surgery and post surgery treatments.</p>
+          </figcaption>
+        </figure>
       </div>
-      <div class="col-md-4">
-        <h3>Care</h3>
-        <p>Supporting families with rehabilitation therapies and home assistance. This is commonly not covered by insurance, yet emotionally invaluable to both the patient and the family.</p>
+      <div class="col-sm-4">
+        <figure>
+          <img class="img-circle img-responsive" src="<?php echo $img_path; ?>/badge-care.png" alt="Care">
+          <figcaption>
+            <h3>Care</h3>
+            <p>Supporting families with rehabilitation therapies and home assistance. This is commonly not covered by insurance, yet emotionally invaluable to both the patient and the family.</p>
+          </figcaption>
+        </figure>
       </div>
-      <div class="col-md-4">
-        <h3>Development</h3>
-        <p>We work to help with the educational needs of other young people going through brain tumour treatment including tutoring and educational support.</p>
+      <div class="col-sm-4">
+        <figure>
+          <img class="img-circle img-responsive" src="<?php echo $img_path; ?>/badge-development.png" alt="Development">
+          <figcaption>
+            <h3>Development</h3>
+            <p>We work to help with the educational needs of other young people going through brain tumour treatment including tutoring and educational support.</p>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>
