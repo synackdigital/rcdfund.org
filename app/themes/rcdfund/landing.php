@@ -52,29 +52,29 @@ $img_path = get_template_directory_uri() . '/assets/img';
       </div>
     </div>
     <div class="areas row text-center">
-      <div class="col-sm-4">
+      <div class="area-research col-sm-4">
         <figure>
           <img class="img-circle img-responsive" src="<?php echo $img_path; ?>/badge-research.png" alt="Research">
           <figcaption>
-            <h3>Research</h3>
+            <h4>Research</h4>
             <p>Contributing funds to enable researchers to further understand and more completely treat brain tumours, including earlier detection, surgery and post surgery treatments.</p>
           </figcaption>
         </figure>
       </div>
-      <div class="col-sm-4">
+      <div class="area-care col-sm-4">
         <figure>
           <img class="img-circle img-responsive" src="<?php echo $img_path; ?>/badge-care.png" alt="Care">
           <figcaption>
-            <h3>Care</h3>
+            <h4>Care</h4>
             <p>Supporting families with rehabilitation therapies and home assistance. This is commonly not covered by insurance, yet emotionally invaluable to both the patient and the family.</p>
           </figcaption>
         </figure>
       </div>
-      <div class="col-sm-4">
+      <div class="area-development col-sm-4">
         <figure>
           <img class="img-circle img-responsive" src="<?php echo $img_path; ?>/badge-development.png" alt="Development">
           <figcaption>
-            <h3>Development</h3>
+            <h4>Development</h4>
             <p>We work to help with the educational needs of other young people going through brain tumour treatment including tutoring and educational support.</p>
           </figcaption>
         </figure>
