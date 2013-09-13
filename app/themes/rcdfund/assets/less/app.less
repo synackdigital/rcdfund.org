@@ -224,7 +224,7 @@ figure figcaption {
 .board {
 
   padding-top: (10 * @padding-large-vertical);
-  padding-bottom: (16 * @padding-large-vertical);
+  padding-bottom: (10 * @padding-large-vertical);
 
   [class^='col-'] {
     margin-top: @line-height-computed;
@@ -269,6 +269,9 @@ figure figcaption {
    ========================================================================== */
 
 .subscribe {
+  padding-top: (4 * @padding-large-vertical);
+  padding-bottom: (4 * @padding-large-vertical);
+
   .form {
     background-color: @teal;
     border-radius: @border-radius-large;
@@ -322,7 +325,18 @@ figure figcaption {
    ========================================================================== */
 
 .content-info {
+  background-color: @prussian;
+  color: @sand;
+  padding-top: (4 * @padding-large-vertical);
+  padding-bottom: (4 * @padding-large-vertical);
 
+  .social {
+    margin-top: -(2 * @padding-base-vertical);
+  }
+
+  .social a {
+    color: @salmon;
+  }
 }
 
 

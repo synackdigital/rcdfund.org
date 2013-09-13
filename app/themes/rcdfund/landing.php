@@ -172,20 +172,27 @@ $img_path = get_template_directory_uri() . '/assets/img';
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h6 class="section-title">The Robert Connor Dawes Fund</h6>
+        <h4 class="section-title">The Robert Connor Dawes Fund</h4>
       </div>
       <div class="col-md-4">
         <p>ABN: 49 126 106 682<br>
-          Registered by the Australian Charities and Not-for-profits Commission
+          Registered by the Australian Charities and Not-for-profits Commission<br>
+          39 Royal Ave, Sandringham, 3191, Vic
         </p>
       </div>
       <div class="col-md-4">
-        <p>We'd love to talk brain matters, whether it is about our works, volunteering, sponsorship or partnerships. <a href="mailto:info@rcdfund.org?subject='Hello RCD Fund!'">Send us an email</a></p>
+        <p>We'd love to talk brain matters, whether it is about our works, volunteering, sponsorship or partnerships.</p>
+        <p><a class="btn btn-success btn-block" href="mailto:info@rcdfund.org?subject='Hello RCD Fund!'">Send us an email</a></p>
       </div>
-      <div class="col-md-4">
-        <p>Join us on <a href="http://facebook.com/rcdfund">FACEBOOK</a><br>
-          Follow us on <a href="http://twitter.com/rcdfund">TWITTER</a><br>
-          Snap &amp; #tag us on <a href="http://instagram/rcdfund">INSTAGRAM</a> #RCDFUND #AETERNUMFORTIS</p>
+      <div class="col-md-4 social">
+        <dl class="dl-horizontal">
+          <dt>Join</dt>
+          <dd><a href="http://facebook.com/rcdfund">Facebook</a></dd>
+          <dt>Follow</dt>
+          <dd><a href="http://twitter.com/rcdfund">Twitter</a></dd>
+          <dt>Snap</dt>
+          <dd><a href="http://instagram/rcdfund">Instagram</a><br>Use tags #RCDFUND and #AETERNUMFORTIS</dd>
+        </dl>
       </div>
     </div>
   </div>
