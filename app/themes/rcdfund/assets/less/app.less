@@ -97,13 +97,13 @@ figure figcaption {
    ========================================================================== */
 
 .connors-run {
-  background: @teal url('../img/beach-photo.jpg') center no-repeat;
+  background: @teal url('../img/beach-photo.jpg') center bottom no-repeat;
   background-size: cover;
   border-bottom: @line-height-computed solid @clay;
   color: @prussian;
 
   position: relative;
-  min-height: 640px;
+  min-height: 560px;
   padding-bottom: (2 * @line-height-computed);
 
   .section-title {
@@ -228,8 +228,8 @@ figure figcaption {
 
 .board {
 
-  padding-top: (4 * @padding-large-vertical);
-  padding-bottom: (7 * @padding-large-vertical);
+  padding-top: (10 * @padding-large-vertical);
+  padding-bottom: (16 * @padding-large-vertical);
 
   [class^='col-'] {
     margin-top: @line-height-computed;
@@ -265,6 +265,20 @@ figure figcaption {
     p {
       min-height: 4em;
     }
+  }
+}
+
+
+/* ==========================================================================
+   Subscribe
+   ========================================================================== */
+
+.subscribe {
+  .form {
+    background-color: @teal;
+    border-radius: @border-radius-large;
+
+    padding-right: @padding-large-vertical @padding-large-horizontal;
   }
 }
 
