@@ -117,8 +117,7 @@ figure figcaption {
 
       // padding: .5em .75em .25em;
 
-      text-transform: uppercase;
-      letter-spacing: .1em;
+      .caps;
     }
   }
 
@@ -228,6 +227,9 @@ figure figcaption {
 
 .board {
 
+  padding-top: (4 * @padding-large-vertical);
+  padding-bottom: (7 * @padding-large-vertical);
+
   [class^='col-'] {
     margin-top: @line-height-computed;
     margin-bottom: @line-height-computed;
@@ -236,6 +238,32 @@ figure figcaption {
   figure img {
     max-height: 255px;
     width: auto;
+  }
+
+  // Vertical align trick in captions
+  figure figcaption {
+
+    // Same baseline for all headers
+    h4 {
+      position: relative;
+
+      min-height: 5em;
+      div {
+        border-bottom: 1px solid rgba(0,0,0,.2);
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding-top: @padding-base-vertical;
+        padding-bottom: @padding-base-vertical;
+      }
+    }
+
+    // Same height for all texts to push contact down
+    p {
+      min-height: 4em;
+    }
   }
 }
 
@@ -309,9 +337,16 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    display: block;
 }
 
+// Center responsive images when
 .text-center .img-responsive {
   margin-left: auto;
   margin-right: auto;
+}
+
+// Uppercase 'caps' style
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
 // A 'XL' version of BS3 buttons

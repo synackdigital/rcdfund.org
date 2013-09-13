@@ -98,51 +98,51 @@ $img_path = get_template_directory_uri() . '/assets/img';
       <h1 class="section-title">Our Board &amp; Team <small class="block">Supported by five big hearts &amp; brains</small></h1>
       <div class="col-md-2 col-md-offset-1">
         <figure>
-          <img src="http://lorempixel.com/300/300/abstract/2/" class="img-responsive img-circle" alt="Board Member">
+          <!-- <img src="http://lorempixel.com/300/300/abstract/2/" class="img-responsive img-circle" alt="Liz Dawes"> -->
           <figcaption>
-            <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
+            <h4><div><span class="block">Liz Dawes,</span> Executive Director</div></h4>
             <p>Connor’s mum. Business woman. World-mover.</p>
-            <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
+            <a class="btn btn-info" href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a>
           </figcaption>
         </figure>
       </div>
       <div class="col-md-2">
         <figure>
-          <img src="http://lorempixel.com/300/300/abstract/3/" class="img-responsive img-circle" alt="Board Member">
+          <!-- <img src="http://lorempixel.com/300/300/abstract/3/" class="img-responsive img-circle" alt="Scott Dawes"> -->
           <figcaption>
-            <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
-            <p>Connor’s mum. Business woman. World-mover.</p>
-            <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
+            <h4><div><span class="block">Scott Dawes,</span> Director</div></h4>
+            <p>Connor's dad. Brave Runner. Quiet heart-stirrer.</p>
+            <a class="btn btn-info" href="mailto:scott@rcdfund.org" title="Send Scott an e-mail">scott@rcdfund.org</a>
           </figcaption>
         </figure>
       </div>
       <div class="col-md-2">
         <figure>
-          <img src="http://lorempixel.com/300/300/abstract/4/" class="img-responsive img-circle" alt="Board Member">
+          <!-- <img src="http://lorempixel.com/300/300/abstract/4/" class="img-responsive img-circle" alt="Jane Abbott"> -->
           <figcaption>
-            <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
-            <p>Connor’s mum. Business woman. World-mover.</p>
-            <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
+            <h4><div><span class="block">Jane Abbott,</span> Director, Secretary</div></h4>
+            <p>Paperwork genius. Lover of details. Artful administrator.</p>
+            <a class="btn btn-info" href="mailto:jane@rcdfund.org" title="Send Jane an e-mail">jane@rcdfund.org</a>
           </figcaption>
         </figure>
       </div>
       <div class="col-md-2">
         <figure>
-          <img src="http://lorempixel.com/300/300/abstract/5/" class="img-responsive img-circle" alt="Board Member">
+          <!-- <img src="http://lorempixel.com/300/300/abstract/5/" class="img-responsive img-circle" alt="Marek Wolski"> -->
           <figcaption>
-            <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
-            <p>Connor’s mum. Business woman. World-mover.</p>
-            <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
+            <h4><div><span class="block">Marek Wolski,</span> Director, Marketing</div></h4>
+            <p>Marketer. Ideas guy. Making things (happen).</p>
+            <a class="btn btn-info" href="mailto:marek@rcdfund.org" title="Send Marek an e-mail">marek@rcdfund.org</a>
           </figcaption>
         </figure>
       </div>
       <div class="col-md-2">
         <figure>
-          <img src="http://lorempixel.com/300/300/abstract/6/" class="img-responsive img-circle" alt="Board Member">
+          <!-- <img src="http://lorempixel.com/300/300/abstract/6/" class="img-responsive img-circle" alt="Jenny Selleck"> -->
           <figcaption>
-            <p><strong class="block">Liz Dawes,</strong> Executive Director</p>
-            <p>Connor’s mum. Business woman. World-mover.</p>
-            <p><a href="mailto:liz@rcdfund.org" title="Send Liz an e-mail">liz@rcdfund.org</a></p>
+            <h4><div><span class="block">Jenny Selleck,</span> Sponsors &amp; PR</div></h4>
+            <p class="description">Partnership mastermind. Media pro. Expert organiser.</p>
+            <a class="btn btn-info" href="mailto:jenny@rcdfund.org" title="Send Jenny an e-mail">jenny@rcdfund.org</a>
           </figcaption>
         </figure>
       </div>
