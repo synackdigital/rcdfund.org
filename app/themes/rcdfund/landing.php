@@ -164,7 +164,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
             <button class="btn btn-primary" type="button">Subscribe!</button>
           </span>
         </div>
-        <a href="#" class="help-block">Privacy policy</a>
+        <a data-toggle="modal" href="#privacy" class="help-block">Privacy policy</a>
       </div>
     </div>
   </div>
@@ -205,3 +205,36 @@ $img_path = get_template_directory_uri() . '/assets/img';
     </div>
   </div>
 </footer>
+
+<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Hey there stranger</h4>
+      </div>
+      <div class="modal-body">
+        <p>There are two ways we collect information about you.</p>
+        <ol>
+          <li>
+            <h5>The personal info</h5>
+            <p>When you fill in one of our forms (like our freelancer box) or download a document (like one of our articles) we might use this to get back to you if you’ve asked us a question, say.</p>
+            <p>We won’t pass your information on to anyone else (no matter how much money they offer us for it). You can unsubscribe using the link in the email.</p>
+          </li>
+          <li>
+            <h5>The anonymous info</h5>
+            <p>We also automatically record information about your browsing habits – like when you’re logging on and where from, and what you look at when you’re here. We use this to help us understand how people are using the site, and hopefully make it better.</p>
+            <p>But we can’t link that data back to you – it’s completely anonymous.</p>
+          </li>
+        </ol>
+        <h4>Changing this policy</h4>
+        <p>This policy isn’t set in stone – we can change at it at any time. If we do, we’ll make it clear on this page, so keep checking back. We keep all our old versions here. If we collected your info under an old version, those are the rules that apply.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<?php wp_footer(); ?>
