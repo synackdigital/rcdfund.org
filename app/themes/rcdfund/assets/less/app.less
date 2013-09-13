@@ -143,14 +143,8 @@ figure figcaption {
 .about {
 
   .areas {
-    background: url('../img/gauze.png') top center;
-    border-radius: @border-radius-large;
-    .box-shadow(~"0 1px 2px rgba(0,0,0,.1)");
-
-    margin-top: @line-height-computed;
-    margin-bottom: @line-height-computed;
-    padding-top: @line-height-computed;
-    padding-bottom: @line-height-computed;
+    margin-top: (8 * @padding-large-vertical);
+    margin-bottom: (8 * @padding-large-vertical);
 
     h4 {
       text-transform: uppercase;
@@ -160,17 +154,23 @@ figure figcaption {
       margin-right: auto;
     }
 
-    .area-research h4 {
-      color: @teal;
-      border-bottom: 1px solid mix(white, @teal, 50%);
+    .area-research {
+      color: @prussian;
+      h4 {
+        border-bottom: 1px solid mix(white, @prussian, 50%);
+      }
     }
-    .area-care h4 {
-      color: @banana;
-      border-bottom: 1px solid mix(white, @banana, 50%);
+    .area-care {
+      color: @firebrick;
+      h4 {
+        border-bottom: 1px solid mix(white, @firebrick, 50%);
+      }
     }
-    .area-development h4 {
-      color: @salmon;
-      border-bottom: 1px solid mix(white, @salmon, 50%);
+    .area-development {
+      color: @clay;
+      h4 {
+        border-bottom: 1px solid mix(white, @clay, 50%);
+      }
     }
   }
 
