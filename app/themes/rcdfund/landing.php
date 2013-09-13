@@ -120,7 +120,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
         <figure>
           <!-- <img src="http://lorempixel.com/300/300/abstract/4/" class="img-responsive img-circle" alt="Jane Abbott"> -->
           <figcaption>
-            <h4><div><span class="block">Jane Abbott,</span> Director, Secretary</div></h4>
+            <h4><div><span class="block">Jane Abbott,</span> Director, Company Secretary</div></h4>
             <p>Paperwork genius. Lover of details. Artful administrator.</p>
             <a class="btn btn-info" href="mailto:jane@rcdfund.org" title="Send Jane an e-mail">jane@rcdfund.org</a>
           </figcaption>
@@ -140,7 +140,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
         <figure>
           <!-- <img src="http://lorempixel.com/300/300/abstract/6/" class="img-responsive img-circle" alt="Jenny Selleck"> -->
           <figcaption>
-            <h4><div><span class="block">Jenny Selleck,</span> Sponsors &amp; PR</div></h4>
+            <h4><div><span class="block">Jenny Selleck,</span> Sponsorship &amp; PR</div></h4>
             <p class="description">Partnership mastermind. Media pro. Expert organiser.</p>
             <a class="btn btn-info" href="mailto:jenny@rcdfund.org" title="Send Jenny an e-mail">jenny@rcdfund.org</a>
           </figcaption>
