@@ -10,11 +10,11 @@ $img_path = get_template_directory_uri() . '/assets/img';
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img class="logo img-responsive" src="<?php echo $img_path; ?>/rcdfund-blue-sbm.png" alt="RCD Fund – Supporting Brain Matters">
+        <img class="logo img-responsive" src="<?php echo $img_path; ?>/rcdfund-inverse-sbm.png" alt="RCD Fund – Supporting Brain Matters">
       </div>
       <div class="col-md-8">
         <p class="tagline"><small class="block">Supporting brain matters in areas of</small> Research, Care and Development. <small class="block">In memory of Robert Connor Dawes</small></p>
-        <p><a href="https://connorsrun.gofundraise.com.au/payments/donate/beneficiary/1023" class="btn btn-info btn-lg" title="Make a donation"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Make a donation</a></p>
+        <p><span class="glyphicon glyphicon-lg glyphicon-hand-right"></span>&emsp;<a href="https://connorsrun.gofundraise.com.au/payments/donate/beneficiary/1023" class="btn btn-info btn-lg" title="Make a donation">Make a donation</a></p>
       </div>
     </div>
   </div>

@@ -60,8 +60,10 @@ figure figcaption {
    ========================================================================== */
 
 .banner {
-  background: @teal url('../img/pattern-teal.png');
-  border-bottom: @padding-base-vertical solid @sand;
+  background-color: @prussian;
+  background-image: url('../img/pattern-prussian.png');
+  color: @sand;
+  border-bottom: @padding-base-vertical solid @salmon;
 
   padding-top: (6 * @line-height-computed);
   padding-bottom: (6 * @line-height-computed);
@@ -75,8 +77,6 @@ figure figcaption {
 }
 
 .banner .tagline {
-  color: @prussian;
-
   margin-top: (2 * @line-height-computed);
   margin-bottom: (2 * @line-height-computed);
 
@@ -382,6 +382,12 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
   // line-height: ensure even-numbered height of button next to large input
   .button-size((1.5 * @padding-large-vertical); (1.5 * @padding-large-horizontal); (1.5 * @font-size-large); (1.5 * @line-height-large); (1.5 * @border-radius-large));
   padding-bottom: @padding-large-vertical;
+}
+
+// More sizes for Glyphicons
+.glyphicon-lg {
+  font-size: floor(@font-size-base * 2.60);
+  vertical-align: top;
 }
 
 
