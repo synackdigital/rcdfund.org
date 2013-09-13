@@ -116,28 +116,46 @@ figure figcaption {
    ========================================================================== */
 
 .connors-run {
-  background: @teal url('../img/map.png') bottom center no-repeat;
-  border-bottom: @line-height-computed solid @teal;
+  background: @teal url('../img/beach-photo.jpg') center no-repeat;
+  background-size: cover;
+  border-bottom: @line-height-computed solid @clay;
   color: @prussian;
 
+  position: relative;
+  min-height: 640px;
   padding-bottom: (2 * @line-height-computed);
 
-  a {
-    color: @firebrick;
-  }
-
   .section-title {
-    margin-top: -(2 * @line-height-computed);
+    margin-top: (2 * @line-height-computed);
     margin-bottom: (2 * @line-height-computed);
 
-    span {
-      background-color: @teal;
-      border-radius: @border-radius-large;
+    border-bottom: 2px solid @teal;
 
-      padding: .5em .75em .25em;
+    span {
+      // background-color: @teal;
+      // border-radius: @border-radius-large;
+
+      // padding: .5em .75em .25em;
 
       text-transform: uppercase;
       letter-spacing: .1em;
+    }
+  }
+
+  .fb-event {
+    background-color: @prussian;
+    color: @sand;
+    border-radius: @border-radius-small;
+
+    position: absolute;
+    bottom: @padding-large-vertical;
+    left: 50%;
+    width: 240px;
+    margin-left: -120px;
+    padding: @padding-large-vertical @padding-base-horizontal;
+
+    a {
+      color: @banana;
     }
   }
 }

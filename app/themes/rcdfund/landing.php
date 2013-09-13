@@ -23,13 +23,13 @@ $img_path = get_template_directory_uri() . '/assets/img';
 <section class="connors-run text-center">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-6 col-md-offset-3">
         <h2 class="section-title"><span>Connor's Run</span></h2>
-        <p class="lead">Our first event was a smashing success with 1,500 big hearted and big brained participants. Together we raised $75,000 for Research, Care &amp; Development projects. Connor would be proud.</p>
+        <p class="lead">Our first event was a smashing success with 1,500 big hearted and big brained participants. Together we raised nearly $100,000 for Research, Care &amp; Development projects. Connor would be proud.</p>
         <p class="lead"><strong>Thank you.</strong></p>
-        <p>Event photos are up on our <a href="#">Facebook page</a> <small>(p.s you don’t need an account to view them)</small></p>
       </div>
     </div>
+    <p class="fb-event">Event photos are up on our <a href="https://www.facebook.com/rcdfund/photos_albums">Facebook page</a> <small class="block">(p.s you don’t need an account to view them)</small></p>
   </div>
 </section>
 
