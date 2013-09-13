@@ -24,7 +24,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h2 class="section-title"><span>Connor's Run</span></h2>
+        <h2 class="section-title">Connor's Run</h2>
         <p class="lead">Our first event was a smashing success with 1,500 big hearted and big brained participants. Together we raised nearly $100,000 for Research, Care &amp; Development projects. Connor would be proud.</p>
         <p class="lead"><strong>Thank you.</strong></p>
       </div>
