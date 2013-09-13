@@ -29,7 +29,9 @@ $img_path = get_template_directory_uri() . '/assets/img';
         <p class="lead"><strong>Thank you.</strong></p>
       </div>
     </div>
-    <p class="fb-event">Event photos are up on our <a href="https://www.facebook.com/rcdfund/photos_albums">Facebook page</a> <small class="block">(p.s you don’t need an account to view them)</small></p>
+    <div class="row">
+      <p class="fb-event">Event photos are up on our <a class="block" href="https://www.facebook.com/rcdfund/photos_albums">Facebook page</a> <small class="block">(p.s you don’t need an account to view them)</small></p>
+    </div>
   </div>
 </section>
 
