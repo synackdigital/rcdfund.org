@@ -189,18 +189,17 @@ $img_path = get_template_directory_uri() . '/assets/img';
         <h6 class="section-title">The Robert Connor Dawes Fund</h6>
       </div>
       <div class="col-md-4">
-        <p>ABN: XXXYZYZZYXY<br>
-          Registered as a lorem ipsum isum charity<br>
-          39 Royal Av, Sandringham, 3191, Vic
+        <p>ABN: 49 126 106 682<br>
+          Registered by the Australian Charities and Not-for-profits Commission
         </p>
       </div>
       <div class="col-md-4">
-        <p>o get in touch regarding information about our works, volun- teering, sponsorship or partnerships, email Liz Dawes: <a href="mailto:info@rcdfund.org">info@rcdfund.org</a></p>
+        <p>We'd love to talk brain matters, whether it is about our works, volunteering, sponsorship or partnerships. <a href="mailto:info@rcdfund.org?subject='Hello RCD Fund!'">Send us an email</a></p>
       </div>
       <div class="col-md-4">
-        <p>Join us on <a href="#">FACEBOOK</a><br>
-          Follow us on <a href="#">TWITTER</a><br>
-          Snap & #tag us on <a href="#">INSTAGRAM</a> #RCDFUND #AETERNUMFORTIS</p>
+        <p>Join us on <a href="http://facebook.com/rcdfund">FACEBOOK</a><br>
+          Follow us on <a href="http://twitter.com/rcdfund">TWITTER</a><br>
+          Snap &amp; #tag us on <a href="http://instagram/rcdfund">INSTAGRAM</a> #RCDFUND #AETERNUMFORTIS</p>
       </div>
     </div>
   </div>
