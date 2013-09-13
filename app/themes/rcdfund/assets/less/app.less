@@ -142,6 +142,18 @@ figure figcaption {
 
 .about {
 
+  padding-top: (4 * @padding-large-vertical);
+
+  figure img {
+    max-height: 180px;
+    width: auto;
+
+    &.img-robert {
+      margin-top: (6 * @padding-large-vertical);
+      max-height: 320px;
+    }
+  }
+
   .areas {
     margin-top: (8 * @padding-large-vertical);
     margin-bottom: (8 * @padding-large-vertical);
@@ -150,6 +162,7 @@ figure figcaption {
       text-transform: uppercase;
 
       max-width: 50%;
+      margin-top: @line-height-computed;
       margin-left: auto;
       margin-right: auto;
     }
@@ -174,10 +187,6 @@ figure figcaption {
     }
   }
 
-  figure img {
-    max-height: 255px;
-    width: auto;
-  }
 }
 
 

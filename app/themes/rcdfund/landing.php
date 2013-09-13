@@ -38,7 +38,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
 <section class="about">
   <div class="container">
     <div class="row">
-      <div class="col-sm-7">
+      <div class="col-sm-4 col-sm-offset-2">
         <h1 class="section-title">The RCD Fund</h1>
         <p>Inspired by a big heart and brain, the RCD Fund was created in memory of Robert Connor Dawes in June 2013.</p>
         <p>For 16 months, Connor's brilliant mind, strong body and gentle soul faced off against an ependymoma. Like many others, his brains and brawn gave it all to fight against the poor odds. But on April 20, 2013, Connor's own battle ended.</p>
@@ -46,9 +46,9 @@ $img_path = get_template_directory_uri() . '/assets/img';
         <h2>Our Mission</h2>
         <p>Brain tumours are the most fatal of all childhood cancers. Current clinical treatments only help 50% of children, and leave 90% with lifelong physical and mental impairments. We're all about changing the odds. To make brain tumours go the way of the dinosaurs. To support the science and in the meatime the patients. Our fundraising goals are captured by Connor’s initials RCD.</p>
       </div>
-      <div class="col-sm-4 col-sm-offset-1 text-center">
+      <div class="col-sm-5 text-center">
         <figure>
-          <img class="img-circle img-responsive" src="<?php echo $img_path; ?>/robert-connor-dawes.jpg" alt="Photo of Robert">
+          <img class="img-robert img-circle img-responsive" src="<?php echo $img_path; ?>/robert-connor-dawes.jpg" alt="Photo of Robert">
           <figcaption><strong>Robert Connor Dawes</strong></figcaption>
         </figure>
       </div>
