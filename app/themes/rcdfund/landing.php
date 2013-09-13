@@ -170,18 +170,6 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section>
 
-<section class="supporters text-center">
-  <div class="container">
-    <div class="row">
-      <h3 class="section-title">The RCD Fund is supported by these big hearts and brains</h3>
-      <img src="http://dummyimage.com/80x80.png/eee/999" alt="">
-      <img src="http://dummyimage.com/180x80.png/eee/999" alt="">
-      <img src="http://dummyimage.com/240x80.png/eee/999" alt="">
-      <img src="http://dummyimage.com/160x80.png/eee/999" alt="">
-    </div>
-  </div>
-</section>
-
 <footer class="content-info">
   <div class="container">
     <div class="row">
