@@ -204,7 +204,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
           <dt>Follow</dt>
           <dd><a href="http://twitter.com/rcdfund">Twitter</a></dd>
           <dt>Snap</dt>
-          <dd><a href="http://instagram/rcdfund">Instagram</a><br>Use tags #RCDFUND and #AETERNUMFORTIS</dd>
+          <dd><a href="http://instagram.com/rcdfund">Instagram</a><br>Use tags #RCDFUND and #AETERNUMFORTIS</dd>
         </dl>
       </div>
     </div>
