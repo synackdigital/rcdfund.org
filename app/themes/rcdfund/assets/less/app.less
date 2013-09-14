@@ -101,7 +101,6 @@ figure figcaption {
   border-bottom: @line-height-computed solid @clay;
   color: @prussian;
 
-  position: relative;
   min-height: 520px;
   padding-bottom: (2 * @line-height-computed);
 
@@ -121,15 +120,21 @@ figure figcaption {
     color: @sand;
     border-radius: @border-radius-small;
 
-    position: absolute;
-    bottom: (6 * @padding-large-vertical);
-    left: 50%;
-    width: 300px;
-    margin-left: -150px;
     padding: @padding-large-vertical @padding-base-horizontal;
 
     a {
       color: @banana;
+    }
+  }
+
+  @media (min-width: @screen-sm) {
+    position: relative;
+    .fb-event {
+      position: absolute;
+      bottom: (6 * @padding-large-vertical);
+      left: 50%;
+      width: 300px;
+      margin-left: -150px;
     }
   }
 }
