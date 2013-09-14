@@ -171,7 +171,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
         <div class="input-group">
           <input type="text" class="form-control input-lg">
           <span class="input-group-btn">
-            <button class="btn btn-primary btn-lg" type="button">Subscribe!</button>
+            <button class="btn btn-success btn-lg" type="button">Subscribe!</button>
           </span>
         </div>
         <a data-toggle="modal" href="#privacy" class="help-block">Privacy policy</a>
