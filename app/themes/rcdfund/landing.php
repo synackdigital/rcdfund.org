@@ -98,7 +98,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   <div class="container">
     <div class="row">
       <h1 class="section-title">Our Team</h1>
-      <div class="col-md-2 col-md-offset-1">
+      <div class="col-md-2">
         <figure>
           <!-- <img src="http://lorempixel.com/300/300/abstract/2/" class="img-responsive img-circle" alt="Liz Dawes"> -->
           <figcaption>
@@ -145,6 +145,16 @@ $img_path = get_template_directory_uri() . '/assets/img';
             <h4><div><span class="block">Jenny Selleck,</span> Sponsorship &amp; PR</div></h4>
             <p class="description">Partnership mastermind. Media pro. Expert organiser.</p>
             <a class="btn btn-info" href="mailto:jenny@rcdfund.org" title="Send Jenny an e-mail">jenny@rcdfund.org</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-2">
+        <figure>
+          <!-- <img src="http://lorempixel.com/300/300/abstract/7/" class="img-responsive img-circle" alt="Jenny Selleck"> -->
+          <figcaption>
+            <h4><div><span class="block">Celia Williams,</span> Research &amp; Giving</div></h4>
+            <p class="description">Research guru. Giving liaison.</p>
+            <a class="btn btn-info" href="mailto:celia@rcdfund.org" title="Send Celia an e-mail">celia@rcdfund.org</a>
           </figcaption>
         </figure>
       </div>
