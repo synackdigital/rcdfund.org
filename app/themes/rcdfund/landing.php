@@ -165,15 +165,16 @@ $img_path = get_template_directory_uri() . '/assets/img';
 <section class="subscribe">
   <div class="container">
     <div class="row">
-      <div class="form col-md-6 col-md-offset-3">
-        <h3>Feed your brain</h3>
-        <p>We’ll be building out this site with exciting content and stories over the coming months. Join the brainfood newsletter to be informed about these and other happenings. It’ll go out every month or so.</p>
-        <div class="input-group">
+      <div class="mailchimp col-md-6 col-md-offset-3">
+        <!-- <h3>Feed your brain</h3>
+        <p>We’ll be building out this site with exciting content and stories over the coming months. Join the brainfood newsletter to be informed about these and other happenings. It’ll go out every month or so.</p> -->
+        <?php mailchimpSF_signup_form(); ?>
+        <!-- <div class="input-group">
           <input type="text" class="form-control input-lg">
           <span class="input-group-btn">
             <button class="btn btn-success btn-lg" type="button">Subscribe!</button>
           </span>
-        </div>
+        </div> -->
         <a data-toggle="modal" href="#privacy" class="help-block">Privacy policy</a>
       </div>
     </div>
