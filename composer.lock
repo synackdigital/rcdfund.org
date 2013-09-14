@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6cb8935ddc6e8adb0a6ae0e28368b638",
+    "hash": "3f889a4b1c092dc642b278e3d5ff7914",
     "packages": [
         {
             "name": "composer/installers",
@@ -135,26 +135,11 @@
             "type": "webroot"
         },
         {
-            "name": "wpackagist/google-analyticator",
-            "version": "trunk",
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/google-analyticator.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/google-analyticator"
-        },
-        {
             "name": "wpackagist/logged-in",
-            "version": "trunk",
+            "version": "1.0.4",
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/logged-in.zip",
+                "url": "http://downloads.wordpress.org/plugin/logged-in.1.0.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -166,10 +151,10 @@
         },
         {
             "name": "wpackagist/mailchimp",
-            "version": "1.2.14",
+            "version": "trunk",
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/mailchimp.1.2.14.zip",
+                "url": "http://downloads.wordpress.org/plugin/mailchimp.zip",
                 "reference": null,
                 "shasum": null
             },
