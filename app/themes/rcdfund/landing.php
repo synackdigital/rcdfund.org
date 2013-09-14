@@ -88,7 +88,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
 <section class="donate">
   <div class="container">
     <div class="row">
-      <h2 class="col-md-7">A bit of love and support goes a long way. Thank you.</h2>
+      <h2 class="col-md-7">Your love and support goes a long way. Thank you.</h2>
       <div class="col-md-4 col-md-offset-1"><a href="https://connorsrun.gofundraise.com.au/payments/donate/beneficiary/1023" class="btn btn-danger btn-xl btn-block"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Make a donation</a></div>
     </div>
   </div>
@@ -97,7 +97,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
 <section class="board text-center">
   <div class="container">
     <div class="row">
-      <h1 class="section-title">Our Board &amp; Team <small class="block">Supported by five big hearts &amp; brains</small></h1>
+      <h1 class="section-title">Our Team</h1>
       <div class="col-md-2 col-md-offset-1">
         <figure>
           <!-- <img src="http://lorempixel.com/300/300/abstract/2/" class="img-responsive img-circle" alt="Liz Dawes"> -->
