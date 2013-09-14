@@ -89,7 +89,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   <div class="container">
     <div class="row">
       <h2 class="col-md-7">Your love and support goes a long way. Thank you.</h2>
-      <div class="col-md-4 col-md-offset-1"><a href="https://connorsrun.gofundraise.com.au/payments/donate/beneficiary/1023" class="btn btn-danger btn-xl btn-block"><span class="glyphicon glyphicon-hand-right"></span>&emsp;Make a donation</a></div>
+      <div class="col-md-4 col-md-offset-1"><span class="glyphicon glyphicon-xl glyphicon-hand-right"></span>&emsp;&emsp;<a href="https://connorsrun.gofundraise.com.au/payments/donate/beneficiary/1023" class="btn btn-danger btn-xl">Make a donation</a></div>
     </div>
   </div>
 </section>
