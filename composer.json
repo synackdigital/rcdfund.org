@@ -25,7 +25,8 @@
     "wordpress": "3.6",
     "fancyguy/webroot-installer": "1.0.0",
     "wpackagist/logged-in": "*",
-    "wpackagist/mailchimp": "*"
+    "wpackagist/mailchimp": "*",
+    "wpackagist/google-analyticator": "*"
   },
   "extra": {
     "webroot-dir": "wordpress",
