@@ -98,7 +98,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   <div class="container">
     <div class="row">
       <h1 class="section-title">Our Team</h1>
-      <div class="col-md-2">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0">
         <figure>
           <!-- <img src="http://lorempixel.com/300/300/abstract/2/" class="img-responsive img-circle" alt="Liz Dawes"> -->
           <figcaption>
@@ -108,7 +108,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-2">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-2 col-md-2 col-md-offset-0">
         <figure>
           <!-- <img src="http://lorempixel.com/300/300/abstract/3/" class="img-responsive img-circle" alt="Scott Dawes"> -->
           <figcaption>
@@ -118,7 +118,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-2">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0">
         <figure>
           <!-- <img src="http://lorempixel.com/300/300/abstract/4/" class="img-responsive img-circle" alt="Jane Abbott"> -->
           <figcaption>
@@ -128,7 +128,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-2">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-2 col-md-2 col-md-offset-0">
         <figure>
           <!-- <img src="http://lorempixel.com/300/300/abstract/5/" class="img-responsive img-circle" alt="Marek Wolski"> -->
           <figcaption>
@@ -138,7 +138,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-2">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0">
         <figure>
           <!-- <img src="http://lorempixel.com/300/300/abstract/6/" class="img-responsive img-circle" alt="Jenny Selleck"> -->
           <figcaption>
@@ -148,7 +148,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-2">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-2 col-md-2 col-md-offset-0">
         <figure>
           <!-- <img src="http://lorempixel.com/300/300/abstract/7/" class="img-responsive img-circle" alt="Jenny Selleck"> -->
           <figcaption>

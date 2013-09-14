@@ -248,9 +248,11 @@ figure figcaption {
       }
     }
 
-    // Same height for all texts to push contact down
-    p {
-      min-height: 4em;
+    // Same height for all texts to push contact buttons down
+    @media (min-width: @screen-md) {
+      p {
+        min-height: 6em;
+      }
     }
   }
 }
