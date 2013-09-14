@@ -6,7 +6,7 @@ Template Name: Landing Page
 $img_path = get_template_directory_uri() . '/assets/img';
 ?>
 
-<header class="banner text-center">
+<header class="banner text-center feathers">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -180,7 +180,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section>
 
-<footer class="content-info">
+<footer class="content-info feathers">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -194,7 +194,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
       </div>
       <div class="col-md-4">
         <p>We'd love to talk brain matters, whether it is about our works, volunteering, sponsorship or partnerships.</p>
-        <p><a class="btn btn-success btn-block" href="mailto:info@rcdfund.org?subject='Hello RCD Fund!'">Send us an email</a></p>
+        <p><a class="btn btn-danger btn-block" href="mailto:info@rcdfund.org?subject='Hello RCD Fund!'">Send us an email</a></p>
       </div>
       <div class="col-md-4 social">
         <dl class="dl-horizontal">
