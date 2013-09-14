@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "96b78ba947bd2eb5cf05b6490be0f4c3",
+    "hash": "3f889a4b1c092dc642b278e3d5ff7914",
     "packages": [
         {
             "name": "composer/installers",
@@ -136,10 +136,10 @@
         },
         {
             "name": "wpackagist/logged-in",
-            "version": "trunk",
+            "version": "1.0.4",
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/logged-in.zip",
+                "url": "http://downloads.wordpress.org/plugin/logged-in.1.0.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -148,6 +148,21 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/extend/plugins/logged-in"
+        },
+        {
+            "name": "wpackagist/mailchimp",
+            "version": "trunk",
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/mailchimp.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/extend/plugins/mailchimp"
         }
     ],
     "packages-dev": [
