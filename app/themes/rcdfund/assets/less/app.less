@@ -63,9 +63,13 @@ figure figcaption {
   background-color: @teal;
   color: @prussian;
   border-bottom: @padding-base-vertical solid @salmon;
+  padding-top: @line-height-computed;
+  padding-bottom: @line-height-computed;
 
-  padding-top: (6 * @line-height-computed);
-  padding-bottom: (6 * @line-height-computed);
+  @media (min-width: @container-tablet) {
+    padding-top: (6 * @line-height-computed);
+    padding-bottom: (6 * @line-height-computed);
+  }
 }
 
 .banner .logo {
