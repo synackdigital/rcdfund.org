@@ -181,6 +181,19 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section>
 
+<section class="puzzle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <img class="puzzle-preview" src="<?php echo $img_path; ?>/puzzle.png">
+        <h1>The answers you might be looking for</h1>
+        <p>Get the solutions to the puzzles in the Brain Matters notebook</p>
+        <p><a class="btn btn-danger btn-lg" href="/wordpress/media/BrainMatters-PuzzleSolutions.pdf" title="Download the Brain Matters puzzles">Download</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="content-info feathers">
   <div class="container">
     <div class="row">
