@@ -21,5 +21,14 @@
   <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon-76x76.png">
   <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon-152x152.png">
 
+  <meta property="og:title" content="RCD Fund">
+  <meta property="og:description" content="Supporting brain matters in areas of Research, Care and Development in memory of Robert Connor Dawes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://rcdfund.org/">
+  <meta property="og:image" content="http://rcdfund.org/assets/img/rcdfund-blue-sbm.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="900">
+  <meta property="og:image:height" content="900">
+
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 </head>
