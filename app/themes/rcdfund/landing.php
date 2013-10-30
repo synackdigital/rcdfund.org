@@ -20,7 +20,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </header>
 
-<section class="connors-run text-center">
+<!-- <section class="connors-run text-center">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
@@ -31,6 +31,26 @@ $img_path = get_template_directory_uri() . '/assets/img';
     </div>
     <div class="row">
       <p class="fb-event">Event photos are up on our <a class="block" href="https://www.facebook.com/rcdfund/photos_albums">Facebook page</a> <small class="block">(p.s you don’t need an account to view them)</small></p>
+    </div>
+  </div>
+</section> -->
+
+<section class="xmas">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-4 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+        <header>
+          <p class="text-left">The RCD Fund<br>&amp; Nene<br>present</p>
+          <h1>
+            <small>Have a very merry</small>
+            Christmas Market
+          </h1>
+        </header>
+        <p class="lead">Join us for Christmas decorations, drinks and delights in an open house meets Christmas market.</p>
+        <p>Wed&ndash;Thu: 9am&ndash;3pm ($5 presales &amp; drop-in)<br>Includes Christmas decoration catalogue.</p>
+        <p>Friday cocktails: 6&ndash;10pm ($25 booking req)<br>Includes great Christmas entertainment, drink on arrival &amp; nibbles.</p>
+        <p><a class="btn btn-lg btn-primary" href="http://www.eventbrite.com/event/8971519055">Book online now</a></p>
+      </div>
     </div>
   </div>
 </section>
