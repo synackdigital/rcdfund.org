@@ -55,6 +55,33 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section>
 
+<section class="xmascards">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2"><img class="logo img-responsive" src="<?php echo $img_path; ?>/xmascardpattern.png" alt="XMAS"></div>
+    </div>
+    <div class="row">
+      <header class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+        <h1>Fresh from the Polar printers!</h1>
+        <p>This year Christmas cheer is easier to spread and more beautiful than ever. We've worked with the award-winning and very talented Swedish designers <a href="http://snask.com" target="_blank">SNASK</a> (they also designed the RCD logo) to bring you a collection of RCD Christmas cards. The design is inspired by a snowflake and has at it's heart the RCD bird.</p>
+      </header>
+  </div>
+  <div class="row store">
+    <div class="col-xs-12">
+      <h2>Buy Christmas & Donation Cards Online</h2>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-md-offset-1" style="padding-top:30px;">
+      <a href="http://rcdxmasau.tictail.com" target="_blank" title="Shop from Australia here"><strong>AUS</strong> Gift Card Store</a>
+    </div>
+    <div class="hidden-xs col-sm-4">
+      <img class="logo img-responsive" style="max-height:140px;" src="<?php echo $img_path; ?>/rcdfund-red-sbm.png" alt="RCD Fund – Supporting Brain Matters">
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3" style="padding-top:30px;">
+      <a href="http://rcdxmasusa.tictail.com" target="_blank" title="Shop from the USA here"><strong>USA</strong> Gift Card Store</a>
+    </div>
+  </div>
+</section>
+
 <section class="about">
   <div class="container">
     <div class="row">
