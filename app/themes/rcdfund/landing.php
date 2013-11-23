@@ -6,7 +6,7 @@ Template Name: Landing Page
 $img_path = get_template_directory_uri() . '/assets/img';
 ?>
 
-<header class="banner text-center feathers">
+<header id="banner" class="text-center feathers">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -20,7 +20,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </header>
 
-<!-- <section class="connors-run text-center">
+<!-- <section id="connors-run text-center">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
@@ -35,7 +35,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section> -->
 
-<section class="xmas">
+<section id="xmas">
   <div class="container">
     <div class="row">
       <div class="col-xs-8 col-xs-offset-4 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
@@ -55,7 +55,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section>
 
-<section class="xmascards">
+<section id="xmascards">
   <div class="container text-center">
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2"><img class="logo img-responsive" src="<?php echo $img_path; ?>/xmascardpattern.png" alt="XMAS"></div>
@@ -82,7 +82,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section>
 
-<section class="about">
+<section id="about">
   <div class="container">
     <div class="row">
       <div class="col-sm-4 col-sm-offset-2">
@@ -132,7 +132,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section>
 
-<section class="donate">
+<section id="donate">
   <div class="container">
     <div class="row">
       <h2 class="col-md-7">Your love and support goes a long way. Thank you.</h2>
@@ -141,7 +141,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section>
 
-<section class="board text-center">
+<section id="board text-center">
   <div class="container">
     <div class="row">
       <h1 class="section-title">Our Team</h1>
@@ -209,7 +209,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section>
 
-<section class="subscribe">
+<section id="subscribe">
   <div class="container">
     <div class="row">
       <div class="mailchimp col-md-6 col-md-offset-3">
@@ -228,7 +228,7 @@ $img_path = get_template_directory_uri() . '/assets/img';
   </div>
 </section>
 
-<section class="puzzle">
+<section id="puzzle">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
