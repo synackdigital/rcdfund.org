@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "3f889a4b1c092dc642b278e3d5ff7914",
+    "hash": "a278f877efe56ce9f179dca52062f5bc",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.6",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "b3bd071ea114a57212c75aa6a2eef5cfe0cc798f"
+                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/b3bd071ea114a57212c75aa6a2eef5cfe0cc798f",
-                "reference": "b3bd071ea114a57212c75aa6a2eef5cfe0cc798f",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d792632d27e1980d921cbbba12eab7b888338d4c",
+                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c",
                 "shasum": ""
             },
             "replace": {
@@ -59,6 +59,7 @@
                 "agl",
                 "cakephp",
                 "codeigniter",
+                "concrete5",
                 "drupal",
                 "fuelphp",
                 "installer",
@@ -76,20 +77,20 @@
                 "wordpress",
                 "zend"
             ],
-            "time": "2013-08-20 04:37:09"
+            "time": "2013-10-24 16:13:49"
         },
         {
             "name": "fancyguy/webroot-installer",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fancyguy/webroot-installer.git",
-                "reference": "4888a3dad9ab3b3da505a149230be0ec2ab837f4"
+                "reference": "a2d5c2e149d837e5580a62a91d3c91577aa30d28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fancyguy/webroot-installer/zipball/4888a3dad9ab3b3da505a149230be0ec2ab837f4",
-                "reference": "4888a3dad9ab3b3da505a149230be0ec2ab837f4",
+                "url": "https://api.github.com/repos/fancyguy/webroot-installer/zipball/a2d5c2e149d837e5580a62a91d3c91577aa30d28",
+                "reference": "a2d5c2e149d837e5580a62a91d3c91577aa30d28",
                 "shasum": ""
             },
             "require-dev": {
@@ -111,26 +112,26 @@
             ],
             "authors": [
                 {
-                    "name": "Steve Buzonas (slbmeh)",
+                    "name": "Steve Buzonas",
                     "email": "steve@fancyguy.com",
                     "homepage": "http://www.stevebuzonas.com"
                 }
             ],
             "description": "A composer installer for libraries that live in an application webroot.",
             "homepage": "http://fancyguy.github.com/webroot-installer/",
-            "time": "2013-01-29 22:51:45"
+            "time": "2013-03-15 17:51:14"
         },
         {
             "name": "wordpress",
-            "version": "3.6",
+            "version": "3.8",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/3.6.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/3.8.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
-                "fancyguy/webroot-installer": "1.0.0"
+                "fancyguy/webroot-installer": "1.1.0"
             },
             "type": "webroot"
         },
@@ -151,10 +152,10 @@
         },
         {
             "name": "wpackagist/mailchimp",
-            "version": "trunk",
+            "version": "1.4.1",
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/mailchimp.zip",
+                "url": "http://downloads.wordpress.org/plugin/mailchimp.1.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
