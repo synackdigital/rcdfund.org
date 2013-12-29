@@ -19,55 +19,8 @@ define('POST_EXCERPT_LENGTH', 40); // length in words for excerpt_length filter 
  * .main classes
  */
 function roots_main_class() {
-  if (roots_display_sidebar()) {
-    // Classes on pages with the sidebar
-    $class = 'col-sm-8';
-  } else {
-    // Classes on full width pages
-    $class = 'col-sm-12';
-  }
-
+  $class = 'col-lg-12';
   return $class;
-}
-
-/**
- * .sidebar classes
- */
-function roots_sidebar_class() {
-  return 'col-sm-4';
-}
-
-/**
- * Define which pages shouldn't have the sidebar
- *
- * See lib/sidebar.php for more details
- */
-function roots_display_sidebar() {
-  $sidebar_config = new Roots_Sidebar(
-    /**
-     * Conditional tag checks (http://codex.wordpress.org/Conditional_Tags)
-     * Any of these conditional tags that return true won't show the sidebar
-     *
-     * To use a function that accepts arguments, use the following format:
-     *
-     * array('function_name', array('arg1', 'arg2'))
-     *
-     * The second element must be an array even if there's only 1 argument.
-     */
-    array(
-      'is_404',
-      'is_front_page'
-    ),
-    /**
-     * Page template checks (via is_page_template())
-     * Any of these page templates that return true won't show the sidebar
-     */
-    array(
-      'template-custom.php'
-    )
-  );
-
-  return apply_filters('roots_display_sidebar', $sidebar_config->display);
 }
 
 /**
