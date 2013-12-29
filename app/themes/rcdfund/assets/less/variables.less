@@ -1,6 +1,11 @@
 
-// Global values
+// GLOBAL VALUES
 // --------------------------------------------------
+
+// Utilities
+// -------------------------
+
+@adminbar-height:       32px;
 
 // Named colors
 // -------------------------
@@ -28,9 +33,25 @@
 // COMPONENT VARIABLES
 // --------------------------------------------------
 
-
 // Navbar
 // -------------------------
 
-@adminbar-height:                  32px;
+// Basics of a navbar
 @navbar-height:                    40px;
+
+@navbar-default-color:             white;
+@navbar-default-bg:                @teal;
+@navbar-default-border:            darken(@navbar-default-bg, 10%);
+
+// Navbar links
+@navbar-default-link-color:                @link-color;
+@navbar-default-link-hover-color:          @link-hover-color;
+@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 5%);
+@navbar-default-link-active-color:         white;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 10%);
+@navbar-default-link-disabled-color:       mix(@navbar-default-bg, @navbar-default-link-color, 40%);
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           @navbar-default-link-hover-bg;
+@navbar-default-toggle-icon-bar-bg:        @navbar-default-link-color;
+@navbar-default-toggle-border-color:       transparent;
