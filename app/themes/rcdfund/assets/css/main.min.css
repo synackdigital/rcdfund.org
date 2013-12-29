@@ -6028,6 +6028,9 @@ body.admin-bar .navbar-fixed-top {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 20px rgba(48, 46, 70, 0.8);
+  box-shadow: 0 5px 20px rgba(48, 46, 70, 0.8);
 }
 @media (min-width: 768px) {
   .navbar .navbar-header img {
