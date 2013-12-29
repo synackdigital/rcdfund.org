@@ -13,16 +13,14 @@ module.exports = function(grunt) {
         '!assets/js/scripts.min.js'
       ]
     },
-    recess: {
-      dist: {
+    less: {
+      main: {
         options: {
-          compile: true,
-          compress: true
+          // cleancss: true,
+          paths: ["assets/less", "bower_components/bootstrap/less"]
         },
         files: {
-          'assets/css/main.min.css': [
-            'assets/less/app.less'
-          ]
+          "assets/css/main.min.css": "assets/less/main.less"
         }
       }
     },
@@ -30,18 +28,18 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'assets/js/scripts.min.js': [
-            'assets/js/plugins/bootstrap/transition.js',
-            'assets/js/plugins/bootstrap/alert.js',
-            'assets/js/plugins/bootstrap/button.js',
-            'assets/js/plugins/bootstrap/carousel.js',
-            'assets/js/plugins/bootstrap/collapse.js',
-            'assets/js/plugins/bootstrap/dropdown.js',
-            'assets/js/plugins/bootstrap/modal.js',
-            'assets/js/plugins/bootstrap/tooltip.js',
-            'assets/js/plugins/bootstrap/popover.js',
-            'assets/js/plugins/bootstrap/scrollspy.js',
-            'assets/js/plugins/bootstrap/tab.js',
-            'assets/js/plugins/bootstrap/affix.js',
+            'bower_components/bootstrap/js/transition.js',
+            'bower_components/bootstrap/js/alert.js',
+            'bower_components/bootstrap/js/button.js',
+            // 'bower_components/bootstrap/js/carousel.js',
+            'bower_components/bootstrap/js/collapse.js',
+            // 'bower_components/bootstrap/js/dropdown.js',
+            // 'bower_components/bootstrap/js/modal.js',
+            // 'bower_components/bootstrap/js/tooltip.js',
+            // 'bower_components/bootstrap/js/popover.js',
+            // 'bower_components/bootstrap/js/scrollspy.js',
+            // 'bower_components/bootstrap/js/tab.js',
+            // 'bower_components/bootstrap/js/affix.js',
             'assets/js/plugins/*.js',
             'assets/js/_*.js'
           ]
@@ -52,9 +50,9 @@ module.exports = function(grunt) {
       less: {
         files: [
           'assets/less/*.less',
-          'assets/less/bootstrap/*.less'
+          'bower_components/**/*.less'
         ],
-        tasks: ['recess', 'version']
+        tasks: ['less', 'version']
       },
       js: {
         files: [
@@ -66,7 +64,9 @@ module.exports = function(grunt) {
         // Browser live reloading
         // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
         options: {
-          livereload: false
+          spawn: true,
+          interrupt: true
+          // livereload: false
         },
         files: [
           'assets/css/main.min.css',
@@ -87,20 +87,17 @@ module.exports = function(grunt) {
   // Load tasks
   grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-recess');
 
   // Register tasks
   grunt.registerTask('default', [
     'clean',
-    'recess',
+    'less',
     'uglify',
     'version'
-  ]);
-  grunt.registerTask('dev', [
-    'watch'
   ]);
 
 };
