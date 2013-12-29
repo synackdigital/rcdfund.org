@@ -15,12 +15,14 @@ module.exports = function(grunt) {
 
     // Hash the CSS
     var hashCss = md5('assets/css/main.min.css');
+    var hashCss = md5('assets/css/landing.css');
 
     // Hash the JS
     var hashJs = md5('assets/js/scripts.min.js');
 
     // Update scripts.php to reference the new versions
     var regexCss = /(wp_enqueue_style\('roots_main',(\s*[^,]+,){2})\s*[^\)]+\);/;
+    var regexCss = /(wp_enqueue_style\('roots_landing',(\s*[^,]+,){2})\s*[^\)]+\);/;
     var regexJs = /(wp_register_script\('roots_scripts',(\s*[^,]+,){2})\s*[^,]+,\s*([^\)]+)\);/;
 
     var content = grunt.file.read(scriptsPhp);
