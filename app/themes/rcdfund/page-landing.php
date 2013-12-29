@@ -1,8 +1,4 @@
 <?php
-/*
-Template Name: Landing Page
-*/
-
 $img_path = get_template_directory_uri() . '/assets/img';
 ?>
 
