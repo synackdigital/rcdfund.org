@@ -2,6 +2,8 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
     jshint: {
       options: {
         jshintrc: '.jshintrc'
@@ -25,6 +27,9 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
+      options: {
+        banner: '/*! <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+      },
       dist: {
         files: {
           'assets/js/scripts.min.js': [

@@ -5,7 +5,12 @@
   "authors": [
     "frebro <frebro@gmail.com>"
   ],
-  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
   "private": true,
   "ignore": [
     "**/.*",
