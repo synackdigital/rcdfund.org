@@ -15,6 +15,14 @@
 // Main styles
 // -----------
 
+// Fit all images inside their containers
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
 // Make space for fixed navbar
 body {
   padding-top: @navbar-height;
@@ -23,4 +31,37 @@ body {
 // Push fixed navbar down when adminbar is displayed
 body.admin-bar .navbar-fixed-top {
   top: @adminbar-height;
+}
+
+// Logotype
+.navbar .navbar-header {
+  img {
+    max-width: 42%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: @screen-sm-min) {
+      position: fixed;
+    }
+  }
+
+  @media (min-width: @screen-sm-min) {
+    &,
+    & img {
+      width: @logo-sm-width;
+    }
+  }
+  @media (min-width: @screen-md-min) {
+    &,
+    & img {
+      width: @logo-md-width;
+    }
+  }
+  @media (min-width: @screen-lg-min) {
+    &,
+    & img {
+      width: @logo-lg-width;
+    }
+  }
 }

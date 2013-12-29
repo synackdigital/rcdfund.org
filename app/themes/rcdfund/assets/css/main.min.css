@@ -6011,9 +6011,44 @@ td.visible-print {
   src: url('../fonts/285360_3_0.eot');
   src: url('../fonts/285360_3_0.eot?#iefix') format('embedded-opentype'), url('../fonts/285360_3_0.woff') format('woff'), url('../fonts/285360_3_0.ttf') format('truetype');
 }
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
 body {
   padding-top: 40px;
 }
 body.admin-bar .navbar-fixed-top {
   top: 32px;
+}
+.navbar .navbar-header img {
+  max-width: 42%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-header img {
+    position: fixed;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar-header,
+  .navbar .navbar-header img {
+    width: 180px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .navbar-header,
+  .navbar .navbar-header img {
+    width: 234px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .navbar-header,
+  .navbar .navbar-header img {
+    width: 285px;
+  }
 }
