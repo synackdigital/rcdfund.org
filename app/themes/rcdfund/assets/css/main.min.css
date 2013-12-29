@@ -6052,3 +6052,11 @@ body.admin-bar .navbar-fixed-top {
     width: 285px;
   }
 }
+@media (min-width: 768px) {
+  .navbar .nav-primary {
+    float: left !important;
+  }
+  .navbar .nav-secondary {
+    float: right !important;
+  }
+}

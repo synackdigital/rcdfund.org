@@ -33,7 +33,7 @@ body.admin-bar .navbar-fixed-top {
   top: @adminbar-height;
 }
 
-// Logotype
+// Responsive logotype
 .navbar .navbar-header {
   img {
     max-width: 42%;
@@ -62,6 +62,18 @@ body.admin-bar .navbar-fixed-top {
     &,
     & img {
       width: @logo-lg-width;
+    }
+  }
+}
+
+// Responsive navbars
+.navbar {
+  @media (min-width: @screen-sm-min) {
+    .nav-primary {
+      .pull-left;
+    }
+    .nav-secondary {
+      .pull-right;
     }
   }
 }
