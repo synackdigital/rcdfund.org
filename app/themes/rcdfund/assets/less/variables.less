@@ -5,15 +5,19 @@
 // Utilities
 // -------------------------
 
+// Column max-widths expressed in pixels
 @col-sm-maxwidth:       60px;
 @col-md-maxwidth:       78px;
 @col-lg-maxwidth:       95px;
 
-
-@adminbar-height:       32px;
+// Fixed sizes for logo at different intervals
 @logo-sm-width:         (3 * @col-sm-maxwidth);
 @logo-md-width:         (3 * @col-md-maxwidth);
 @logo-lg-width:         (3 * @col-lg-maxwidth);
+
+// Height of the wp-adminbar
+@wp-adminbar-height:       32px;
+
 
 // Named colors
 // -------------------------
@@ -27,6 +31,36 @@
 @pink:                  #ef968f;
 @red:                   #a42922;
 @brown:                 #675141;
+
+
+// Links
+// -------------------------
+
+@link-color:            @brand-primary;
+@link-hover-color:      darken(@link-color, 15%);
+
+// Typography
+// -------------------------
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          17px;
+@font-size-large:         ceil(@font-size-base * 1.176); // ~20px
+@font-size-small:         ceil(@font-size-base * 0.823); // ~14px
+
+@font-size-h1:            floor(@font-size-base * 3.059); // ~52px
+@font-size-h2:            floor(@font-size-base * 2.353); // ~40px
+@font-size-h3:            @font-size-large;
+@font-size-h4:            @font-size-small;
+@font-size-h5:            @font-size-h4;
+@font-size-h6:            @font-size-h5;
+
+@line-height-base:        1.412; // ~24/17
+@line-height-computed:    floor(@font-size-base * @line-height-base); // ~24px
+
 
 // Brand colors
 // -------------------------
