@@ -4,7 +4,7 @@
 <section class="section" id="main" role="main" style="padding-bottom:300px;">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-8 col-lg-offset-4">
         <?php the_content(); ?>
       </div>
     </div>

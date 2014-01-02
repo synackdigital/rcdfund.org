@@ -6011,6 +6011,10 @@ td.visible-print {
   src: url('../fonts/285360_3_0.eot');
   src: url('../fonts/285360_3_0.eot?#iefix') format('embedded-opentype'), url('../fonts/285360_3_0.woff') format('woff'), url('../fonts/285360_3_0.ttf') format('truetype');
 }
+h1,
+.h1,
+h2,
+.h2,
 h3,
 .h3,
 h4,
@@ -6020,6 +6024,22 @@ h5,
 h6,
 .h6 {
   text-transform: uppercase;
+}
+h1,
+.h1,
+h2,
+.h2 {
+  letter-spacing: 2px;
+}
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  letter-spacing: 1px;
 }
 small,
 .small {
