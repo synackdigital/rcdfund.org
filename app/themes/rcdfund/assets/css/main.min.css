@@ -6113,3 +6113,111 @@ body.admin-bar .navbar-fixed-top {
     float: right !important;
   }
 }
+.fill-darkblue {
+  background-color: #302e46;
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+.fill-darkblue a {
+  color: #7cccbf;
+}
+.fill-darkblue a:hover,
+.fill-darkblue a:focus {
+  color: #c5e9e3;
+}
+.fill-teal {
+  background-color: #7cccbf;
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+}
+.fill-teal a {
+  color: #302e46;
+}
+.fill-teal a:hover,
+.fill-teal a:focus {
+  color: #5a5684;
+}
+.fill-sand {
+  background-color: #e4dcc1;
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+}
+.fill-sand a {
+  color: #302e46;
+}
+.fill-sand a:hover,
+.fill-sand a:focus {
+  color: #5a5684;
+}
+.fill-dust {
+  background-color: #f1ede0;
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+}
+.fill-dust a {
+  color: #302e46;
+}
+.fill-dust a:hover,
+.fill-dust a:focus {
+  color: #5a5684;
+}
+.fill-nearwhite {
+  background-color: #e7e7e7;
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+}
+.fill-nearwhite a {
+  color: #302e46;
+}
+.fill-nearwhite a:hover,
+.fill-nearwhite a:focus {
+  color: #5a5684;
+}
+.fill-yellow {
+  background-color: #fec24d;
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+}
+.fill-yellow a {
+  color: #302e46;
+}
+.fill-yellow a:hover,
+.fill-yellow a:focus {
+  color: #5a5684;
+}
+.fill-pink {
+  background-color: #ef968f;
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+}
+.fill-pink a {
+  color: #302e46;
+}
+.fill-pink a:hover,
+.fill-pink a:focus {
+  color: #5a5684;
+}
+.fill-red {
+  background-color: #a42922;
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+.fill-red a {
+  color: #7cccbf;
+}
+.fill-red a:hover,
+.fill-red a:focus {
+  color: #c5e9e3;
+}
+.fill-brown {
+  background-color: #675141;
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+.fill-brown a {
+  color: #7cccbf;
+}
+.fill-brown a:hover,
+.fill-brown a:focus {
+  color: #c5e9e3;
+}

@@ -1,0 +1,30 @@
+
+// COLOR UTILITIES
+// ---------------
+
+// Link colors
+// Do not apply directly to links
+.link-color(@color) {
+  a {
+    color: @color;
+    &:hover,
+    &:focus {
+      color: lighten(@color, 20%);
+    }
+  }
+}
+
+// Background fills with smart foreground colors
+.fill-with (@color) {
+  background-color: @color;
+}
+.fill-with (@color) when (lightness(@color) >= 50%) {
+  color: black;
+  color: fade(black, 80%);
+  .link-color(@darkblue);
+}
+.fill-with (@color) when (lightness(@color) < 50%) {
+  color: white;
+  color: fade(white, 80%);
+  .link-color(@teal);
+}

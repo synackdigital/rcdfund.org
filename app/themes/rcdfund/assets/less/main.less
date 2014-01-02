@@ -13,6 +13,7 @@
 @import "variables";
 
 // Core CSS
+@import "mixins";
 @import "type";
 
 
@@ -129,4 +130,35 @@ body.admin-bar .navbar-fixed-top {
       .pull-right;
     }
   }
+}
+
+// FILL COLORS
+// -----------
+
+.fill-darkblue {
+  .fill-with(@darkblue);
+}
+.fill-teal {
+  .fill-with(@teal);
+}
+.fill-sand {
+  .fill-with(@sand);
+}
+.fill-dust {
+  .fill-with(@dust);
+}
+.fill-nearwhite {
+  .fill-with(@nearwhite);
+}
+.fill-yellow {
+  .fill-with(@yellow);
+}
+.fill-pink {
+  .fill-with(@pink);
+}
+.fill-red {
+  .fill-with(@red);
+}
+.fill-brown {
+  .fill-with(@brown);
 }
