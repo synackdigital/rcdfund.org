@@ -32,44 +32,89 @@ body {
   padding-top: @navbar-height;
 }
 
+// Fixed navbar scrolls away on small devices
+.navbar-fixed-top {
+  @media (max-width: @screen-sm) {
+    position: absolute;
+  }
+}
+
 // Push fixed navbar down when adminbar is displayed
 body.admin-bar .navbar-fixed-top {
   top: @wp-adminbar-height;
+  @media (max-width: @wp-adminbar-mobile-breakpoint) {
+    top: @wp-adminbar-mobile-height;
+  }
 }
 
-// Responsive logotype
-.navbar .navbar-header {
-  img {
-    max-width: 42%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+// Navbar font size
+.navbar {
+  font-size: @navbar-font-size;
+}
 
-    // Apply shadow to image
-    border-radius: 50%;
-    .box-shadow(0 5px 20px fade(@darkblue, 80%));
+// Logotype graphic
+.navbar .navbar-header {
+
+  // Image appearance
+  img {
+    width: @col-sm-maxwidth;
 
     @media (min-width: @screen-sm-min) {
-      position: fixed;
+
+      // Apply shadow to image
+      border-radius: 50%;
+      .box-shadow(0 5px 20px fade(@darkblue, 80%));
     }
   }
 
+  &.affix,
+  & img.affix {
+    position: static;
+  }
+
+  // Responsive widths
   @media (min-width: @screen-sm-min) {
+    img {
+      &,
+      &.affix {
+        position: fixed;
+      }
+    }
     &,
-    & img {
+    img {
       width: @logo-sm-width;
+    }
+    &.affix,
+    img.affix {
+      width: @logo-sm-affix-width;
     }
   }
   @media (min-width: @screen-md-min) {
     &,
-    & img {
+    img {
       width: @logo-md-width;
+    }
+    &.affix,
+    img.affix {
+      width: @logo-md-affix-width;
     }
   }
   @media (min-width: @screen-lg-min) {
     &,
-    & img {
+    img {
       width: @logo-lg-width;
+    }
+    &.affix,
+    img .affix {
+      width: @logo-lg-affix-width;
+    }
+  }
+
+  // Animated width change
+  @media (min-width: @screen-sm-min) {
+    &,
+    img {
+      .transition(~'width 230ms ease-in-out');
     }
   }
 }

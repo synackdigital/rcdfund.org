@@ -11,12 +11,18 @@
 @col-lg-maxwidth:       95px;
 
 // Fixed sizes for logo at different intervals
-@logo-sm-width:         (3 * @col-sm-maxwidth);
-@logo-md-width:         (3 * @col-md-maxwidth);
-@logo-lg-width:         (3 * @col-lg-maxwidth);
+@logo-sm-width:               (3 * @col-sm-maxwidth);
+@logo-md-width:               (3 * @col-md-maxwidth);
+@logo-lg-width:               (3 * @col-lg-maxwidth);
 
-// Height of the wp-adminbar
-@wp-adminbar-height:       32px;
+@logo-sm-affix-width:         (1 * @col-sm-maxwidth);
+@logo-md-affix-width:         (1 * @col-md-maxwidth);
+@logo-lg-affix-width:         (1 * @col-lg-maxwidth);
+
+// The wp-adminbar
+@wp-adminbar-mobile-breakpoint:   782px;
+@wp-adminbar-height:              32px;
+@wp-adminbar-mobile-height:       46px;
 
 
 // Named colors
@@ -31,7 +37,6 @@
 @pink:                  #ef968f;
 @red:                   #a42922;
 @brown:                 #675141;
-
 
 // Links
 // -------------------------
@@ -79,11 +84,12 @@
 // -------------------------
 
 // Basics of a navbar
-@navbar-height:                    40px;
+@navbar-height:                     40px;
+@navbar-font-size:                  @font-size-small;
 
-@navbar-default-color:             white;
-@navbar-default-bg:                @teal;
-@navbar-default-border:            darken(@navbar-default-bg, 10%);
+@navbar-default-color:              white;
+@navbar-default-bg:                 @teal;
+@navbar-default-border:             darken(@navbar-default-bg, 10%);
 
 // Navbar links
 @navbar-default-link-color:                @link-color;
@@ -97,3 +103,11 @@
 @navbar-default-toggle-hover-bg:           @navbar-default-link-hover-bg;
 @navbar-default-toggle-icon-bar-bg:        @navbar-default-link-color;
 @navbar-default-toggle-border-color:       transparent;
+
+// Type
+// ------------------------
+
+@abbr-border-color:           @yellow;
+@headings-small-color:        @teal;
+@blockquote-small-color:      @teal;
+@blockquote-border-color:     darken(@teal, 5%);

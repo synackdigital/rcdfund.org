@@ -1,11 +1,16 @@
 // Modified http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/
 // Only fires on body class (working off strictly WordPress body_class)
 
-var ExampleSite = {
+var RCDFund = {
   // All pages
   common: {
     init: function() {
-      // JS here
+      // Give all affixed elements an explicit position
+      $('[data-spy="affix"]').each(function(index) {
+        var el = $(this);
+        var offset = $(this).offset();
+        el.css('top', offset.top).css('left', offset.left);
+      });
     },
     finalize: function() { }
   },
@@ -25,7 +30,7 @@ var ExampleSite = {
 
 var UTIL = {
   fire: function(func, funcname, args) {
-    var namespace = ExampleSite;
+    var namespace = RCDFund;
     funcname = (funcname === undefined) ? 'init' : funcname;
     if (func !== '' && namespace[func] && typeof namespace[func][funcname] === 'function') {
       namespace[func][funcname](args);

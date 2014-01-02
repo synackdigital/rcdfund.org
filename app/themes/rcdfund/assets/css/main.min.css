@@ -371,7 +371,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #999999;
+  color: #7cccbf;
 }
 h1,
 h2,
@@ -567,7 +567,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #999999;
+  border-bottom: 1px dotted #fec24d;
 }
 .initialism {
   font-size: 90%;
@@ -576,7 +576,7 @@ abbr[data-original-title] {
 blockquote {
   padding: 12px 24px;
   margin: 0 0 24px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #6ac5b6;
 }
 blockquote p {
   font-size: 21.25px;
@@ -590,7 +590,7 @@ blockquote small,
 blockquote .small {
   display: block;
   line-height: 1.412;
-  color: #999999;
+  color: #7cccbf;
 }
 blockquote small:before,
 blockquote .small:before {
@@ -599,7 +599,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #6ac5b6;
   border-left: 0;
 }
 blockquote.pull-right p,
@@ -6034,27 +6034,48 @@ img {
 body {
   padding-top: 40px;
 }
+@media (max-width: 768px) {
+  .navbar-fixed-top {
+    position: absolute;
+  }
+}
 body.admin-bar .navbar-fixed-top {
   top: 32px;
 }
+@media (max-width: 782px) {
+  body.admin-bar .navbar-fixed-top {
+    top: 46px;
+  }
+}
+.navbar {
+  font-size: 14px;
+}
 .navbar .navbar-header img {
-  max-width: 42%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 5px 20px rgba(48, 46, 70, 0.8);
-  box-shadow: 0 5px 20px rgba(48, 46, 70, 0.8);
+  width: 60px;
 }
 @media (min-width: 768px) {
   .navbar .navbar-header img {
-    position: fixed;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 5px 20px rgba(48, 46, 70, 0.8);
+    box-shadow: 0 5px 20px rgba(48, 46, 70, 0.8);
   }
 }
+.navbar .navbar-header.affix,
+.navbar .navbar-header img.affix {
+  position: static;
+}
 @media (min-width: 768px) {
+  .navbar .navbar-header img,
+  .navbar .navbar-header img.affix {
+    position: fixed;
+  }
   .navbar .navbar-header,
   .navbar .navbar-header img {
     width: 180px;
+  }
+  .navbar .navbar-header.affix,
+  .navbar .navbar-header img.affix {
+    width: 60px;
   }
 }
 @media (min-width: 992px) {
@@ -6062,11 +6083,26 @@ body.admin-bar .navbar-fixed-top {
   .navbar .navbar-header img {
     width: 234px;
   }
+  .navbar .navbar-header.affix,
+  .navbar .navbar-header img.affix {
+    width: 78px;
+  }
 }
 @media (min-width: 1200px) {
   .navbar .navbar-header,
   .navbar .navbar-header img {
     width: 285px;
+  }
+  .navbar .navbar-header.affix,
+  .navbar .navbar-header img .affix {
+    width: 95px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar-header,
+  .navbar .navbar-header img {
+    -webkit-transition: width 230ms ease-in-out;
+    transition: width 230ms ease-in-out;
   }
 }
 @media (min-width: 768px) {
