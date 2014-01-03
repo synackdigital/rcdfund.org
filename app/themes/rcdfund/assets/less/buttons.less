@@ -1,0 +1,40 @@
+.btn {
+  border-width: 2px;
+}
+
+.btn {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @link-color;
+    border-color: @link-color;
+    &.btn-primary {
+      color: white;
+      background-color: @brand-primary;
+      border-color: @brand-primary;
+    }
+    &.btn-success {
+      color: white;
+      background-color: @brand-success;
+      border-color: @brand-success;
+    }
+    &.btn-warning {
+      color: white;
+      background-color: @brand-warning;
+      border-color: @brand-warning;
+    }
+    &.btn-danger {
+      color: white;
+      background-color: @brand-danger;
+      border-color: @brand-danger;
+    }
+    &.btn-info {
+      color: white;
+      background-color: @brand-info;
+      border-color: @brand-info;
+    }
+  }
+}
