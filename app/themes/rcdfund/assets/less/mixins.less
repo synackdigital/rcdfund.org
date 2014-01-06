@@ -15,16 +15,24 @@
 }
 
 // Background fills with smart foreground colors
-.fill-with (@color) {
+.fill-color (@color) {
   background-color: @color;
 }
-.fill-with (@color) when (lightness(@color) >= 50%) {
+.fill-color (@color) when (lightness(@color) >= 50%) {
   color: black;
   color: fade(black, 80%);
   .link-color(@darkblue);
 }
-.fill-with (@color) when (lightness(@color) < 50%) {
+.fill-color (@color) when (lightness(@color) < 50%) {
   color: white;
   color: fade(white, 80%);
   .link-color(@teal);
+}
+
+// Two-part background fills using gradients
+.fill-two-colors (@left, @right) {
+  .fill-color(@left);
+  background-image: -webkit-linear-gradient(left, @left, @left 50%, @right 50%, @right);
+  background-image: linear-gradient(left, @left, @left 50%, @right 50%, @right);
+  background-repeat: no-repeat;
 }

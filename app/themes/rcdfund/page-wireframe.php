@@ -65,6 +65,12 @@
   </div>
 </section>
 
+<section class="fill-nearwhite-yellow">
+  <div class="container">
+    nearwhite + yellow <a href="#">Link</a>
+  </div>
+</section>
+
 <section class="fill-nearwhite">
   <div class="container">
     nearwhite <a href="#">Link</a>

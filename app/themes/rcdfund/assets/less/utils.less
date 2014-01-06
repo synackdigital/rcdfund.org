@@ -3,33 +3,97 @@
 // ------
 
 // Fill colors
-.fill-darkblue {
-  .fill-with(@darkblue);
-}
-.fill-teal {
-  .fill-with(@teal);
-}
-.fill-sand {
-  .fill-with(@sand);
-}
-.fill-dust {
-  .fill-with(@dust);
-}
-.fill-nearwhite {
-  .fill-with(@nearwhite);
-}
-.fill-yellow {
-  .fill-with(@yellow);
-}
-.fill-pink {
-  .fill-with(@pink);
-}
-.fill-red {
-  .fill-with(@red);
-}
-.fill-brown {
-  .fill-with(@brown);
-}
+.fill-darkblue { .fill-color(@darkblue); }
+.fill-teal { .fill-color(@teal); }
+.fill-sand { .fill-color(@sand); }
+.fill-dust { .fill-color(@dust); }
+.fill-nearwhite { .fill-color(@nearwhite); }
+.fill-yellow { .fill-color(@yellow); }
+.fill-pink { .fill-color(@pink); }
+.fill-red { .fill-color(@red); }
+.fill-brown { .fill-color(@brown); }
+
+// Two-part fill colors
+.fill-darkblue-teal       { .fill-two-colors(@darkblue, @teal); }
+.fill-darkblue-sand       { .fill-two-colors(@darkblue, @sand); }
+.fill-darkblue-dust       { .fill-two-colors(@darkblue, @dust); }
+.fill-darkblue-nearwhite  { .fill-two-colors(@darkblue, @nearwhite); }
+.fill-darkblue-yellow     { .fill-two-colors(@darkblue, @yellow); }
+.fill-darkblue-pink       { .fill-two-colors(@darkblue, @pink); }
+.fill-darkblue-red        { .fill-two-colors(@darkblue, @red); }
+.fill-darkblue-brown      { .fill-two-colors(@darkblue, @brown); }
+
+.fill-teal-darkblue       { .fill-two-colors(@teal, @darkblue); }
+.fill-teal-sand           { .fill-two-colors(@teal, @sand); }
+.fill-teal-dust           { .fill-two-colors(@teal, @dust); }
+.fill-teal-nearwhite      { .fill-two-colors(@teal, @nearwhite); }
+.fill-teal-yellow         { .fill-two-colors(@teal, @yellow); }
+.fill-teal-pink           { .fill-two-colors(@teal, @pink); }
+.fill-teal-red            { .fill-two-colors(@teal, @red); }
+.fill-teal-brown          { .fill-two-colors(@teal, @brown); }
+
+.fill-sand-darkblue       { .fill-two-colors(@sand, @darkblue); }
+.fill-sand-teal           { .fill-two-colors(@sand, @teal); }
+.fill-sand-dust           { .fill-two-colors(@sand, @dust); }
+.fill-sand-nearwhite      { .fill-two-colors(@sand, @nearwhite); }
+.fill-sand-yellow         { .fill-two-colors(@sand, @yellow); }
+.fill-sand-pink           { .fill-two-colors(@sand, @pink); }
+.fill-sand-red            { .fill-two-colors(@sand, @red); }
+.fill-sand-brown          { .fill-two-colors(@sand, @brown); }
+
+.fill-dust-darkblue       { .fill-two-colors(@dust, @darkblue); }
+.fill-dust-teal           { .fill-two-colors(@dust, @teal); }
+.fill-dust-sand           { .fill-two-colors(@dust, @sand); }
+.fill-dust-nearwhite      { .fill-two-colors(@dust, @nearwhite); }
+.fill-dust-yellow         { .fill-two-colors(@dust, @yellow); }
+.fill-dust-pink           { .fill-two-colors(@dust, @pink); }
+.fill-dust-red            { .fill-two-colors(@dust, @red); }
+.fill-dust-brown          { .fill-two-colors(@dust, @brown); }
+
+.fill-nearwhite-darkblue  { .fill-two-colors(@nearwhite, @darkblue); }
+.fill-nearwhite-teal      { .fill-two-colors(@nearwhite, @teal); }
+.fill-nearwhite-sand      { .fill-two-colors(@nearwhite, @sand); }
+.fill-nearwhite-dust      { .fill-two-colors(@nearwhite, @dust); }
+.fill-nearwhite-yellow    { .fill-two-colors(@nearwhite, @yellow); }
+.fill-nearwhite-pink      { .fill-two-colors(@nearwhite, @pink); }
+.fill-nearwhite-red       { .fill-two-colors(@nearwhite, @red); }
+.fill-nearwhite-brown     { .fill-two-colors(@nearwhite, @brown); }
+
+.fill-yellow-darkblue     { .fill-two-colors(@yellow, @darkblue); }
+.fill-yellow-teal         { .fill-two-colors(@yellow, @teal); }
+.fill-yellow-sand         { .fill-two-colors(@yellow, @sand); }
+.fill-yellow-dust         { .fill-two-colors(@yellow, @dust); }
+.fill-yellow-nearwhite    { .fill-two-colors(@yellow, @nearwhite); }
+.fill-yellow-pink         { .fill-two-colors(@yellow, @pink); }
+.fill-yellow-red          { .fill-two-colors(@yellow, @red); }
+.fill-yellow-brown        { .fill-two-colors(@yellow, @brown); }
+
+.fill-pink-darkblue       { .fill-two-colors(@pink, @darkblue); }
+.fill-pink-teal           { .fill-two-colors(@pink, @teal); }
+.fill-pink-sand           { .fill-two-colors(@pink, @sand); }
+.fill-pink-dust           { .fill-two-colors(@pink, @dust); }
+.fill-pink-nearwhite      { .fill-two-colors(@pink, @nearwhite); }
+.fill-pink-yellow         { .fill-two-colors(@pink, @yellow); }
+.fill-pink-red            { .fill-two-colors(@pink, @red); }
+.fill-pink-brown          { .fill-two-colors(@pink, @brown); }
+
+.fill-red-darkblue        { .fill-two-colors(@red, @darkblue); }
+.fill-red-teal            { .fill-two-colors(@red, @teal); }
+.fill-red-sand            { .fill-two-colors(@red, @sand); }
+.fill-red-dust            { .fill-two-colors(@red, @dust); }
+.fill-red-nearwhite       { .fill-two-colors(@red, @nearwhite); }
+.fill-red-yellow          { .fill-two-colors(@red, @yellow); }
+.fill-red-pink            { .fill-two-colors(@red, @pink); }
+.fill-red-brown           { .fill-two-colors(@red, @brown); }
+
+.fill-brown-darkblue      { .fill-two-colors(@brown, @darkblue); }
+.fill-brown-teal          { .fill-two-colors(@brown, @teal); }
+.fill-brown-sand          { .fill-two-colors(@brown, @sand); }
+.fill-brown-dust          { .fill-two-colors(@brown, @dust); }
+.fill-brown-nearwhite     { .fill-two-colors(@brown, @nearwhite); }
+.fill-brown-yellow        { .fill-two-colors(@brown, @yellow); }
+.fill-brown-pink          { .fill-two-colors(@brown, @pink); }
+.fill-brown-red           { .fill-two-colors(@brown, @red); }
 
 // TYPOGRAPHY
 // ----------
