@@ -6128,6 +6128,9 @@ td.visible-print {
   font-weight: normal !important;
   text-transform: none !important;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 h1,
 .h1,
 h2,
@@ -6161,6 +6164,9 @@ h6,
 small,
 .small {
   font-size: 82.35%;
+}
+dl dt:not(:first-of-type) {
+  margin-top: 12px;
 }
 .btn {
   border-width: 2px;
@@ -6681,7 +6687,7 @@ fieldset[disabled] .btn-brown.active {
 .navbar .navicon {
   padding: 4px;
 }
-.navbar .navicon a {
+.navbar .navicon button {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -6693,18 +6699,18 @@ fieldset[disabled] .btn-brown.active {
   width: 32px;
   height: 32px;
 }
-.navbar .navicon a:focus,
-.navbar .navicon a:hover {
+.navbar .navicon button:focus,
+.navbar .navicon button:hover {
   background-color: transparent !important;
   opacity: .8;
 }
-.navbar .navicon.navicon-contact a {
+.navbar .navicon.navicon-contact button {
   background-image: url('../img/navicon-contact.png');
 }
-.navbar .navicon.navicon-follow a {
+.navbar .navicon.navicon-follow button {
   background-image: url('../img/navicon-follow.png');
 }
-.navbar .navicon.navicon-donate a {
+.navbar .navicon.navicon-donate button {
   background-image: url('../img/navicon-donate.png');
 }
 .navbar .navbar-header img {
@@ -6728,31 +6734,31 @@ fieldset[disabled] .btn-brown.active {
   }
   .navbar .navbar-header,
   .navbar .navbar-header img {
-    width: 180px;
+    width: 164px;
   }
   .navbar .navbar-header.affix,
   .navbar .navbar-header img.affix {
-    width: 60px;
+    width: 44px;
   }
 }
 @media (min-width: 992px) {
   .navbar .navbar-header,
   .navbar .navbar-header img {
-    width: 234px;
+    width: 218px;
   }
   .navbar .navbar-header.affix,
   .navbar .navbar-header img.affix {
-    width: 78px;
+    width: 62px;
   }
 }
 @media (min-width: 1200px) {
   .navbar .navbar-header,
   .navbar .navbar-header img {
-    width: 285px;
+    width: 269px;
   }
   .navbar .navbar-header.affix,
   .navbar .navbar-header img .affix {
-    width: 95px;
+    width: 79px;
   }
 }
 @media (min-width: 768px) {
@@ -6790,5 +6796,20 @@ body.admin-bar .navbar-fixed-top {
   }
   .navbar .nav-secondary {
     float: right !important;
+  }
+}
+#dropdown .panel {
+  margin: 0;
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 72px;
+}
+@media (max-width: 782px) {
+  #dropdown .panel {
+    top: 86px;
   }
 }

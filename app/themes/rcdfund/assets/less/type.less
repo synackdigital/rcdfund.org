@@ -6,3 +6,8 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6 { letter-spacing: 1px; }
 
 // Ex: 17px base font * 82.35% = about 14px
 small, .small  { font-size: 82.35%; }
+
+// Extra margin on description lists
+dl dt:not(:first-of-type) {
+  margin-top: (.5 * @line-height-computed);
+}

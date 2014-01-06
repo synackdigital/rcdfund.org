@@ -63,3 +63,17 @@ body.admin-bar .navbar-fixed-top {
   }
 }
 
+// Collapsible navbar dropdown
+#dropdown .panel {
+  margin: 0;
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  position: fixed;
+  z-index: @zindex-dropdown;
+  top: (@wp-adminbar-height + @navbar-height);
+  @media (max-width: @wp-adminbar-mobile-breakpoint) {
+    top: (@wp-adminbar-mobile-height + @navbar-height);
+  }
+}
