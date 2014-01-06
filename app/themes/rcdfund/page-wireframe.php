@@ -74,6 +74,27 @@
 <section class="fill-nearwhite">
   <div class="container">
     nearwhite <a href="#">Link</a>
+    <dl>
+      <h3>Squiggles</h3>
+      <dt>Darkblue</dt>
+      <dd><img src="/assets/img/squiggle-darkblue.png" style="width:340px;height:auto;"></dd>
+      <dt>Teal</dt>
+      <dd><img src="/assets/img/squiggle-teal.png" style="width:340px;height:auto;"></dd>
+      <dt>Sand</dt>
+      <dd><img src="/assets/img/squiggle-sand.png" style="width:340px;height:auto;"></dd>
+      <dt>Dust</dt>
+      <dd><img src="/assets/img/squiggle-dust.png" style="width:340px;height:auto;"></dd>
+      <dt>Nearwhite</dt>
+      <dd style="background-color:rgba(0,0,0,.2);"><img src="/assets/img/squiggle-nearwhite.png" style="width:340px;height:auto;"></dd>
+      <dt>Yellow</dt>
+      <dd><img src="/assets/img/squiggle-yellow.png" style="width:340px;height:auto;"></dd>
+      <dt>Pink</dt>
+      <dd><img src="/assets/img/squiggle-pink.png" style="width:340px;height:auto;"></dd>
+      <dt>Red</dt>
+      <dd><img src="/assets/img/squiggle-red.png" style="width:340px;height:auto;"></dd>
+      <dt>Brown</dt>
+      <dd><img src="/assets/img/squiggle-brown.png" style="width:340px;height:auto;"></dd>
+    </dl>
   </div>
 </section>
 
