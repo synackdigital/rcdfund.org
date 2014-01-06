@@ -36,14 +36,7 @@ body {
   padding-top: @navbar-height;
 }
 
-// Fixed navbar scrolls away on small devices
-.navbar-fixed-top {
-  @media (max-width: @screen-sm) {
-    position: absolute;
-  }
-}
-
-// Push fixed navbar down when adminbar is displayed
+// Push fixed navbar down when wp adminbar is displayed
 body.admin-bar .navbar-fixed-top {
   top: @wp-adminbar-height;
   @media (max-width: @wp-adminbar-mobile-breakpoint) {
@@ -51,79 +44,14 @@ body.admin-bar .navbar-fixed-top {
   }
 }
 
-// Navbar font size
-.navbar {
-  font-size: @navbar-font-size;
-}
-
-// Logotype graphic
-.navbar .navbar-header {
-
-  // Image appearance
-  img {
-    width: @col-sm-maxwidth;
-
-    @media (min-width: @screen-sm-min) {
-
-      // Apply shadow to image
-      border-radius: 50%;
-      .box-shadow(0 5px 20px fade(@darkblue, 80%));
-    }
-  }
-
-  &.affix,
-  & img.affix {
-    position: static;
-  }
-
-  // Responsive widths
-  @media (min-width: @screen-sm-min) {
-    img {
-      &,
-      &.affix {
-        position: fixed;
-      }
-    }
-    &,
-    img {
-      width: @logo-sm-width;
-    }
-    &.affix,
-    img.affix {
-      width: @logo-sm-affix-width;
-    }
-  }
-  @media (min-width: @screen-md-min) {
-    &,
-    img {
-      width: @logo-md-width;
-    }
-    &.affix,
-    img.affix {
-      width: @logo-md-affix-width;
-    }
-  }
-  @media (min-width: @screen-lg-min) {
-    &,
-    img {
-      width: @logo-lg-width;
-    }
-    &.affix,
-    img .affix {
-      width: @logo-lg-affix-width;
-    }
-  }
-
-  // Animated width change
-  @media (min-width: @screen-sm-min) {
-    &,
-    img {
-      .transition(~'width 230ms ease-in-out');
-    }
+// Fixed navbar scrolls away on small devices
+.navbar-fixed-top {
+  @media (max-width: @screen-sm) {
+    position: absolute;
   }
 }
 
-// Responsive navbars
+// Float primary and secondary sidebars
 .navbar {
   @media (min-width: @screen-sm-min) {
     .nav-primary {
@@ -135,33 +63,3 @@ body.admin-bar .navbar-fixed-top {
   }
 }
 
-// FILL COLORS
-// -----------
-
-.fill-darkblue {
-  .fill-with(@darkblue);
-}
-.fill-teal {
-  .fill-with(@teal);
-}
-.fill-sand {
-  .fill-with(@sand);
-}
-.fill-dust {
-  .fill-with(@dust);
-}
-.fill-nearwhite {
-  .fill-with(@nearwhite);
-}
-.fill-yellow {
-  .fill-with(@yellow);
-}
-.fill-pink {
-  .fill-with(@pink);
-}
-.fill-red {
-  .fill-with(@red);
-}
-.fill-brown {
-  .fill-with(@brown);
-}

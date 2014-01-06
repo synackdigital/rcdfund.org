@@ -1,4 +1,9 @@
 
+// Navbar font size
+.navbar {
+  font-size: @navbar-font-size;
+}
+
 // Navbar icons
 // ------------
 // Replaces navbar item text with icon using classes
@@ -33,5 +38,72 @@
   }
   &.navicon-donate a {
     background-image: url('../img/navicon-donate.png');
+  }
+}
+
+// Logotype graphic
+.navbar .navbar-header {
+
+  // Image appearance
+  img {
+    width: @col-sm-maxwidth;
+
+    @media (min-width: @screen-sm-min) {
+
+      // Apply shadow to image
+      border-radius: 50%;
+      .box-shadow(0 5px 20px fade(@darkblue, 80%));
+    }
+  }
+
+  &.affix,
+  & img.affix {
+    position: static;
+  }
+
+  // Responsive widths
+  @media (min-width: @screen-sm-min) {
+    img {
+      &,
+      &.affix {
+        position: fixed;
+      }
+    }
+    &,
+    img {
+      width: @logo-sm-width;
+    }
+    &.affix,
+    img.affix {
+      width: @logo-sm-affix-width;
+    }
+  }
+  @media (min-width: @screen-md-min) {
+    &,
+    img {
+      width: @logo-md-width;
+    }
+    &.affix,
+    img.affix {
+      width: @logo-md-affix-width;
+    }
+  }
+  @media (min-width: @screen-lg-min) {
+    &,
+    img {
+      width: @logo-lg-width;
+    }
+    &.affix,
+    img .affix {
+      width: @logo-lg-affix-width;
+    }
+  }
+
+  // Animated width change
+  @media (min-width: @screen-sm-min) {
+    &,
+    img {
+      .transition(~'width 230ms ease-in-out');
+    }
   }
 }
