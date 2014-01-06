@@ -1,0 +1,37 @@
+
+// Navbar icons
+// ------------
+// Replaces navbar item text with icon using classes
+// E.g. <li class="navicon navicon-contact">
+.navbar .navicon {
+
+  // Padding works as spacing between icons
+  padding: 4px;
+
+  // Set up links for using icons
+  a {
+    .hide-text();
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+
+    &:focus,
+    &:hover {
+      background-color: transparent !important;
+      opacity: .8;
+    }
+  }
+
+  // Display icon PNGs
+  &.navicon-contact a {
+    background-image: url('../img/navicon-contact.png');
+  }
+  &.navicon-follow a {
+    background-image: url('../img/navicon-follow.png');
+  }
+  &.navicon-donate a {
+    background-image: url('../img/navicon-donate.png');
+  }
+}

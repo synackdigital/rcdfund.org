@@ -6567,6 +6567,35 @@ fieldset[disabled] .btn-brown.active {
   background-color: #675141;
   border-color: #675141;
 }
+.navbar .navicon {
+  padding: 4px;
+}
+.navbar .navicon a {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+.navbar .navicon a:focus,
+.navbar .navicon a:hover {
+  background-color: transparent !important;
+  opacity: .8;
+}
+.navbar .navicon.navicon-contact a {
+  background-image: url('../img/navicon-contact.png');
+}
+.navbar .navicon.navicon-follow a {
+  background-image: url('../img/navicon-follow.png');
+}
+.navbar .navicon.navicon-donate a {
+  background-image: url('../img/navicon-donate.png');
+}
 img {
   max-width: 100%;
   max-height: 100%;
