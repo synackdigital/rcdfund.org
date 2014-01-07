@@ -15,7 +15,7 @@
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12 col-sm-5 col-sm-offset-7 keyline-right">
-        <?php echo do_shortcode("[insert page='our-mission']"); ?>
+        <?php echo do_shortcode("[insert page='our-mission' display='insert-content.php']"); ?>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12 col-sm-5 keyline-left">
-        <?php echo do_shortcode("[insert page='what-is-an-ependymoma']"); ?>
+        <?php echo do_shortcode("[insert page='what-is-an-ependymoma' display='insert-content.php']"); ?>
       </div>
     </div>
   </div>
