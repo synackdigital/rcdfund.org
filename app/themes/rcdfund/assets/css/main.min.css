@@ -372,7 +372,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #7cccbf;
+  color: rgba(51, 51, 51, 0.7);
 }
 h1,
 h2,
@@ -6027,6 +6027,9 @@ td.visible-print {
 .fill-darkblue a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-darkblue small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-teal {
   background-color: #7cccbf;
   color: black;
@@ -6038,6 +6041,9 @@ td.visible-print {
 .fill-teal a:not(.btn):hover,
 .fill-teal a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-teal small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-sand {
   background-color: #e4dcc1;
@@ -6051,6 +6057,9 @@ td.visible-print {
 .fill-sand a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-sand small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-dust {
   background-color: #f1ede0;
   color: black;
@@ -6062,6 +6071,9 @@ td.visible-print {
 .fill-dust a:not(.btn):hover,
 .fill-dust a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-dust small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-nearwhite {
   background-color: #e7e7e7;
@@ -6075,6 +6087,9 @@ td.visible-print {
 .fill-nearwhite a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-nearwhite small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-yellow {
   background-color: #fec24d;
   color: black;
@@ -6086,6 +6101,9 @@ td.visible-print {
 .fill-yellow a:not(.btn):hover,
 .fill-yellow a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-yellow small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-pink {
   background-color: #ef968f;
@@ -6099,6 +6117,9 @@ td.visible-print {
 .fill-pink a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-pink small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-red {
   background-color: #a42922;
   color: white;
@@ -6111,6 +6132,9 @@ td.visible-print {
 .fill-red a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-red small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-brown {
   background-color: #675141;
   color: white;
@@ -6122,6 +6146,9 @@ td.visible-print {
 .fill-brown a:not(.btn):hover,
 .fill-brown a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-brown small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-darkblue-teal {
   background-color: #302e46;
@@ -6138,6 +6165,9 @@ td.visible-print {
 .fill-darkblue-teal a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-darkblue-teal small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-darkblue-sand {
   background-color: #302e46;
   color: white;
@@ -6152,6 +6182,9 @@ td.visible-print {
 .fill-darkblue-sand a:not(.btn):hover,
 .fill-darkblue-sand a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-darkblue-sand small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-darkblue-dust {
   background-color: #302e46;
@@ -6168,6 +6201,9 @@ td.visible-print {
 .fill-darkblue-dust a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-darkblue-dust small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-darkblue-nearwhite {
   background-color: #302e46;
   color: white;
@@ -6182,6 +6218,9 @@ td.visible-print {
 .fill-darkblue-nearwhite a:not(.btn):hover,
 .fill-darkblue-nearwhite a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-darkblue-nearwhite small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-darkblue-yellow {
   background-color: #302e46;
@@ -6198,6 +6237,9 @@ td.visible-print {
 .fill-darkblue-yellow a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-darkblue-yellow small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-darkblue-pink {
   background-color: #302e46;
   color: white;
@@ -6212,6 +6254,9 @@ td.visible-print {
 .fill-darkblue-pink a:not(.btn):hover,
 .fill-darkblue-pink a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-darkblue-pink small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-darkblue-red {
   background-color: #302e46;
@@ -6228,6 +6273,9 @@ td.visible-print {
 .fill-darkblue-red a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-darkblue-red small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-darkblue-brown {
   background-color: #302e46;
   color: white;
@@ -6242,6 +6290,9 @@ td.visible-print {
 .fill-darkblue-brown a:not(.btn):hover,
 .fill-darkblue-brown a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-darkblue-brown small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-teal-darkblue {
   background-color: #7cccbf;
@@ -6258,6 +6309,9 @@ td.visible-print {
 .fill-teal-darkblue a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-teal-darkblue small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-teal-sand {
   background-color: #7cccbf;
   color: black;
@@ -6272,6 +6326,9 @@ td.visible-print {
 .fill-teal-sand a:not(.btn):hover,
 .fill-teal-sand a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-teal-sand small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-teal-dust {
   background-color: #7cccbf;
@@ -6288,6 +6345,9 @@ td.visible-print {
 .fill-teal-dust a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-teal-dust small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-teal-nearwhite {
   background-color: #7cccbf;
   color: black;
@@ -6302,6 +6362,9 @@ td.visible-print {
 .fill-teal-nearwhite a:not(.btn):hover,
 .fill-teal-nearwhite a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-teal-nearwhite small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-teal-yellow {
   background-color: #7cccbf;
@@ -6318,6 +6381,9 @@ td.visible-print {
 .fill-teal-yellow a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-teal-yellow small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-teal-pink {
   background-color: #7cccbf;
   color: black;
@@ -6332,6 +6398,9 @@ td.visible-print {
 .fill-teal-pink a:not(.btn):hover,
 .fill-teal-pink a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-teal-pink small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-teal-red {
   background-color: #7cccbf;
@@ -6348,6 +6417,9 @@ td.visible-print {
 .fill-teal-red a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-teal-red small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-teal-brown {
   background-color: #7cccbf;
   color: black;
@@ -6362,6 +6434,9 @@ td.visible-print {
 .fill-teal-brown a:not(.btn):hover,
 .fill-teal-brown a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-teal-brown small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-sand-darkblue {
   background-color: #e4dcc1;
@@ -6378,6 +6453,9 @@ td.visible-print {
 .fill-sand-darkblue a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-sand-darkblue small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-sand-teal {
   background-color: #e4dcc1;
   color: black;
@@ -6392,6 +6470,9 @@ td.visible-print {
 .fill-sand-teal a:not(.btn):hover,
 .fill-sand-teal a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-sand-teal small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-sand-dust {
   background-color: #e4dcc1;
@@ -6408,6 +6489,9 @@ td.visible-print {
 .fill-sand-dust a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-sand-dust small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-sand-nearwhite {
   background-color: #e4dcc1;
   color: black;
@@ -6422,6 +6506,9 @@ td.visible-print {
 .fill-sand-nearwhite a:not(.btn):hover,
 .fill-sand-nearwhite a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-sand-nearwhite small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-sand-yellow {
   background-color: #e4dcc1;
@@ -6438,6 +6525,9 @@ td.visible-print {
 .fill-sand-yellow a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-sand-yellow small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-sand-pink {
   background-color: #e4dcc1;
   color: black;
@@ -6452,6 +6542,9 @@ td.visible-print {
 .fill-sand-pink a:not(.btn):hover,
 .fill-sand-pink a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-sand-pink small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-sand-red {
   background-color: #e4dcc1;
@@ -6468,6 +6561,9 @@ td.visible-print {
 .fill-sand-red a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-sand-red small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-sand-brown {
   background-color: #e4dcc1;
   color: black;
@@ -6482,6 +6578,9 @@ td.visible-print {
 .fill-sand-brown a:not(.btn):hover,
 .fill-sand-brown a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-sand-brown small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-dust-darkblue {
   background-color: #f1ede0;
@@ -6498,6 +6597,9 @@ td.visible-print {
 .fill-dust-darkblue a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-dust-darkblue small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-dust-teal {
   background-color: #f1ede0;
   color: black;
@@ -6512,6 +6614,9 @@ td.visible-print {
 .fill-dust-teal a:not(.btn):hover,
 .fill-dust-teal a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-dust-teal small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-dust-sand {
   background-color: #f1ede0;
@@ -6528,6 +6633,9 @@ td.visible-print {
 .fill-dust-sand a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-dust-sand small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-dust-nearwhite {
   background-color: #f1ede0;
   color: black;
@@ -6542,6 +6650,9 @@ td.visible-print {
 .fill-dust-nearwhite a:not(.btn):hover,
 .fill-dust-nearwhite a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-dust-nearwhite small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-dust-yellow {
   background-color: #f1ede0;
@@ -6558,6 +6669,9 @@ td.visible-print {
 .fill-dust-yellow a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-dust-yellow small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-dust-pink {
   background-color: #f1ede0;
   color: black;
@@ -6572,6 +6686,9 @@ td.visible-print {
 .fill-dust-pink a:not(.btn):hover,
 .fill-dust-pink a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-dust-pink small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-dust-red {
   background-color: #f1ede0;
@@ -6588,6 +6705,9 @@ td.visible-print {
 .fill-dust-red a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-dust-red small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-dust-brown {
   background-color: #f1ede0;
   color: black;
@@ -6602,6 +6722,9 @@ td.visible-print {
 .fill-dust-brown a:not(.btn):hover,
 .fill-dust-brown a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-dust-brown small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-nearwhite-darkblue {
   background-color: #e7e7e7;
@@ -6618,6 +6741,9 @@ td.visible-print {
 .fill-nearwhite-darkblue a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-nearwhite-darkblue small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-nearwhite-teal {
   background-color: #e7e7e7;
   color: black;
@@ -6632,6 +6758,9 @@ td.visible-print {
 .fill-nearwhite-teal a:not(.btn):hover,
 .fill-nearwhite-teal a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-nearwhite-teal small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-nearwhite-sand {
   background-color: #e7e7e7;
@@ -6648,6 +6777,9 @@ td.visible-print {
 .fill-nearwhite-sand a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-nearwhite-sand small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-nearwhite-dust {
   background-color: #e7e7e7;
   color: black;
@@ -6662,6 +6794,9 @@ td.visible-print {
 .fill-nearwhite-dust a:not(.btn):hover,
 .fill-nearwhite-dust a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-nearwhite-dust small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-nearwhite-yellow {
   background-color: #e7e7e7;
@@ -6678,6 +6813,9 @@ td.visible-print {
 .fill-nearwhite-yellow a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-nearwhite-yellow small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-nearwhite-pink {
   background-color: #e7e7e7;
   color: black;
@@ -6692,6 +6830,9 @@ td.visible-print {
 .fill-nearwhite-pink a:not(.btn):hover,
 .fill-nearwhite-pink a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-nearwhite-pink small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-nearwhite-red {
   background-color: #e7e7e7;
@@ -6708,6 +6849,9 @@ td.visible-print {
 .fill-nearwhite-red a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-nearwhite-red small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-nearwhite-brown {
   background-color: #e7e7e7;
   color: black;
@@ -6722,6 +6866,9 @@ td.visible-print {
 .fill-nearwhite-brown a:not(.btn):hover,
 .fill-nearwhite-brown a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-nearwhite-brown small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-yellow-darkblue {
   background-color: #fec24d;
@@ -6738,6 +6885,9 @@ td.visible-print {
 .fill-yellow-darkblue a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-yellow-darkblue small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-yellow-teal {
   background-color: #fec24d;
   color: black;
@@ -6752,6 +6902,9 @@ td.visible-print {
 .fill-yellow-teal a:not(.btn):hover,
 .fill-yellow-teal a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-yellow-teal small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-yellow-sand {
   background-color: #fec24d;
@@ -6768,6 +6921,9 @@ td.visible-print {
 .fill-yellow-sand a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-yellow-sand small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-yellow-dust {
   background-color: #fec24d;
   color: black;
@@ -6782,6 +6938,9 @@ td.visible-print {
 .fill-yellow-dust a:not(.btn):hover,
 .fill-yellow-dust a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-yellow-dust small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-yellow-nearwhite {
   background-color: #fec24d;
@@ -6798,6 +6957,9 @@ td.visible-print {
 .fill-yellow-nearwhite a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-yellow-nearwhite small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-yellow-pink {
   background-color: #fec24d;
   color: black;
@@ -6812,6 +6974,9 @@ td.visible-print {
 .fill-yellow-pink a:not(.btn):hover,
 .fill-yellow-pink a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-yellow-pink small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-yellow-red {
   background-color: #fec24d;
@@ -6828,6 +6993,9 @@ td.visible-print {
 .fill-yellow-red a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-yellow-red small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-yellow-brown {
   background-color: #fec24d;
   color: black;
@@ -6842,6 +7010,9 @@ td.visible-print {
 .fill-yellow-brown a:not(.btn):hover,
 .fill-yellow-brown a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-yellow-brown small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-pink-darkblue {
   background-color: #ef968f;
@@ -6858,6 +7029,9 @@ td.visible-print {
 .fill-pink-darkblue a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-pink-darkblue small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-pink-teal {
   background-color: #ef968f;
   color: black;
@@ -6872,6 +7046,9 @@ td.visible-print {
 .fill-pink-teal a:not(.btn):hover,
 .fill-pink-teal a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-pink-teal small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-pink-sand {
   background-color: #ef968f;
@@ -6888,6 +7065,9 @@ td.visible-print {
 .fill-pink-sand a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-pink-sand small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-pink-dust {
   background-color: #ef968f;
   color: black;
@@ -6902,6 +7082,9 @@ td.visible-print {
 .fill-pink-dust a:not(.btn):hover,
 .fill-pink-dust a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-pink-dust small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-pink-nearwhite {
   background-color: #ef968f;
@@ -6918,6 +7101,9 @@ td.visible-print {
 .fill-pink-nearwhite a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-pink-nearwhite small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-pink-yellow {
   background-color: #ef968f;
   color: black;
@@ -6932,6 +7118,9 @@ td.visible-print {
 .fill-pink-yellow a:not(.btn):hover,
 .fill-pink-yellow a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-pink-yellow small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-pink-red {
   background-color: #ef968f;
@@ -6948,6 +7137,9 @@ td.visible-print {
 .fill-pink-red a:not(.btn):focus {
   color: #5a5684;
 }
+.fill-pink-red small {
+  color: rgba(0, 0, 0, 0.55);
+}
 .fill-pink-brown {
   background-color: #ef968f;
   color: black;
@@ -6962,6 +7154,9 @@ td.visible-print {
 .fill-pink-brown a:not(.btn):hover,
 .fill-pink-brown a:not(.btn):focus {
   color: #5a5684;
+}
+.fill-pink-brown small {
+  color: rgba(0, 0, 0, 0.55);
 }
 .fill-red-darkblue {
   background-color: #a42922;
@@ -6978,6 +7173,9 @@ td.visible-print {
 .fill-red-darkblue a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-red-darkblue small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-red-teal {
   background-color: #a42922;
   color: white;
@@ -6992,6 +7190,9 @@ td.visible-print {
 .fill-red-teal a:not(.btn):hover,
 .fill-red-teal a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-red-teal small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-red-sand {
   background-color: #a42922;
@@ -7008,6 +7209,9 @@ td.visible-print {
 .fill-red-sand a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-red-sand small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-red-dust {
   background-color: #a42922;
   color: white;
@@ -7022,6 +7226,9 @@ td.visible-print {
 .fill-red-dust a:not(.btn):hover,
 .fill-red-dust a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-red-dust small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-red-nearwhite {
   background-color: #a42922;
@@ -7038,6 +7245,9 @@ td.visible-print {
 .fill-red-nearwhite a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-red-nearwhite small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-red-yellow {
   background-color: #a42922;
   color: white;
@@ -7052,6 +7262,9 @@ td.visible-print {
 .fill-red-yellow a:not(.btn):hover,
 .fill-red-yellow a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-red-yellow small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-red-pink {
   background-color: #a42922;
@@ -7068,6 +7281,9 @@ td.visible-print {
 .fill-red-pink a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-red-pink small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-red-brown {
   background-color: #a42922;
   color: white;
@@ -7082,6 +7298,9 @@ td.visible-print {
 .fill-red-brown a:not(.btn):hover,
 .fill-red-brown a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-red-brown small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-brown-darkblue {
   background-color: #675141;
@@ -7098,6 +7317,9 @@ td.visible-print {
 .fill-brown-darkblue a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-brown-darkblue small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-brown-teal {
   background-color: #675141;
   color: white;
@@ -7112,6 +7334,9 @@ td.visible-print {
 .fill-brown-teal a:not(.btn):hover,
 .fill-brown-teal a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-brown-teal small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-brown-sand {
   background-color: #675141;
@@ -7128,6 +7353,9 @@ td.visible-print {
 .fill-brown-sand a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-brown-sand small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-brown-dust {
   background-color: #675141;
   color: white;
@@ -7142,6 +7370,9 @@ td.visible-print {
 .fill-brown-dust a:not(.btn):hover,
 .fill-brown-dust a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-brown-dust small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-brown-nearwhite {
   background-color: #675141;
@@ -7158,6 +7389,9 @@ td.visible-print {
 .fill-brown-nearwhite a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-brown-nearwhite small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-brown-yellow {
   background-color: #675141;
   color: white;
@@ -7172,6 +7406,9 @@ td.visible-print {
 .fill-brown-yellow a:not(.btn):hover,
 .fill-brown-yellow a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-brown-yellow small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .fill-brown-pink {
   background-color: #675141;
@@ -7188,6 +7425,9 @@ td.visible-print {
 .fill-brown-pink a:not(.btn):focus {
   color: #c5e9e3;
 }
+.fill-brown-pink small {
+  color: rgba(255, 255, 255, 0.55);
+}
 .fill-brown-red {
   background-color: #675141;
   color: white;
@@ -7202,6 +7442,9 @@ td.visible-print {
 .fill-brown-red a:not(.btn):hover,
 .fill-brown-red a:not(.btn):focus {
   color: #c5e9e3;
+}
+.fill-brown-red small {
+  color: rgba(255, 255, 255, 0.55);
 }
 .cursive {
   font-family: "Sacramento", cursive;
@@ -7247,6 +7490,9 @@ small,
 }
 dl dt:not(:first-of-type) {
   margin-top: 12px;
+}
+.page-header {
+  border-bottom: none;
 }
 .btn {
   border-width: 2px;

@@ -22,11 +22,17 @@
   color: black;
   color: fade(black, 80%);
   .link-color(@darkblue);
+  small {
+    color: fade(black, 55%);
+  }
 }
 .fill-color (@color) when (lightness(@color) < 50%) {
   color: white;
   color: fade(white, 80%);
   .link-color(@teal);
+  small {
+    color: fade(white, 55%);
+  }
 }
 
 // Two-part background fills using gradients
