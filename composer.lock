@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d519309bbd33975c8a8bee72ea665ef0",
+    "hash": "b21c96d5093def06bf1f6f39e5264d38",
     "packages": [
         {
             "name": "composer/installers",
@@ -150,6 +150,21 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/extend/plugins/custom-post-type-ui"
+        },
+        {
+            "name": "wpackagist/insert-pages",
+            "version": "trunk",
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/insert-pages.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/extend/plugins/insert-pages"
         },
         {
             "name": "wpackagist/logged-in",

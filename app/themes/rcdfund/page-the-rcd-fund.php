@@ -18,12 +18,7 @@
         -
       </div>
       <div class="col-xs-12 col-sm-5 col-sm-offset-2">
-        <h1 class="h3 pb-1">
-          <small>Our</small>
-          Mission
-        </h1>
-        <p>Brain cancer is the most fatal of all childhood cancers. Current clinical treatments only help 50% of children, but leave 90% with lifelong physical and mental impairments.</p>
-        <p>This is why brain tumours are so devastating. We're all about changing the odds. To make brain tumours go the way of the dinosaurs. To support the science and in the meantime the patients.</p>
+        <?php echo do_shortcode("[insert page='our-mission']"); ?>
       </div>
     </div>
   </div>
@@ -33,11 +28,7 @@
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12 col-sm-5">
-        <h1 class="h3 pb-1">
-          <small>What is an</small>
-          Ependymoma?
-        </h1>
-        <p>Ependymoma is a disease in which malignant (cancer) cells form in the tissues of the brain and spinal cord. The brain controls vital functions such as memory and learning, thesenses (hearing, sight, smell, taste, and touch), and emotion. The spinal cord is made up of bundles of nerve fibers that connect the brain with nerves in most parts of the body.</p>
+        <?php echo do_shortcode("[insert page='what-is-an-ependymoma']"); ?>
       </div>
       <div class="col-xs-12 col-sm-5 col-sm-offset-2">
         -

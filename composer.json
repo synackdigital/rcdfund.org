@@ -29,7 +29,8 @@
     "fancyguy/webroot-installer": "1.1.0",
     "wpackagist/logged-in": "1.0.4",
     "wpackagist/mailchimp": "1.4.1",
-    "wpackagist/custom-post-type-ui": "0.8.2"
+    "wpackagist/custom-post-type-ui": "0.8.2",
+    "wpackagist/insert-pages": "*"
   },
   "extra": {
     "webroot-dir": "wordpress",
