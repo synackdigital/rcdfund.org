@@ -30,7 +30,8 @@
     "wpackagist/logged-in": "1.0.4",
     "wpackagist/mailchimp": "1.4.1",
     "wpackagist/custom-post-type-ui": "0.8.2",
-    "wpackagist/insert-pages": "*"
+    "wpackagist/insert-pages": "*@dev",
+    "wpackagist/advanced-custom-fields": "*"
   },
   "extra": {
     "webroot-dir": "wordpress",

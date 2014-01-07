@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b21c96d5093def06bf1f6f39e5264d38",
+    "hash": "8fcff55fab1a4158d648c0d80250243a",
     "packages": [
         {
             "name": "composer/installers",
@@ -137,6 +137,21 @@
             "type": "webroot"
         },
         {
+            "name": "wpackagist/advanced-custom-fields",
+            "version": "trunk",
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/extend/plugins/advanced-custom-fields"
+        },
+        {
             "name": "wpackagist/custom-post-type-ui",
             "version": "0.8.2",
             "dist": {
@@ -204,9 +219,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "wpackagist/insert-pages": 20
+    },
     "platform": {
         "php": ">=5.3.0"
     },
