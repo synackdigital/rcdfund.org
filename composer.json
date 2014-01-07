@@ -1,4 +1,7 @@
 {
+  "name": "synackdigital/rcdfund",
+  "description": "Wordpress site for RCDFund.org",
+  "license": "MIT",
   "repositories": [
     {
       "type": "package",
