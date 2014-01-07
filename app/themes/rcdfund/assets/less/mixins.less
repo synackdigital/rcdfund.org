@@ -22,17 +22,15 @@
   color: black;
   color: fade(black, 80%);
   .link-color(@darkblue);
-  small {
-    color: fade(black, 55%);
-  }
+  small { color: fade(black, 55%); }
+  &, & [class*='keyline'] { border-color: fade(black, 20%); }
 }
 .fill-color (@color) when (lightness(@color) < 50%) {
   color: white;
   color: fade(white, 80%);
   .link-color(@teal);
-  small {
-    color: fade(white, 55%);
-  }
+  small { color: fade(white, 55%); }
+  &, & [class*='keyline'] { border-color: fade(white, 20%); }
 }
 
 // Two-part background fills using gradients

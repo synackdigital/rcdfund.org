@@ -14,10 +14,7 @@
 <section class="fill-nearwhite-yellow">
   <div class="container">
     <div class="row text-center pt-1 pb-2">
-      <div class="col-xs-12 col-sm-5">
-        -
-      </div>
-      <div class="col-xs-12 col-sm-5 col-sm-offset-2">
+      <div class="col-xs-12 col-sm-5 col-sm-offset-7 keyline-right">
         <?php echo do_shortcode("[insert page='our-mission']"); ?>
       </div>
     </div>
@@ -27,11 +24,8 @@
 <section class="fill-darkblue-nearwhite">
   <div class="container">
     <div class="row text-center pt-1 pb-2">
-      <div class="col-xs-12 col-sm-5">
+      <div class="col-xs-12 col-sm-5 keyline-left">
         <?php echo do_shortcode("[insert page='what-is-an-ependymoma']"); ?>
-      </div>
-      <div class="col-xs-12 col-sm-5 col-sm-offset-2">
-        -
       </div>
     </div>
   </div>
