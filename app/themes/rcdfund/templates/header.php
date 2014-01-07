@@ -30,7 +30,7 @@
   <div class="panel">
     <aside class="fill-sand collapse" id="contact">
       <div class="container">
-        <div class="row">
+        <div class="row pt-1 pb-2">
           <h1 class="h3 col-xs-12 col-sm-9 col-sm-offset-3">Contact us</h1>
           <div class="col-xs-12 col-sm-2 col-sm-offset-3">
             <p>
@@ -79,7 +79,7 @@
   <div class="panel">
     <aside class="fill-sand collapse" id="follow">
       <div class="container">
-        <div class="row">
+        <div class="row pt-1 pb-2">
           <h1 class="h3 col-xs-12 col-sm-9 col-sm-offset-3">Follow RCD Fund</h1>
           <div class="col-sm-5 col-sm-offset-3">
             Social links
@@ -95,7 +95,7 @@
   <div class="panel">
     <aside class="fill-sand collapse" id="donate">
       <div class="container">
-        <div class="row">
+        <div class="row pt-1 pb-2">
           <div class="col-sm-9 col-sm-offset-3">
             Donate
           </div>

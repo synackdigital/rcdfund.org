@@ -1,7 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
 <article class="article fill-dust" id="main" role="main">
   <div class="container">
-    <div class="row text-center">
+    <div class="row text-center pt-1 pb-4">
       <div class="col-lg-6 col-lg-offset-3">
         <?php get_template_part('templates/page', 'header'); ?>
         <?php the_content(); ?>
@@ -13,12 +13,12 @@
 
 <section class="fill-nearwhite-yellow">
   <div class="container">
-    <div class="row text-center">
+    <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12 col-sm-5">
         -
       </div>
       <div class="col-xs-12 col-sm-5 col-sm-offset-2">
-        <h1 class="h3">
+        <h1 class="h3 pb-1">
           <small>Our</small><br>
           Mission
         </h1>
@@ -31,9 +31,9 @@
 
 <section class="fill-darkblue-nearwhite">
   <div class="container">
-    <div class="row text-center">
+    <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12 col-sm-5">
-        <h1 class="h3">
+        <h1 class="h3 pb-1">
           <small>What is an</small><br>
           Ependymoma?
         </h1>
