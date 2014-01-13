@@ -14,7 +14,8 @@ function get_page_id_by_slug( $page_slug, $output = OBJECT, $post_type = 'post' 
 }
 
 function get_thumbnail_url_by_content_slug( $content_slug ) {
-  return wp_get_attachment_image_src( get_post_thumbnail_id( get_page_id_by_slug( $content_slug, OBJECT, 'content') ), 'large')[0];
+  $attachment_image_src = wp_get_attachment_image_src( get_post_thumbnail_id( get_page_id_by_slug( $content_slug, OBJECT, 'content') ), 'large');
+  return $attachment_image_src[0];
 }
 
 
