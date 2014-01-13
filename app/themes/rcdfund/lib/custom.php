@@ -3,6 +3,21 @@
  * Custom functions
  */
 
+function get_page_id_by_slug( $page_slug, $output = OBJECT, $post_type = 'post' ) {
+  $page = get_page_by_path($page_slug, $output, $post_type);
+  if ($page) {
+    return $page->ID;
+  }
+  else {
+    return null;
+  }
+}
+
+function get_thumbnail_url_by_content_slug( $content_slug ) {
+  return wp_get_attachment_image_src( get_post_thumbnail_id( get_page_id_by_slug( $content_slug, OBJECT, 'content') ), 'large')[0];
+}
+
+
 // Activate the Styles dropdown in TinyMCE
 function my_mce_buttons_2( $buttons ) {
   array_unshift( $buttons, 'styleselect' );
