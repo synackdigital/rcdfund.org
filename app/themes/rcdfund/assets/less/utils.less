@@ -2,6 +2,20 @@
 // LAYOUT
 // ------
 
+// Position classes
+.static { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+
+.pin-t { top: 0; }
+.pin-tr { top: 0; right: 0; }
+.pin-br { bottom: 0; right: 0; }
+.pin-b { bottom: 0; }
+.pin-bl { bottom: 0; left: 0; }
+.pin-l { left: 0; }
+.pin-tl { top: 0; left: 0; }
+.pin-all { top: 0; right: 0; bottom: 0; left: 0; }
+
 // Margin top/bottom classes
 .mt-1 { margin-top: @line-height-computed; }
 .mt-2 { margin-top: (2 * @line-height-computed); }
@@ -24,6 +38,9 @@
 .pb-3 { padding-bottom: (3 * @line-height-computed); }
 .pb-4 { padding-bottom: (4 * @line-height-computed); }
 
+// Background positioning
+.bg-cover { background-size: cover; }
+.bg-contain { background-size: contain; }
 
 // KEYLINES
 // --------

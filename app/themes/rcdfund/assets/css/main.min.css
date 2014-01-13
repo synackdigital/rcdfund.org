@@ -6015,6 +6015,46 @@ td.visible-print {
 /*
  * Google Web fonts
  */
+.static {
+  position: static;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.pin-t {
+  top: 0;
+}
+.pin-tr {
+  top: 0;
+  right: 0;
+}
+.pin-br {
+  bottom: 0;
+  right: 0;
+}
+.pin-b {
+  bottom: 0;
+}
+.pin-bl {
+  bottom: 0;
+  left: 0;
+}
+.pin-l {
+  left: 0;
+}
+.pin-tl {
+  top: 0;
+  left: 0;
+}
+.pin-all {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .mt-1 {
   margin-top: 24px;
 }
@@ -6062,6 +6102,12 @@ td.visible-print {
 }
 .pb-4 {
   padding-bottom: 96px;
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-contain {
+  background-size: contain;
 }
 .keyline {
   border-style: solid;

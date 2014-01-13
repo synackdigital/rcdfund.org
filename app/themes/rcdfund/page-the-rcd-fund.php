@@ -11,7 +11,8 @@
 </article>
 <?php endwhile; ?>
 
-<section class="fill-nearwhite-yellow">
+<section class="fill-yellow relative">
+  <div class="absolute pin-all bg-cover hidden-xs" style="right:50%; background-image:url(http://waxwanedotcom.files.wordpress.com/2012/05/dj7.jpg);"></div>
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12 col-sm-5 col-sm-offset-7 keyline-right">
@@ -21,8 +22,9 @@
   </div>
 </section>
 
-<section class="fill-darkblue-nearwhite">
+<section class="fill-darkblue relative">
   <div class="container">
+  <div class="absolute pin-all bg-cover hidden-xs" style="left:50%; background-image:url(http://konstpretton.se/wp-content/uploads/2013/12/tenenbaum.jpg);"></div>
     <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12 col-sm-5 keyline-left">
         <?php echo do_shortcode("[insert page='what-is-an-ependymoma' display='insert-content.php']"); ?>
