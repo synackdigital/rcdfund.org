@@ -45,11 +45,13 @@
 // KEYLINES
 // --------
 
-.keyline        { border-style: solid; border-width: 1px; }
-.keyline-top    { border-style: solid; border-width: 1px 0 0 0; }
-.keyline-right  { border-style: solid; border-width: 0 1px 0 0; }
-.keyline-bottom { border-style: solid; border-width: 0 0 1px 0; }
-.keyline-left   { border-style: solid; border-width: 0 0 0 1px; }
+.keyline              { border-style: solid; border-width: @keyline-base-width; }
+.keyline-horizontal   { border-style: solid; border-width: @keyline-base-width 0; }
+.keyline-vertical     { border-style: solid; border-width: 0 @keyline-base-width; }
+.keyline-top          { border-style: solid; border-width: @keyline-base-width 0 0 0; }
+.keyline-right        { border-style: solid; border-width: 0 @keyline-base-width 0 0; }
+.keyline-bottom       { border-style: solid; border-width: 0 0 @keyline-base-width 0; }
+.keyline-left         { border-style: solid; border-width: 0 0 0 @keyline-base-width; }
 
 
 // COLORS

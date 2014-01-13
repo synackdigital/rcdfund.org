@@ -32,3 +32,20 @@
     </div>
   </div>
 </section>
+
+<section class="fill-sand">
+  <div class="container">
+    <div class="row text-center pt-4 pb-4">
+      <img src="/assets/img/squiggle-darkblue.png" class="center-block mb-4" style="width:340px;height:auto;">
+      <div class="col-xs-12 col-md-4 keyline-vertical">
+        <?php echo do_shortcode("[insert page='research' display='insert-content.php']"); ?>
+      </div>
+      <div class="col-xs-12 col-md-4 keyline-right">
+        <?php echo do_shortcode("[insert page='care' display='insert-content.php']"); ?>
+      </div>
+      <div class="col-xs-12 col-md-4 keyline-right">
+        <?php echo do_shortcode("[insert page='develop' display='insert-content.php']"); ?>
+      </div>
+    </div>
+  </div>
+</section>
