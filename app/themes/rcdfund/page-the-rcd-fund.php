@@ -23,8 +23,8 @@
 </section>
 
 <section class="fill-darkblue relative">
-  <div class="container">
   <div class="absolute pin-all bg-cover hidden-xs" style="left:50%; background-image:url(<?php echo get_thumbnail_url_by_content_slug('what-is-an-ependymoma'); ?>);"></div>
+  <div class="container">
     <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12 col-sm-5 keyline-left">
         <?php echo do_shortcode("[insert page='what-is-an-ependymoma' display='insert-content.php']"); ?>
