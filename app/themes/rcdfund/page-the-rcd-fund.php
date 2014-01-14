@@ -49,3 +49,16 @@
     </div>
   </div>
 </section>
+
+<section class="fill-darkblue">
+  <div class="container">
+    <div class="row text-center pt-2 pb-3">
+      <div class="col-xs-12 col-sm-6 keyline-left">
+        <?php echo do_shortcode("[insert page='our-board-and-team' display='insert-content.php']"); ?>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('our-board-and-team'); ?>" alt="">
+      </div>
+    </div>
+  </div>
+</section>
