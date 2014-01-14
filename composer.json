@@ -31,7 +31,8 @@
     "wpackagist/mailchimp": "1.4.1",
     "wpackagist/custom-post-type-ui": "0.8.2",
     "wpackagist/insert-pages": "*@dev",
-    "wpackagist/advanced-custom-fields": "*"
+    "wpackagist/advanced-custom-fields": "*",
+    "wpackagist/fitvids-for-wordpress": "*"
   },
   "extra": {
     "webroot-dir": "wordpress",
