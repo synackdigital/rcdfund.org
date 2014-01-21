@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b01af9e1f8ac5fc0bd21428c1abd05af",
+    "hash": "60601c154c80b9d401b48b4db8f6b848",
     "packages": [
         {
             "name": "composer/installers",
@@ -138,10 +138,10 @@
         },
         {
             "name": "wpackagist/advanced-custom-fields",
-            "version": "4.3.3",
+            "version": "trunk",
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.4.3.3.zip",
+                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -168,10 +168,10 @@
         },
         {
             "name": "wpackagist/fitvids-for-wordpress",
-            "version": "trunk",
+            "version": "2.1",
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/fitvids-for-wordpress.zip",
+                "url": "http://downloads.wordpress.org/plugin/fitvids-for-wordpress.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -180,6 +180,21 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/extend/plugins/fitvids-for-wordpress"
+        },
+        {
+            "name": "wpackagist/iframe",
+            "version": "trunk",
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/iframe.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/extend/plugins/iframe"
         },
         {
             "name": "wpackagist/insert-pages",

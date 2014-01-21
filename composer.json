@@ -32,7 +32,8 @@
     "wpackagist/custom-post-type-ui": "0.8.2",
     "wpackagist/insert-pages": "*@dev",
     "wpackagist/advanced-custom-fields": "*",
-    "wpackagist/fitvids-for-wordpress": "*"
+    "wpackagist/fitvids-for-wordpress": "*",
+    "wpackagist/iframe": "*"
   },
   "extra": {
     "webroot-dir": "wordpress",
