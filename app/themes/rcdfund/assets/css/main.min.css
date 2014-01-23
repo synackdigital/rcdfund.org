@@ -8755,15 +8755,9 @@ fieldset[disabled] .btn-brown.active {
   padding: 4px;
 }
 .navbar .navicon button {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
   background-size: contain;
-  background-position: center;
+  background-position: left center;
   background-repeat: no-repeat;
-  width: 32px;
   height: 32px;
 }
 .navbar .navicon button:focus,
@@ -8772,13 +8766,21 @@ fieldset[disabled] .btn-brown.active {
   opacity: .8;
 }
 .navbar .navicon.navicon-contact button {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  width: 32px;
   background-image: url('../img/navicon-contact.png');
-}
-.navbar .navicon.navicon-follow button {
-  background-image: url('../img/navicon-follow.png');
 }
 .navbar .navicon.navicon-donate button {
   background-image: url('../img/navicon-donate.png');
+  padding-left: 38px;
+  color: #a42922;
+  font-family: "Sacramento", cursive;
+  font-size: 18px;
+  font-weight: bold;
 }
 .navbar .navbar-header img {
   width: 60px;

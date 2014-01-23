@@ -15,11 +15,9 @@
 
   // Set up buttons for using icons
   button {
-    .hide-text();
     background-size: contain;
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
-    width: 32px;
     height: 32px;
 
     &:focus,
@@ -31,13 +29,17 @@
 
   // Display icon PNGs
   &.navicon-contact button {
+    .hide-text();
+    width: 32px;
     background-image: url('../img/navicon-contact.png');
-  }
-  &.navicon-follow button {
-    background-image: url('../img/navicon-follow.png');
   }
   &.navicon-donate button {
     background-image: url('../img/navicon-donate.png');
+    padding-left: 38px;
+    color: @red;
+    font-family: @font-family-cursive;
+    font-size: 18px;
+    font-weight: bold;
   }
 }
 
