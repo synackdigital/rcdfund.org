@@ -8783,13 +8783,6 @@ fieldset[disabled] .btn-brown.active {
 .navbar .navbar-header img {
   width: 60px;
 }
-@media (min-width: 768px) {
-  .navbar .navbar-header img {
-    border-radius: 50%;
-    -webkit-box-shadow: 0 5px 20px rgba(48, 46, 70, 0.8);
-    box-shadow: 0 5px 20px rgba(48, 46, 70, 0.8);
-  }
-}
 .navbar .navbar-header.affix,
 .navbar .navbar-header img.affix {
   position: static;
