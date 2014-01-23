@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "60601c154c80b9d401b48b4db8f6b848",
+    "hash": "e811d50a66976f19f0a165029d61a071",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.8",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "c87cfc35882eb50df3eef1734bfa52fbcd6c782c"
+                "reference": "53c31d1c216b64c1da999d5d25a97fcbf6810515"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/c87cfc35882eb50df3eef1734bfa52fbcd6c782c",
-                "reference": "c87cfc35882eb50df3eef1734bfa52fbcd6c782c",
+                "url": "https://api.github.com/repos/composer/installers/zipball/53c31d1c216b64c1da999d5d25a97fcbf6810515",
+                "reference": "53c31d1c216b64c1da999d5d25a97fcbf6810515",
                 "shasum": ""
             },
             "replace": {
@@ -72,13 +72,14 @@
                 "mako",
                 "modulework",
                 "phpbb",
+                "piwik",
                 "ppi",
                 "silverstripe",
                 "symfony",
                 "wordpress",
                 "zend"
             ],
-            "time": "2013-12-24 18:04:46"
+            "time": "2014-01-14 16:42:06"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -138,7 +139,12 @@
         },
         {
             "name": "wpackagist/advanced-custom-fields",
-            "version": "trunk",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "trunk"
+            },
             "dist": {
                 "type": "zip",
                 "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
@@ -149,7 +155,8 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/advanced-custom-fields"
+            "homepage": "http://wordpress.org/extend/plugins/advanced-custom-fields",
+            "time": "2014-01-07 05:58:10"
         },
         {
             "name": "wpackagist/custom-post-type-ui",
@@ -183,10 +190,15 @@
         },
         {
             "name": "wpackagist/iframe",
-            "version": "trunk",
+            "version": "2.7",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/iframe/",
+                "reference": "tags/2.7"
+            },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/iframe.zip",
+                "url": "http://downloads.wordpress.org/plugin/iframe.2.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -198,7 +210,12 @@
         },
         {
             "name": "wpackagist/insert-pages",
-            "version": "trunk",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/insert-pages/",
+                "reference": "trunk"
+            },
             "dist": {
                 "type": "zip",
                 "url": "http://downloads.wordpress.org/plugin/insert-pages.zip",
@@ -209,7 +226,8 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/insert-pages"
+            "homepage": "http://wordpress.org/extend/plugins/insert-pages",
+            "time": "2013-11-21 22:42:22"
         },
         {
             "name": "wpackagist/logged-in",
@@ -240,6 +258,27 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/extend/plugins/mailchimp"
+        },
+        {
+            "name": "wpackagist/wp-instagram",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-instagram/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-instagram.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/extend/plugins/wp-instagram",
+            "time": "2014-01-09 11:24:56"
         }
     ],
     "packages-dev": [
@@ -248,9 +287,11 @@
     "aliases": [
 
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
-        "wpackagist/insert-pages": 20
+        "wpackagist/insert-pages": 20,
+        "wpackagist/advanced-custom-fields": 20,
+        "wpackagist/wp-instagram": 20
     },
     "platform": {
         "php": ">=5.3.0"

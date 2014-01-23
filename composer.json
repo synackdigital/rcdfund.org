@@ -2,7 +2,12 @@
   "name": "synackdigital/rcdfund",
   "description": "Wordpress site for RCDFund.org",
   "license": "MIT",
+  "minimum-stability": "dev",
   "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
     {
       "type": "package",
       "package": {
@@ -17,10 +22,6 @@
           "fancyguy/webroot-installer": "1.1.0"
         }
       }
-    },
-    {
-      "type": "composer",
-      "url": "http://wpackagist.org"
     }
   ],
   "require": {
@@ -30,10 +31,11 @@
     "wpackagist/logged-in": "1.0.4",
     "wpackagist/mailchimp": "1.4.1",
     "wpackagist/custom-post-type-ui": "0.8.2",
-    "wpackagist/insert-pages": "*@dev",
-    "wpackagist/advanced-custom-fields": "*",
-    "wpackagist/fitvids-for-wordpress": "*",
-    "wpackagist/iframe": "*"
+    "wpackagist/insert-pages": "@dev",
+    "wpackagist/advanced-custom-fields": "@dev",
+    "wpackagist/fitvids-for-wordpress": "2.1",
+    "wpackagist/iframe": "2.7",
+    "wpackagist/wp-instagram": "@dev"
   },
   "extra": {
     "webroot-dir": "wordpress",
