@@ -8835,6 +8835,12 @@ fieldset[disabled] .btn-brown.active {
     transition: width 230ms ease-in-out;
   }
 }
+a {
+  text-decoration: underline;
+}
+a.btn {
+  text-decoration: none;
+}
 img {
   max-width: 100%;
   max-height: 100%;
