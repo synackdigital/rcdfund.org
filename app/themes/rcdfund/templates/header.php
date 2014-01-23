@@ -31,42 +31,47 @@
     <aside class="fill-sand collapse" id="contact">
       <div class="container">
         <div class="row pt-1 pb-2">
-          <h1 class="h3 col-xs-12 col-sm-9 col-sm-offset-3">Contact us</h1>
           <div class="col-xs-12 col-sm-2 col-sm-offset-3">
+            <h1 class="h3">Contact</h1>
             <p>
               <a href="mailto:info@rcdfund.org">info@rcdfund.org</a><br>
-              <a href="tel:+61 0000 000">+61 0000 000</a>
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-2">
+            <h2 class="h3">Australia</h2>
+            <p>
+              <a href="mailto:liz@rcdfund.org">Liz Dawes</a><br>
+              Executive Director
             </p>
             <p>
-              ABN: 49 126 106 682
+              39 Royal Ave<br>
+              Sandringham, 3191<br>
+              Vic, Australia
+            </p>
+            <p>
+              ABN 49 126 106 682
             </p>
           </div>
           <div class="col-xs-12 col-sm-2">
-            <dl>
-              <dt>Director</dt>
-              <dd><a href="#mailto:">Liz Dawes</a></dd>
-              <dd>+61 123 456 789</dd>
-              <dt>Treasurer</dt>
-              <dd>Jane Abbott</dd>
-              <dt>Research &amp; Giving</dt>
-              <dd>Celia Williams</dd>
-            </dl>
-          </div>
-          <div class="col-xs-12 col-sm-2">
-            <dl>
-              <dt>Marketing</dt>
-              <dd>Marek Wolski</dd>
-              <dt>Sponsorship</dt>
-              <dd>Jenny Selleck</dd>
-            </dl>
+            <h2 class="h3">USA</h2>
+            <p>
+              <a href="mailto:debbie@rcdfund.org">Debbie Clarke Dawes, RN MBA</a><br>
+              Director of Development
+            </p>
+            <p>
+              1135 Lone Tree Road,<br>
+              Elm Grove Wi 53122<br>
+              United States
+            </p>
           </div>
           <div class="col-xs-12 col-sm-3">
+            <h2 class="h3">Social</h2>
             <dl>
-              <dt class="uppercase">Facebook</dt>
-              <dd>fb.me/RCDFund</dd>
-              <dt class="uppercase">Twitter</dt>
-              <dd>@RCDFund</dd>
-              <dt class="uppercase">Instagram</dt>
+              <dt class="h5">Facebook</dt>
+              <dd><a href="http://fb.me/RCDFund" target="_blank">fb.me/RCDFund</a></dd>
+              <dt class="h5">Twitter</dt>
+              <dd><a href="http://twitter.com/RCDFund" target="_blank">@RCDFund</a></dd>
+              <dt class="h5">Instagram</dt>
               <dd>@RCDFund</dd>
               <dd>#AternumFortis</dd>
             </dl>
