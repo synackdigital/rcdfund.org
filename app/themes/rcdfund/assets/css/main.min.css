@@ -7892,6 +7892,46 @@ td.visible-print {
 .fill-brown-red [class*='keyline'] {
   border-color: rgba(255, 255, 255, 0.2);
 }
+.texture-paper {
+  background-color: #e4dcc1;
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+  background-image: url('../img/textured_paper.jpg');
+}
+.texture-paper a:not(.btn) {
+  color: #302e46;
+}
+.texture-paper a:not(.btn):hover,
+.texture-paper a:not(.btn):focus {
+  color: #5a5684;
+}
+.texture-paper small {
+  color: rgba(0, 0, 0, 0.55);
+}
+.texture-paper,
+.texture-paper [class*='keyline'] {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.texture-dust-grid {
+  background-color: #f1ede0;
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+  background-image: url('../img/dust_grid.jpg');
+}
+.texture-dust-grid a:not(.btn) {
+  color: #302e46;
+}
+.texture-dust-grid a:not(.btn):hover,
+.texture-dust-grid a:not(.btn):focus {
+  color: #5a5684;
+}
+.texture-dust-grid small {
+  color: rgba(0, 0, 0, 0.55);
+}
+.texture-dust-grid,
+.texture-dust-grid [class*='keyline'] {
+  border-color: rgba(0, 0, 0, 0.2);
+}
 .cursive {
   font-family: "Sacramento", cursive;
   font-weight: normal !important;
