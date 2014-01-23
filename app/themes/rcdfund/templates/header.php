@@ -18,7 +18,6 @@
       ?>
       <ul id="menu-secondary-navigation" class="nav nav-secondary navbar-nav">
         <li class="navicon navicon-contact"><button type="button" data-toggle="collapse" data-target="#contact" data-parent="#dropdown">Contact us</button></li>
-        <li class="navicon navicon-follow"><button type="button" data-toggle="collapse" data-target="#follow" data-parent="#dropdown">Follow us on social media</button></li>
         <li class="navicon navicon-donate"><button type="button" data-toggle="collapse" data-target="#donate" data-parent="#dropdown">Make a donation!</button></li>
       </ul>
     </nav>
@@ -75,22 +74,6 @@
               <dd>@RCDFund</dd>
               <dd>#AternumFortis</dd>
             </dl>
-          </div>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-  <div class="panel">
-    <aside class="fill-sand collapse" id="follow">
-      <div class="container">
-        <div class="row pt-1 pb-2">
-          <h1 class="h3 col-xs-12 col-sm-9 col-sm-offset-3">Follow RCD Fund</h1>
-          <div class="col-sm-5 col-sm-offset-3">
-            Social links
-          </div>
-          <div class="col-sm-4">
-            <a class="btn btn-darkblue btn-block">Sign up for<br>bi-monthly Brainfood</a>
           </div>
         </div>
       </div>
