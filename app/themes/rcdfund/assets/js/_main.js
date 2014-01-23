@@ -40,16 +40,16 @@ var RCDFund = {
         var show = function(i) {
           $descriptions.each(function(j, el) {
             if (j === i) {
-              $(el).slideDown();
+              $(el).fadeIn();
             } else {
-              $(el).hide();
+              $(el).fadeOut('fast');
             }
           });
           $images.each(function(j, el) {
             if (j === i) {
-              $(el).slideDown();
+              $(el).fadeIn();
             } else {
-              $(el).hide();
+              $(el).fadeOut('fast');
             }
           });
         };
