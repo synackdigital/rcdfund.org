@@ -37,14 +37,29 @@
   </div>
 </section>
 
-<section class="fill-darkblue">
+<section class="team fill-darkblue">
   <div class="container">
     <div class="row text-center pt-2 pb-3">
-      <div class="col-xs-12 col-sm-6 keyline-left">
-        <?php echo do_shortcode("[insert page='our-board-and-team' display='insert-content.php']"); ?>
-      </div>
       <div class="col-xs-12 col-sm-6">
-        <img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('our-board-and-team'); ?>" alt="">
+        <h1 class="h3"><small>Our</small> Board &amp; Team</h1>
+        <ul class="descriptions relative list-unstyled">
+          <li><?php echo do_shortcode("[insert page='liz-dawes' display='insert-content.php']"); ?></li>
+          <li><?php echo do_shortcode("[insert page='scott-dawes' display='insert-content.php']"); ?></li>
+          <li><?php echo do_shortcode("[insert page='jenny-selleck' display='insert-content.php']"); ?></li>
+          <li><?php echo do_shortcode("[insert page='marek-wolski' display='insert-content.php']"); ?></li>
+          <li><?php echo do_shortcode("[insert page='celia-williams' display='insert-content.php']"); ?></li>
+          <li><?php echo do_shortcode("[insert page='debbie-clarke-dawes' display='insert-content.php']"); ?></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-6 relative">
+        <ul class="images relative list-unstyled">
+          <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('liz-dawes'); ?>" alt=""></li>
+          <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('scott-dawes'); ?>" alt=""></li>
+          <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('jenny-selleck'); ?>" alt=""></li>
+          <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('marek-wolski'); ?>" alt=""></li>
+          <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('celia-williams'); ?>" alt=""></li>
+          <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('debbie-clarke-dawes'); ?>" alt=""></li>
+        </ul>
       </div>
     </div>
   </div>

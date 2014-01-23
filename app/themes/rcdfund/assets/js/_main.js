@@ -5,27 +5,69 @@ var RCDFund = {
   // All pages
   common: {
     init: function() {
+
       // Give all affixed elements an explicit position
       $('[data-spy="affix"]').each(function(index) {
         var el = $(this);
         var offset = $(this).offset();
         el.css('top', offset.top).css('left', offset.left);
       });
+
+      // Find and activate image carousels
+      var $teamsection = $('.team');
+      if ($teamsection.length > 0) {
+        var $descriptions = $teamsection.find('.descriptions li');
+        var $images = $teamsection.find('.images li');
+        var outerHeight = 0;
+        var activeIndex = 0;
+
+        $descriptions.each(function(i, el) {
+          var $el = $(el);
+          var height = $el.outerHeight(true) + $teamsection.find('h1').outerHeight(true);
+          $el.css('width', $el.outerWidth()).addClass('absolute pin-tr');
+          outerHeight = (height > outerHeight) ? height : outerHeight;
+        });
+
+        $images.each(function(i, el) {
+          var $el = $(el);
+          var height = $el.outerHeight(true);
+          $el.addClass('absolute pin-tl');
+          outerHeight = (height > outerHeight) ? height : outerHeight;
+        });
+
+        $teamsection.css('height', outerHeight + $teamsection.find('.row').outerHeight(true) - $teamsection.find('h1').outerHeight(true));
+
+        var show = function(i) {
+          $descriptions.each(function(j, el) {
+            if (j === i) {
+              $(el).slideDown();
+            } else {
+              $(el).hide();
+            }
+          });
+          $images.each(function(j, el) {
+            if (j === i) {
+              $(el).slideDown();
+            } else {
+              $(el).hide();
+            }
+          });
+        };
+
+        setInterval(function() {
+          if ( activeIndex < $descriptions.size()-1 ) {
+            activeIndex++;
+          } else {
+            activeIndex = 0;
+          }
+          show(activeIndex);
+        }, 2500);
+
+        show(0);
+      }
     },
     finalize: function() { }
   },
-  // Home page
-  home: {
-    init: function() {
-      // JS here
-    }
-  },
-  // About page
-  about: {
-    init: function() {
-      // JS here
-    }
-  }
 };
 
 var UTIL = {
