@@ -20,7 +20,7 @@
   </div>
 </section>
 
-<section class="texture-paper">
+<section class="fill-sand">
   <div class="container">
     <div class="row text-center pt-4 pb-4">
       <img src="/assets/img/squiggle-darkblue.png" class="center-block mb-4" style="width:340px;height:auto;">

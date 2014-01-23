@@ -1,4 +1,4 @@
-<section class="fill-pink">
+<section class="texture-gray-grid">
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12">
