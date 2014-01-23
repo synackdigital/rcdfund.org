@@ -20,3 +20,15 @@
     </div>
   </div>
 </section>
+
+<section class="fill-red aeternumfortis">
+  <div class="container">
+    <div class="row">
+      <h1 class="h2 col-xs-12 text-center mt-2 mb-1">
+        #aeternumfortis
+        <small>Connors spririt of eternal strength keeps on inspire</small>
+      </h1>
+    </div>
+    <?php echo do_shortcode("[si_feed tag=aeternumfortis limit=4 size=medium wrapper=li link=false]"); ?>
+  </div>
+</section>

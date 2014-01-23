@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e811d50a66976f19f0a165029d61a071",
+    "hash": "b11bcb50fecfda6e01324421b115350d",
     "packages": [
         {
             "name": "composer/installers",
@@ -260,16 +260,16 @@
             "homepage": "http://wordpress.org/extend/plugins/mailchimp"
         },
         {
-            "name": "wpackagist/wp-instagram",
-            "version": "dev-trunk",
+            "name": "wpackagist/simple-instagram",
+            "version": "1.1.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-instagram/",
-                "reference": "trunk"
+                "url": "http://plugins.svn.wordpress.org/simple-instagram/",
+                "reference": "tags/1.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wp-instagram.zip",
+                "url": "http://downloads.wordpress.org/plugin/simple-instagram.1.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -277,8 +277,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/extend/plugins/wp-instagram",
-            "time": "2014-01-09 11:24:56"
+            "homepage": "http://wordpress.org/extend/plugins/simple-instagram"
         }
     ],
     "packages-dev": [
@@ -290,8 +289,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "wpackagist/insert-pages": 20,
-        "wpackagist/advanced-custom-fields": 20,
-        "wpackagist/wp-instagram": 20
+        "wpackagist/advanced-custom-fields": 20
     },
     "platform": {
         "php": ">=5.3.0"

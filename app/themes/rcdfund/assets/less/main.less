@@ -85,3 +85,23 @@ body.admin-bar .navbar-fixed-top {
     top: (@wp-adminbar-mobile-height + @navbar-height);
   }
 }
+
+// Simple Instagram feed
+.si_feed {
+  .make-row();
+  .pt-1;
+  .pb-2;
+  .text-center;
+
+  .si_feed_list {
+    .list-unstyled();
+  }
+
+  .si_item {
+    .make-sm-column(3);
+
+    img {
+      .thumbnail();
+    }
+  }
+}
