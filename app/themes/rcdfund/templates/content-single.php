@@ -1,15 +1,15 @@
 <?php while (have_posts()) : the_post(); ?>
-  <article <?php post_class(); ?>>
-    <header>
-      <h1 class="entry-title"><?php the_title(); ?></h1>
-      <?php get_template_part('templates/entry-meta'); ?>
-    </header>
-    <div class="entry-content">
-      <?php the_content(); ?>
-    </div>
-    <footer>
-      <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-    </footer>
-    <?php comments_template('/templates/comments.php'); ?>
-  </article>
+<div class="texture-paper" id="main" role="main">
+  <div class="container">
+    <article class="row pt-1 pb-1 mb-1 keyline-bottom <?php post_class(); ?>">
+      <header class="col-xs-12 col-sm-8 col-sm-offset-3">
+        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <?php get_template_part('templates/entry-meta'); ?>
+      </header>
+      <div class="entry-content col-xs-12 col-sm-8 col-sm-offset-3">
+        <?php the_content(); ?>
+      </div>
+    </article>
+  </div>
+</div>
 <?php endwhile; ?>

@@ -38,7 +38,7 @@
 </section>
 
 <?php
-// Display Mentions if available
+// Display In The News if available
 $mentions = new WP_Query(array(
   'category_name'   => 'in-the-news',
   'posts_per_page'  => 5
