@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       main: {
         options: {
           // cleancss: true,
-          paths: ["assets/less", "bower_components/bootstrap/less"]
+          paths: ["assets/less", "bower_components/bootstrap/less", "bower_components/font-awesome/less"]
         },
         files: {
           "assets/css/main.min.css": "assets/less/main.less"
@@ -49,6 +49,18 @@ module.exports = function(grunt) {
             'assets/js/_*.js'
           ]
         }
+      }
+    },
+    copy: {
+      'font-awesome': {
+        files: [
+          {
+            expand: true,
+            cwd: "bower_components/font-awesome/fonts",
+            src: "**",
+            dest: "assets/fonts/"
+          }
+        ]
       }
     },
     watch: {
@@ -92,6 +104,7 @@ module.exports = function(grunt) {
   // Load tasks
   grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -100,6 +113,7 @@ module.exports = function(grunt) {
   // Register tasks
   grunt.registerTask('default', [
     'clean',
+    'copy',
     'less',
     'uglify',
     'version'
