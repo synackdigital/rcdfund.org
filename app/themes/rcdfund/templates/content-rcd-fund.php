@@ -43,7 +43,7 @@ if ( post_type_exists('mention') ) :
   $mentions = new WP_Query(array(
     'post_type'       => 'mention',
     'orderby'         => 'rand',
-    'posts_per_page'  => 1
+    'posts_per_page'  => 5
   ));
 ?>
 <section class="fill-teal">
