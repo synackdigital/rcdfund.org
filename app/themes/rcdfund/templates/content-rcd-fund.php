@@ -37,6 +37,26 @@
   </div>
 </section>
 
+<?php
+// Display Mentions if available
+if ( post_type_exists('mention') ) :
+  $mentions = new WP_Query(array(
+    'post_type'       => 'mention',
+    'orderby'         => 'rand',
+    'posts_per_page'  => 1
+  ));
+?>
+<section class="fill-teal">
+  <div class="container">
+    <div class="row text-center pt-1 pb-2">
+      <h1 class="h2 col-xs-12"><small>In</small> the News</h1>
+      <img src="/assets/img/squiggle-darkblue.png" class="inline" style="width:340px;height:auto;">
+      <?php while ( $mentions->have_posts() ) : $mentions->the_post(); get_template_part('templates/content', 'mention'); endwhile; ?>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+
 <section class="team fill-darkblue">
   <div class="container">
     <div class="row text-center pt-2 pb-3">
