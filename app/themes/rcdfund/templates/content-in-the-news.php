@@ -1,6 +1,6 @@
 <div class="col-xs-12 mt-2 mb-3">
   <h2 class="h3">
-    <?php the_title(); ?>
+    &ldquo;<?php the_title(); ?>&rdquo;
     <small class="mt-1">
       &mdash;
       <?php

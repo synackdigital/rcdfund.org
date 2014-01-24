@@ -39,19 +39,18 @@
 
 <?php
 // Display Mentions if available
-if ( post_type_exists('mention') ) :
-  $mentions = new WP_Query(array(
-    'post_type'       => 'mention',
-    'orderby'         => 'rand',
-    'posts_per_page'  => 5
-  ));
+$mentions = new WP_Query(array(
+  'category_name'   => 'in-the-news',
+  'posts_per_page'  => 5
+));
+if ( $mentions ) :
 ?>
 <section class="fill-teal">
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <h1 class="h2 col-xs-12"><small>In</small> the News</h1>
       <img src="/assets/img/squiggle-darkblue.png" class="inline" style="width:340px;height:auto;">
-      <?php while ( $mentions->have_posts() ) : $mentions->the_post(); get_template_part('templates/content', 'mention'); endwhile; ?>
+      <?php while ( $mentions->have_posts() ) : $mentions->the_post(); get_template_part('templates/content', 'in-the-news'); endwhile; ?>
     </div>
   </div>
 </section>
