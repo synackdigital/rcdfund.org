@@ -27,7 +27,7 @@
 <div id="dropdown">
 
   <div class="panel">
-    <aside class="fill-sand collapse" id="contact">
+    <aside class="texture-paper keyline-bottom collapse" id="contact">
       <div class="container">
         <div class="row pt-1 pb-2">
           <div class="col-xs-12 col-sm-2 col-sm-offset-3">
@@ -81,7 +81,7 @@
   </div>
 
   <div class="panel">
-    <aside class="fill-sand collapse" id="donate">
+    <aside class="texture-paper keyline-bottom collapse" id="donate">
       <div class="container">
         <div class="row pt-1 pb-2">
           <div class="col-sm-5 col-sm-offset-3">
