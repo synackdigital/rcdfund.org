@@ -11,10 +11,11 @@
 <section class="fill-teal">
   <div class="container">
     <div class="row text-center pt-1 pb-2">
-      <div class="col-xs-12 col-sm-6 keyline-left">
+      <div class="hidden-sm col-md-1"></div>
+      <div class="col-xs-12 col-sm-7 col-md-5 keyline-left">
         <?php echo do_shortcode("[insert page='on-connor' display='insert-content.php']"); ?>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1">
         <img class="img-round" src="<?php echo get_thumbnail_url_by_content_slug('on-connor'); ?>" alt="">
       </div>
     </div>
