@@ -1,15 +1,16 @@
-<?php while (have_posts()) : the_post(); ?>
-<div class="texture-paper" id="main" role="main">
-  <div class="container">
-    <article class="row pt-1 pb-1 mb-1 keyline-bottom <?php post_class(); ?>">
-      <header class="col-xs-12 col-sm-8 col-sm-offset-4">
-        <h1 class="entry-title"><?php the_title(); ?></h1>
-        <?php get_template_part('templates/entry-meta'); ?>
-      </header>
-      <div class="entry-content col-xs-12 col-sm-8 col-sm-offset-3">
-        <?php the_content(); ?>
-      </div>
-    </article>
-  </div>
-</div>
-<?php endwhile; ?>
+<?php $categories = get_the_category(); ?>
+  <article class="<?php post_class(); ?>">
+    <h1 class="h2 entry-title">
+      <?php
+      if ( 'in-the-news' == $categories[0]->slug ) :
+        echo '&ldquo;' .  get_the_title() . '&rdquo;';
+      else :
+        the_title();
+      endif;
+      ?>
+      <small class="mt-1"><?php get_template_part('templates/entry-meta'); ?></small>
+    </h1>
+    <div class="entry-content mt-1 pt-1 keyline-top">
+      <?php the_content(); ?>
+    </div>
+  </article>

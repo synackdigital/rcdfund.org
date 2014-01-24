@@ -11,7 +11,7 @@
 
   <?php while (have_posts()) : the_post(); ?>
   <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-4 mt-1 mb-1 keyline-left">
+    <div class="col-xs-12 col-sm-9 col-sm-offset-3 mt-1 mb-1 keyline-left">
     <?php get_template_part('templates/content', 'single-summary'); ?>
     </div>
   </div>
