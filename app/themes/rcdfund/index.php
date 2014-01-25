@@ -1,9 +1,19 @@
 <div class="texture-paper">
   <div class="container">
 
-  <header class="text-center mt-4 mb-3">
-    <h1 class="h2">Brain Matters <small>Updates from the RCD Fund</small></h1>
-    <img src="/assets/img/squiggle-darkblue.png" class="center-block mt-1 mb-1" style="width:340px;height:auto;">
+  <header class="row text-center mt-4 mb-3">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <h1 class="h2">Brain Matters <small>Updates from the RCD Fund</small></h1>
+      <img src="/assets/img/squiggle-darkblue.png" class="mt-1 mb-1" style="width:340px;height:auto;">
+      <ul class="list-inline categories">
+         <?php wp_list_categories( [
+            'hierarchical' => false,
+            'title_li' => '',
+            'show_option_none' => '',
+            'depth' => 1
+         ] ); ?>
+      </ul>
+    </div>
   </header>
 
   <?php if (!have_posts()) : ?>

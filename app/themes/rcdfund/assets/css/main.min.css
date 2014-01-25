@@ -10454,3 +10454,8 @@ fieldset[disabled] #mc_signup .button.active {
   color: transparent;
   background-color: #fff;
 }
+ul.categories .current-cat a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333333;
+}
