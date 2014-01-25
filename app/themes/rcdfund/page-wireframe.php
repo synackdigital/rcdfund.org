@@ -70,23 +70,23 @@
     <dl>
       <h3>Squiggles</h3>
       <dt>Darkblue</dt>
-      <dd><img src="/assets/img/squiggle-darkblue.png" style="width:340px;height:auto;"></dd>
+      <dd><img src="/assets/img/squiggle-darkblue.png" class="squiggle"></dd>
       <dt>Teal</dt>
-      <dd><img src="/assets/img/squiggle-teal.png" style="width:340px;height:auto;"></dd>
+      <dd><img src="/assets/img/squiggle-teal.png" class="squiggle"></dd>
       <dt>Sand</dt>
-      <dd><img src="/assets/img/squiggle-sand.png" style="width:340px;height:auto;"></dd>
+      <dd><img src="/assets/img/squiggle-sand.png" class="squiggle"></dd>
       <dt>Dust</dt>
-      <dd><img src="/assets/img/squiggle-dust.png" style="width:340px;height:auto;"></dd>
+      <dd><img src="/assets/img/squiggle-dust.png" class="squiggle"></dd>
       <dt>Nearwhite</dt>
-      <dd style="background-color:rgba(0,0,0,.2);"><img src="/assets/img/squiggle-nearwhite.png" style="width:340px;height:auto;"></dd>
+      <dd style="background-color:rgba(0,0,0,.2);"><img src="/assets/img/squiggle-nearwhite.png" class="squiggle"></dd>
       <dt>Yellow</dt>
-      <dd><img src="/assets/img/squiggle-yellow.png" style="width:340px;height:auto;"></dd>
+      <dd><img src="/assets/img/squiggle-yellow.png" class="squiggle"></dd>
       <dt>Pink</dt>
-      <dd><img src="/assets/img/squiggle-pink.png" style="width:340px;height:auto;"></dd>
+      <dd><img src="/assets/img/squiggle-pink.png" class="squiggle"></dd>
       <dt>Red</dt>
-      <dd><img src="/assets/img/squiggle-red.png" style="width:340px;height:auto;"></dd>
+      <dd><img src="/assets/img/squiggle-red.png" class="squiggle"></dd>
       <dt>Brown</dt>
-      <dd><img src="/assets/img/squiggle-brown.png" style="width:340px;height:auto;"></dd>
+      <dd><img src="/assets/img/squiggle-brown.png" class="squiggle"></dd>
     </dl>
   </div>
 </section>

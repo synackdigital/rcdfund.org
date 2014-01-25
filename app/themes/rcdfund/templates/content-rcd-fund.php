@@ -23,7 +23,7 @@
 <section class="texture-sand-paper">
   <div class="container">
     <div class="row text-center pt-4 pb-4">
-      <img src="/assets/img/squiggle-darkblue.png" class="center-block mb-4" style="width:340px;height:auto;">
+      <img src="/assets/img/squiggle-darkblue.png" class="squiggle mb-3">
       <div class="col-xs-12 col-md-4 keyline-vertical">
         <?php echo do_shortcode("[insert page='research' display='insert-content.php']"); ?>
       </div>
@@ -49,7 +49,7 @@ if ( $mentions ) :
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <h1 class="h2 col-xs-12"><small>In</small> the News</h1>
-      <img src="/assets/img/squiggle-darkblue.png" class="inline mb-1" style="width:340px;height:auto;">
+      <img src="/assets/img/squiggle-red.png" class="squiggle mb-1">
       <?php while ( $mentions->have_posts() ) : $mentions->the_post(); ?>
         <div class="col-xs-12 mb-1">
         <?php get_template_part('templates/content', 'quote'); ?>
