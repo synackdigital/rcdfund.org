@@ -3,7 +3,7 @@
 
   <header class="row text-center mt-4 mb-3">
     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-      <h1 class="h2">Brain Matters <small>Updates from the RCD Fund</small></h1>
+      <h1>Brain Matters <small>Updates from the RCD Fund</small></h1>
       <img src="/assets/img/squiggle-darkblue.png" class="squiggle mt-1 mb-1">
       <ul class="list-inline categories">
          <?php wp_list_categories( array(
