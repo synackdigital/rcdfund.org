@@ -18,7 +18,7 @@
       ?>
       <ul id="menu-secondary-navigation" class="nav nav-secondary navbar-nav">
         <li class="navicon navicon-contact"><button class="btn-link" type="button" data-toggle="collapse" data-target="#contact" data-parent="#dropdown">Contact us</button></li>
-        <li class="navicon navicon-donate"><button class="btn-link" type="button" data-toggle="collapse" data-target="#donate" data-parent="#dropdown">Make a donation!</button></li>
+        <li class="navicon navicon-donate"><button class="btn-link" type="button" data-toggle="collapse" data-target="#donate" data-parent="#dropdown">Make a<br>donation!</button></li>
       </ul>
     </nav>
   </div>
