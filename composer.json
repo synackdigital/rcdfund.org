@@ -35,7 +35,8 @@
     "wpackagist/advanced-custom-fields": "@dev",
     "wpackagist/fitvids-for-wordpress": "2.1",
     "wpackagist/iframe": "2.7",
-    "wpackagist/simple-instagram": "1.1.1"
+    "wpackagist/simple-instagram": "1.1.1",
+    "wpackagist/wordpress-importer": "0.6.1"
   },
   "extra": {
     "webroot-dir": "wordpress",
