@@ -13,57 +13,68 @@ var RCDFund = {
         el.css('top', offset.top).css('left', offset.left);
       });
 
-      // Find and activate image carousels
+      // Find team member info
       var $teamsection = $('.team');
       if ($teamsection.length > 0) {
         var $descriptions = $teamsection.find('.descriptions li');
         var $images = $teamsection.find('.images li');
-        var outerHeight = 0;
-        var activeIndex = 0;
 
-        $descriptions.each(function(i, el) {
-          var $el = $(el);
-          var height = $el.outerHeight(true) + $teamsection.find('h1').outerHeight(true);
-          $el.css('width', $el.outerWidth()).addClass('absolute pin-tr');
-          outerHeight = (height > outerHeight) ? height : outerHeight;
-        });
+        // Different layouts for mobile and desktop
+        if ( $(document).width() > 782 ) {
+          var outerHeight = 0;
+          var activeIndex = 0;
 
-        $images.each(function(i, el) {
-          var $el = $(el);
-          var height = $el.outerHeight(true);
-          $el.addClass('absolute pin-tl');
-          outerHeight = (height > outerHeight) ? height : outerHeight;
-        });
-
-        $teamsection.css('height', outerHeight + $teamsection.find('.row').outerHeight(true) - $teamsection.find('h1').outerHeight(true));
-
-        var show = function(i) {
-          $descriptions.each(function(j, el) {
-            if (j === i) {
-              $(el).fadeIn();
-            } else {
-              $(el).fadeOut('fast');
-            }
+          $descriptions.each(function(i, el) {
+            var $el = $(el);
+            var height = $el.outerHeight(true) + $teamsection.find('h1').outerHeight(true);
+            $el.css('width', $el.outerWidth()).addClass('absolute pin-tr');
+            outerHeight = (height > outerHeight) ? height : outerHeight;
           });
-          $images.each(function(j, el) {
-            if (j === i) {
-              $(el).fadeIn();
-            } else {
-              $(el).fadeOut('fast');
-            }
+
+          $images.each(function(i, el) {
+            var $el = $(el);
+            var height = $el.outerHeight(true);
+            $el.addClass('absolute pin-tl');
+            outerHeight = (height > outerHeight) ? height : outerHeight;
           });
-        };
 
-        setInterval(function() {
-          if ( activeIndex < $descriptions.size()-1 ) {
-            activeIndex++;
-          } else {
-            activeIndex = 0;
-          }
-          show(activeIndex);
-        }, 2500);
+          $teamsection.css('height', outerHeight + $teamsection.find('.row').outerHeight(true) - $teamsection.find('h1').outerHeight(true));
 
-        show(0);
+          var show = function(i) {
+            $descriptions.each(function(j, el) {
+              if (j === i) {
+                $(el).fadeIn();
+              } else {
+                $(el).fadeOut('fast');
+              }
+            });
+            $images.each(function(j, el) {
+              if (j === i) {
+                $(el).fadeIn();
+              } else {
+                $(el).fadeOut('fast');
+              }
+            });
+          };
+
+          setInterval(function() {
+            if ( activeIndex < $descriptions.size()-1 ) {
+              activeIndex++;
+            } else {
+              activeIndex = 0;
+            }
+            show(activeIndex);
+          }, 6500);
+
+          show(0);
+
+        } else {
+          $images.each(function(i, el) {
+            var $el = $(el);
+            $el.addClass('mt-2').append($descriptions[i]);
+          });
+        }
+
       }
     },
     finalize: function() { }
