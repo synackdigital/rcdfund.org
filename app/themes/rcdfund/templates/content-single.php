@@ -1,16 +1,13 @@
-<?php $categories = get_the_category(); ?>
-  <article class="<?php post_class(); ?>">
-    <h1 class="h2 entry-title">
-      <?php
-      if ( 'in-the-news' == $categories[0]->slug ) :
-        echo '&ldquo;' .  get_the_title() . '&rdquo;';
-      else :
-        the_title();
-      endif;
-      ?>
+<article class="<?php post_class(); ?>">
+  <header class="text-center">
+    <h1 class="h3 entry-title mb-1">
+      <?php echo '<a href="' . get_permalink() . '">' . get_the_title() . '</a>'; ?>
       <small class="mt-1"><?php get_template_part('templates/entry-meta'); ?></small>
     </h1>
-    <div class="entry-content mt-1 pt-1 keyline-top">
-      <?php the_content(); ?>
-    </div>
-  </article>
+    <img src="/assets/img/squiggle-darkblue.png" class="inline" style="width:340px;height:auto;">
+    <figure class="mt-1 mb-2"><?php the_post_thumbnail('large', array( 'class' => 'thumbnail' ) ); ?></figure>
+  </header>
+  <div class="entry-content">
+    <?php the_content(); ?>
+  </div>
+</article>
