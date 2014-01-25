@@ -10,4 +10,9 @@
       ?>
       <small class="mt-1"><?php get_template_part('templates/entry-meta'); ?></small>
     </h1>
+    <?php if ( 'in-the-news' != $categories[0]->slug ) : ?>
+    <div class="entry-content">
+      <?php the_excerpt(); ?>
+    </div>
+    <?php endif; ?>
   </article>
