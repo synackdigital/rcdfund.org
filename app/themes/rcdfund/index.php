@@ -1,4 +1,4 @@
-<div class="texture-paper">
+<div class="texture-sand-paper">
   <div class="container">
 
   <header class="row text-center mt-4 mb-3">

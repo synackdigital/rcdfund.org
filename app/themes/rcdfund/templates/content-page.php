@@ -1,5 +1,5 @@
 <?php while (have_posts()) : the_post(); ?>
-<article class="article texture-paper" id="main" role="main">
+<article class="article texture-dust-paper" id="main" role="main">
   <div class="container">
     <div class="row text-center pt-1 pb-4">
       <div class="col-lg-6 col-lg-offset-3">

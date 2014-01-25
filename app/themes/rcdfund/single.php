@@ -1,4 +1,4 @@
-<div class="texture-paper" id="main" role="main">
+<div class="texture-sand-paper" id="main" role="main">
   <div class="container">
   <?php while (have_posts()) : the_post(); ?>
     <div class="row mt-1 mb-2">

@@ -58,6 +58,7 @@
 // ------
 
 // Fill colors
+.fill-darkgray { .fill-color(@darkgray); }
 .fill-darkblue { .fill-color(@darkblue); }
 .fill-teal { .fill-color(@teal); }
 .fill-sand { .fill-color(@sand); }
@@ -78,7 +79,6 @@
 .fill-darkblue-pink       { .fill-two-colors(@darkblue, @pink); }
 .fill-darkblue-red        { .fill-two-colors(@darkblue, @red); }
 .fill-darkblue-brown      { .fill-two-colors(@darkblue, @brown); }
-.fill-darkblue-gray       { .fill-two-colors(@darkblue, @gray); }
 
 .fill-teal-darkblue       { .fill-two-colors(@teal, @darkblue); }
 .fill-teal-sand           { .fill-two-colors(@teal, @sand); }
@@ -88,7 +88,6 @@
 .fill-teal-pink           { .fill-two-colors(@teal, @pink); }
 .fill-teal-red            { .fill-two-colors(@teal, @red); }
 .fill-teal-brown          { .fill-two-colors(@teal, @brown); }
-.fill-teal-gray           { .fill-two-colors(@teal, @gray); }
 
 .fill-sand-darkblue       { .fill-two-colors(@sand, @darkblue); }
 .fill-sand-teal           { .fill-two-colors(@sand, @teal); }
@@ -98,7 +97,6 @@
 .fill-sand-pink           { .fill-two-colors(@sand, @pink); }
 .fill-sand-red            { .fill-two-colors(@sand, @red); }
 .fill-sand-brown          { .fill-two-colors(@sand, @brown); }
-.fill-sand-gray           { .fill-two-colors(@sand, @gray); }
 
 .fill-dust-darkblue       { .fill-two-colors(@dust, @darkblue); }
 .fill-dust-teal           { .fill-two-colors(@dust, @teal); }
@@ -108,7 +106,6 @@
 .fill-dust-pink           { .fill-two-colors(@dust, @pink); }
 .fill-dust-red            { .fill-two-colors(@dust, @red); }
 .fill-dust-brown          { .fill-two-colors(@dust, @brown); }
-.fill-dust-gray           { .fill-two-colors(@dust, @gray); }
 
 .fill-nearwhite-darkblue  { .fill-two-colors(@nearwhite, @darkblue); }
 .fill-nearwhite-teal      { .fill-two-colors(@nearwhite, @teal); }
@@ -118,7 +115,6 @@
 .fill-nearwhite-pink      { .fill-two-colors(@nearwhite, @pink); }
 .fill-nearwhite-red       { .fill-two-colors(@nearwhite, @red); }
 .fill-nearwhite-brown     { .fill-two-colors(@nearwhite, @brown); }
-.fill-nearwhite-gray      { .fill-two-colors(@nearwhite, @gray); }
 
 .fill-yellow-darkblue     { .fill-two-colors(@yellow, @darkblue); }
 .fill-yellow-teal         { .fill-two-colors(@yellow, @teal); }
@@ -128,7 +124,6 @@
 .fill-yellow-pink         { .fill-two-colors(@yellow, @pink); }
 .fill-yellow-red          { .fill-two-colors(@yellow, @red); }
 .fill-yellow-brown        { .fill-two-colors(@yellow, @brown); }
-.fill-yellow-gray         { .fill-two-colors(@yellow, @gray); }
 
 .fill-pink-darkblue       { .fill-two-colors(@pink, @darkblue); }
 .fill-pink-teal           { .fill-two-colors(@pink, @teal); }
@@ -138,7 +133,6 @@
 .fill-pink-yellow         { .fill-two-colors(@pink, @yellow); }
 .fill-pink-red            { .fill-two-colors(@pink, @red); }
 .fill-pink-brown          { .fill-two-colors(@pink, @brown); }
-.fill-pink-gray           { .fill-two-colors(@pink, @gray); }
 
 .fill-red-darkblue        { .fill-two-colors(@red, @darkblue); }
 .fill-red-teal            { .fill-two-colors(@red, @teal); }
@@ -148,7 +142,6 @@
 .fill-red-yellow          { .fill-two-colors(@red, @yellow); }
 .fill-red-pink            { .fill-two-colors(@red, @pink); }
 .fill-red-brown           { .fill-two-colors(@red, @brown); }
-.fill-red-gray            { .fill-two-colors(@red, @gray); }
 
 .fill-brown-darkblue      { .fill-two-colors(@brown, @darkblue); }
 .fill-brown-teal          { .fill-two-colors(@brown, @teal); }
@@ -158,15 +151,32 @@
 .fill-brown-yellow        { .fill-two-colors(@brown, @yellow); }
 .fill-brown-pink          { .fill-two-colors(@brown, @pink); }
 .fill-brown-red           { .fill-two-colors(@brown, @red); }
-.fill-brown-gray          { .fill-two-colors(@brown, @gray); }
 
 
 // TEXTURES
 // --------
 
-.texture-paper { .fill-sand; background-image: @texture-paper; }
-.texture-dust-grid { .fill-dust; background-image: @texture-dust-grid; }
-.texture-gray-grid { .fill-gray; background-image: @texture-gray-grid; }
+.texture-darkgray-paper   { .fill-darkgray; background-image: @darkgray-paper; }
+.texture-darkblue-paper   { .fill-darkblue; background-image: @darkblue-paper; }
+.texture-teal-paper       { .fill-teal; background-image: @teal-paper; }
+.texture-sand-paper       { .fill-sand; background-image: @sand-paper; }
+.texture-dust-paper       { .fill-dust; background-image: @dust-paper; }
+.texture-nearwhite-paper  { .fill-nearwhite; background-image: @nearwhite-paper; }
+.texture-yellow-paper     { .fill-yellow; background-image: @yellow-paper; }
+.texture-pink-paper       { .fill-pink; background-image: @pink-paper; }
+.texture-red-paper        { .fill-red; background-image: @red-paper; }
+.texture-brown-paper      { .fill-brown; background-image: @brown-paper; }
+
+.texture-darkgray-grid    { .fill-darkgray; background-image: @darkgray-grid; }
+.texture-darkblue-grid    { .fill-darkblue; background-image: @darkblue-grid; }
+.texture-teal-grid        { .fill-teal; background-image: @teal-grid; }
+.texture-sand-grid        { .fill-sand; background-image: @sand-grid; }
+.texture-dust-grid        { .fill-dust; background-image: @dust-grid; }
+.texture-nearwhite-grid   { .fill-nearwhite; background-image: @nearwhite-grid; }
+.texture-yellow-grid      { .fill-yellow; background-image: @yellow-grid; }
+.texture-pink-grid        { .fill-pink; background-image: @pink-grid; }
+.texture-red-grid         { .fill-red; background-image: @red-grid; }
+.texture-brown-grid       { .fill-brown; background-image: @brown-grid; }
 
 
 // TYPOGRAPHY

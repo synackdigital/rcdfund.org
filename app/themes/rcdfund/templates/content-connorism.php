@@ -1,4 +1,4 @@
-<section class="fill-sand">
+<section class="texture-dust-paper">
   <div class="container">
     <div class="row text-center pt-1 pb-1">
       <div class="col-xs-12">

@@ -1,4 +1,4 @@
-<footer class="contentinfo fill-nearwhite" role="contentinfo">
+<footer class="contentinfo texture-nearwhite-paper keyline-top" role="contentinfo">
   <div class="container">
     <div class="row pt-2 pb-2">
       <div class="col-sm-2">

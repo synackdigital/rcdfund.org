@@ -1,4 +1,4 @@
-<section class="fill-yellow relative">
+<section class="texture-yellow-paper relative">
   <div class="absolute pin-all bg-cover hidden-xs" style="right:50%; background-image:url(<?php echo get_thumbnail_url_by_content_slug('our-mission'); ?>);"></div>
   <div class="container">
     <div class="row text-center pt-1 pb-2">
@@ -9,7 +9,7 @@
   </div>
 </section>
 
-<section class="fill-darkblue relative">
+<section class="texture-darkblue-paper relative">
   <div class="absolute pin-all bg-cover hidden-xs" style="left:50%; background-image:url(<?php echo get_thumbnail_url_by_content_slug('what-is-an-ependymoma'); ?>);"></div>
   <div class="container">
     <div class="row text-center pt-1 pb-2">
@@ -20,7 +20,7 @@
   </div>
 </section>
 
-<section class="fill-sand">
+<section class="texture-sand-paper">
   <div class="container">
     <div class="row text-center pt-4 pb-4">
       <img src="/assets/img/squiggle-darkblue.png" class="center-block mb-4" style="width:340px;height:auto;">
@@ -45,7 +45,7 @@ $mentions = new WP_Query(array(
 ));
 if ( $mentions ) :
 ?>
-<section class="fill-teal">
+<section class="texture-teal-grid">
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <h1 class="h2 col-xs-12"><small>In</small> the News</h1>
@@ -60,7 +60,7 @@ if ( $mentions ) :
 </section>
 <?php endif; ?>
 
-<section class="team fill-darkblue">
+<section class="team texture-darkblue-paper">
   <div class="container">
     <div class="row text-center pt-2 pb-3">
       <div class="col-xs-12 col-sm-6">

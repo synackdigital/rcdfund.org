@@ -1,4 +1,4 @@
-<section class="texture-gray-grid">
+<section class="texture-darkgray-grid">
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12">
@@ -8,7 +8,7 @@
   </div>
 </section>
 
-<section class="fill-teal">
+<section class="texture-teal-paper">
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <div class="hidden-sm col-md-1"></div>
@@ -22,7 +22,7 @@
   </div>
 </section>
 
-<section class="fill-red aeternumfortis">
+<section class="texture-brown-paper aeternumfortis">
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <div class="col-xs-12">
