@@ -10416,6 +10416,8 @@ body.admin-bar .navbar-fixed-top {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  float: none;
+  display: inline-block;
 }
 @media (min-width: 768px) {
   .si_feed .si_item {
