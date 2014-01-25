@@ -49,9 +49,9 @@ if ( $mentions ) :
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <h1 class="h2 col-xs-12"><small>In</small> the News</h1>
-      <img src="/assets/img/squiggle-darkblue.png" class="inline" style="width:340px;height:auto;">
+      <img src="/assets/img/squiggle-darkblue.png" class="inline mb-1" style="width:340px;height:auto;">
       <?php while ( $mentions->have_posts() ) : $mentions->the_post(); ?>
-        <div class="col-xs-12 mt-2 mb-3">
+        <div class="col-xs-12 mb-1">
         <?php get_template_part('templates/content', 'single-summary'); ?>
         </div>
       <?php endwhile; ?>
