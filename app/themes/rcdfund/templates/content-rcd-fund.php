@@ -45,13 +45,13 @@ $mentions = new WP_Query(array(
 ));
 if ( $mentions ) :
 ?>
-<section class="texture-teal-grid">
+<section class="in-the-news texture-teal-grid">
   <div class="container">
     <div class="row text-center pt-1 pb-2">
       <h1 class="h2 col-xs-12"><small>In</small> the News</h1>
-      <img src="/assets/img/squiggle-red.png" class="squiggle mb-1">
+      <img src="/assets/img/squiggle-red.png" class="squiggle mb-2">
       <?php while ( $mentions->have_posts() ) : $mentions->the_post(); ?>
-        <div class="col-xs-12 mb-1">
+        <div class="col-xs-10 col-xs-offset-1 mb-1">
         <?php get_template_part('templates/content', 'quote'); ?>
         </div>
       <?php endwhile; ?>

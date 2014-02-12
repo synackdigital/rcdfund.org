@@ -10381,6 +10381,9 @@ body.admin-bar .navbar-fixed-top {
     top: 106px;
   }
 }
+.in-the-news blockquote {
+  border-left: none;
+}
 .si_feed {
   margin-left: -15px;
   margin-right: -15px;
