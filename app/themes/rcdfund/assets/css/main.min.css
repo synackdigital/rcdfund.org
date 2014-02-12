@@ -9678,6 +9678,9 @@ td.visible-print {
 .uppercase {
   text-transform: uppercase;
 }
+a.external {
+  text-decoration: underline;
+}
 h1,
 .h1,
 h2,
@@ -10301,7 +10304,7 @@ fieldset[disabled] .btn-brown.active {
   }
   .navbar .navbar-header.affix,
   .navbar .navbar-header img.affix {
-    width: 44px;
+    width: 104px;
   }
 }
 @media (min-width: 992px) {
@@ -10311,7 +10314,7 @@ fieldset[disabled] .btn-brown.active {
   }
   .navbar .navbar-header.affix,
   .navbar .navbar-header img.affix {
-    width: 62px;
+    width: 140px;
   }
 }
 @media (min-width: 1200px) {
@@ -10321,7 +10324,7 @@ fieldset[disabled] .btn-brown.active {
   }
   .navbar .navbar-header.affix,
   .navbar .navbar-header img .affix {
-    width: 79px;
+    width: 174px;
   }
 }
 @media (min-width: 768px) {
@@ -10330,36 +10333,6 @@ fieldset[disabled] .btn-brown.active {
     -webkit-transition: width 230ms ease-in-out;
     transition: width 230ms ease-in-out;
   }
-}
-a {
-  text-decoration: underline;
-}
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a,
-a h1,
-a h2,
-a h3,
-a h4,
-a h5,
-a h6,
-.h1 a,
-.h2 a,
-.h3 a,
-.h4 a,
-.h5 a,
-.h6 a,
-a .h1,
-a .h2,
-a .h3,
-a .h4,
-a .h5,
-a .h6,
-a.btn {
-  text-decoration: none;
 }
 img {
   max-width: 100%;

@@ -77,7 +77,13 @@ var RCDFund = {
 
       }
     },
-    finalize: function() { }
+    finalize: function() {
+
+      // Add .external to external links
+      $('a').filter(function() {
+        return this.hostname && this.hostname !== location.hostname;
+      }).addClass("external");
+    }
   },
 };
 
