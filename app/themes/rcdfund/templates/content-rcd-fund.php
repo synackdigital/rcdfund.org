@@ -82,7 +82,8 @@ if ( $mentions ) :
           <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('jenny-selleck'); ?>" alt=""></li>
           <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('marek-wolski'); ?>" alt=""></li>
           <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('celia-williams'); ?>" alt=""></li>
-          <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('debbie-clarke-dawes'); ?>" alt=""></li>
+          <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('debbie-dawes-clark'); ?>" alt=""></li>
+          <li><img class="thumbnail" src="<?php echo get_thumbnail_url_by_content_slug('jane-abbott'); ?>" alt=""></li>
         </ul>
       </div>
     </div>
