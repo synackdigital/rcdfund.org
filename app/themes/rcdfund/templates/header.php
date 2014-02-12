@@ -54,7 +54,7 @@
           <div class="col-xs-12 col-sm-2">
             <h2 class="h3">USA</h2>
             <p>
-              <a href="mailto:debbie@rcdfund.org">Debbie Clarke Dawes</a><br>
+              <a href="mailto:debbie@rcdfund.org">Debbie Clark Dawes</a><br>
               Director of Development
             </p>
             <p>
