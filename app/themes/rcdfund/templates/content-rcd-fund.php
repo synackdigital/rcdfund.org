@@ -71,7 +71,7 @@ if ( $mentions ) :
           <li><?php echo do_shortcode("[insert page='jenny-selleck' display='insert-content.php']"); ?></li>
           <li><?php echo do_shortcode("[insert page='marek-wolski' display='insert-content.php']"); ?></li>
           <li><?php echo do_shortcode("[insert page='celia-williams' display='insert-content.php']"); ?></li>
-          <li><?php echo do_shortcode("[insert page='debbie-clarke-dawes' display='insert-content.php']"); ?></li>
+          <li><?php echo do_shortcode("[insert page='debbie-dawes-clark' display='insert-content.php']"); ?></li>
           <li><?php echo do_shortcode("[insert page='jane-abbott' display='insert-content.php']"); ?></li>
         </ul>
       </div>
