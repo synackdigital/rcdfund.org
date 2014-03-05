@@ -1,15 +1,11 @@
-<?php while (have_posts()) : the_post(); ?>
-  <article <?php post_class(); ?>>
-    <header>
-      <h1 class="entry-title"><?php the_title(); ?></h1>
-      <?php get_template_part('templates/entry-meta'); ?>
-    </header>
-    <div class="entry-content">
-      <?php the_content(); ?>
-    </div>
-    <footer>
-      <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-    </footer>
-    <?php comments_template('/templates/comments.php'); ?>
-  </article>
-<?php endwhile; ?>
+<article class="<?php post_class(); ?>">
+  <header class="text-center">
+    <h1 class="h2 entry-title mb-1"><?php the_title(); ?></h1>
+    <p class="mt-1"><?php get_template_part('templates/entry-meta'); ?></p>
+    <figure class="mt-1 mb-2"><?php the_post_thumbnail('large', array( 'class' => 'thumbnail' ) ); ?></figure>
+    <img src="/assets/img/squiggle-brown.png" class="squiggle mt-2 mb-2">
+  </header>
+  <div class="entry-content">
+    <?php the_content(); ?>
+  </div>
+</article>

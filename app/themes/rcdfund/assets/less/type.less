@@ -1,0 +1,36 @@
+
+// Underline external links
+a.external {
+  text-decoration: underline;
+}
+
+// Uppercase small headers
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { text-transform: uppercase; }
+h1, .h1, h2, .h2 { letter-spacing: 2px; }
+h3, .h3, h4, .h4, h5, .h5, h6, .h6 { letter-spacing: 1px; }
+
+// Small inside h* displays on separate row
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  small {
+    display: block;
+    margin-bottom: (.25 * @line-height-computed);
+  }
+}
+
+// Ex: 17px base font * 82.35% = about 14px
+small, .small  { font-size: 82.35%; }
+
+// Extra margin on description lists
+dl dt:not(:first-of-type) {
+  margin-top: (.5 * @line-height-computed);
+}
+
+// Page header
+.page-header {
+  border-bottom: none;
+}
+
+// Cursive text
+.cursive {
+  font-family: @font-family-cursive;
+}

@@ -1,0 +1,42 @@
+
+// COLOR UTILITIES
+// ---------------
+
+// Link colors
+// Do not apply directly to links
+.link-color(@color) {
+  a:not(.btn) {
+    color: @color;
+    &:hover,
+    &:focus {
+      color: lighten(@color, 20%);
+    }
+  }
+}
+
+// Background fills with smart foreground colors
+.fill-color (@color) {
+  background-color: @color;
+}
+.fill-color (@color) when (lightness(@color) >= 50%) {
+  color: black;
+  color: fade(black, 80%);
+  .link-color(@darkblue);
+  small { color: fade(black, 55%); }
+  &, & [class*='keyline'] { border-color: fade(black, 20%); }
+}
+.fill-color (@color) when (lightness(@color) < 50%) {
+  color: white;
+  color: fade(white, 80%);
+  .link-color(@teal);
+  small { color: fade(white, 55%); }
+  &, & [class*='keyline'] { border-color: fade(white, 20%); }
+}
+
+// Two-part background fills using gradients
+.fill-two-colors (@left, @right) {
+  .fill-color(@left);
+  background-image: -webkit-linear-gradient(left, @left, @left 50%, @right 50%, @right);
+  background-image: linear-gradient(left, @left, @left 50%, @right 50%, @right);
+  background-repeat: no-repeat;
+}

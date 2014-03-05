@@ -1,0 +1,161 @@
+
+// Button border
+.btn {
+  border-width: @btn-border-width;
+}
+.btn-group {
+  .btn + .btn,
+  .btn + .btn-group,
+  .btn-group + .btn,
+  .btn-group + .btn-group {
+    margin-left: -@btn-border-width;
+  }
+}
+
+// Outline button modificatins
+.btn {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @link-color;
+    border-color: @link-color;
+    &.btn-primary {
+      color: white;
+      background-color: @brand-primary;
+      border-color: @brand-primary;
+    }
+    &.btn-success {
+      color: white;
+      background-color: @brand-success;
+      border-color: @brand-success;
+    }
+    &.btn-warning {
+      color: white;
+      background-color: @brand-warning;
+      border-color: @brand-warning;
+    }
+    &.btn-danger {
+      color: white;
+      background-color: @brand-danger;
+      border-color: @brand-danger;
+    }
+    &.btn-info {
+      color: white;
+      background-color: @brand-info;
+      border-color: @brand-info;
+    }
+  }
+}
+
+// Colored outline buttons
+.btn-darkblue {
+  .button-variant(@darkblue; transparent; @darkblue);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @darkblue;
+    border-color: @darkblue;
+  }
+}
+.btn-teal {
+  .button-variant(@teal; transparent; @teal);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @teal;
+    border-color: @teal;
+  }
+}
+.btn-sand {
+  .button-variant(@sand; transparent; @sand);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @sand;
+    border-color: @sand;
+  }
+}
+.btn-dust {
+  .button-variant(@dust; transparent; @dust);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @dust;
+    border-color: @dust;
+  }
+}
+.btn-nearwhite {
+  .button-variant(@nearwhite; transparent; @nearwhite);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @nearwhite;
+    border-color: @nearwhite;
+  }
+}
+.btn-yellow {
+  .button-variant(@yellow; transparent; @yellow);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @yellow;
+    border-color: @yellow;
+  }
+}
+.btn-pink {
+  .button-variant(@pink; transparent; @pink);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @pink;
+    border-color: @pink;
+  }
+}
+.btn-red {
+  .button-variant(@red; transparent; @red);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @red;
+    border-color: @red;
+  }
+}
+.btn-brown {
+  .button-variant(@brown; transparent; @brown);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: white;
+    background-color: @brown;
+    border-color: @brown;
+  }
+}
