@@ -82,8 +82,8 @@ module.exports = function(grunt) {
         // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
         options: {
           spawn: true,
-          interrupt: true
-          // livereload: false
+          interrupt: true,
+          livereload: false
         },
         files: [
           'assets/css/main.min.css',
