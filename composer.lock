@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7e5f4f4ba42fb4ca6b8680cbd00f9484",
+    "hash": "6108377cd597f4dc07e0b204a5137a26",
     "packages": [
         {
             "name": "composer/installers",
@@ -516,7 +516,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.3.4",
+            "version": "4.3.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
