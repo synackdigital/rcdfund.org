@@ -1,9 +1,23 @@
+# WordPress
+web/wp
+web/.htaccess
 
-# Composer manages Wordpress core, plugins and vendor libs
-wordpress/
-app/plugins/
-vendor/
+# WP-CLI
+db-sync
+sql-dump-*.sql
 
-# Wordpress server details should never be included in version control
-.htaccess
-wp-config.php
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
