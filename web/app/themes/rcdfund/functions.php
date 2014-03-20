@@ -9,6 +9,7 @@ require_once locate_template('/lib/sidebar.php');         // Sidebar class
 require_once locate_template('/lib/config.php');          // Configuration
 require_once locate_template('/lib/activation.php');      // Theme activation
 require_once locate_template('/lib/post-types.php');      // Custom post types
+require_once locate_template('/lib/open-graph.php');      // Facebook Open Graph integration
 require_once locate_template('/lib/titles.php');          // Page titles
 require_once locate_template('/lib/cleanup.php');         // Cleanup
 require_once locate_template('/lib/nav.php');             // Custom nav modifications
