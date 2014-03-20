@@ -50,7 +50,6 @@
     "composer/installers": "v1.0.12",
     "wp-cli/wp-cli": "v0.14.1",
     "vlucas/phpdotenv": "~1.0.6",
-    "wpackagist-plugin/custom-post-type-ui": "0.8.2",
     "wpackagist-plugin/advanced-custom-fields": "4.3.5",
     "wpackagist-plugin/fitvids-for-wordpress": "2.1",
     "wpackagist-plugin/iframe": "2.8",

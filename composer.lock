@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6108377cd597f4dc07e0b204a5137a26",
+    "hash": "1e08bcad155e28cad4d669b1aba2c02a",
     "packages": [
         {
             "name": "composer/installers",
@@ -536,29 +536,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/advanced-custom-fields/"
-        },
-        {
-            "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "0.8.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/0.8.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/custom-post-type-ui.0.8.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/custom-post-type-ui": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/custom-post-type-ui/"
         },
         {
             "name": "wpackagist-plugin/fitvids-for-wordpress",
