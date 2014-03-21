@@ -23,6 +23,9 @@ var Roots = {
   common: {
     init: function() {
       // JavaScript to be fired on all pages
+
+      // Run FitVids on embedded media
+      $(".entry-content-asset").fitVids();
     }
   },
   // Home page
