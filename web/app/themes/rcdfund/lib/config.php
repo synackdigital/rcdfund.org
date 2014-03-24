@@ -55,8 +55,13 @@ function roots_display_sidebar() {
      * The second element must be an array even if there's only 1 argument.
      */
     array(
+      'is_home',
+      'is_front_page',
+      'is_singular',
+      'is_archive',
+      'is_search',
       'is_404',
-      'is_front_page'
+      array('is_singular', array('content', 'connorism'))
     ),
     /**
      * Page template checks (via is_page_template())
