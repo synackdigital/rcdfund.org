@@ -22,6 +22,7 @@ module.exports = function(grunt) {
         options: {
           compress: true,
           sourceMap: true,
+          report: 'min',
           sourceMapFilename: 'assets/css/main.min.css.map',
           sourceMapRootpath: '/app/themes/rcdfund/'
         }
