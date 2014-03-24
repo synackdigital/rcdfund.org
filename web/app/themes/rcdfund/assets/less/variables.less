@@ -1,0 +1,190 @@
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Utilities
+// -------------------------
+
+// Fixed sizes for logo at different intervals
+// Based on calculated column widths
+@logo-sm-width:                   248px;
+@logo-sm-affix-width:             113px;
+@logo-md-width:                   339px;
+@logo-md-affix-width:             168px;
+@logo-lg-width:                   423px;
+@logo-lg-affix-width:             218px;
+
+// The wp-adminbar
+@wp-adminbar-mobile-breakpoint:   782px;
+@wp-adminbar-height:              32px;
+@wp-adminbar-mobile-height:       46px;
+
+
+// Typography
+// -------------------------
+
+@font-family-sans-serif:  "BrandonGrotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-cursive:     "Sacramento", cursive;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          17px;
+@font-size-large:         ceil(@font-size-base * 1.176); // ~20px
+@font-size-small:         ceil(@font-size-base * 0.823); // ~14px
+
+@font-size-h1:            floor(@font-size-base * 2.353); // ~40px
+@font-size-h2:            floor(@font-size-base * 1.765); // ~30px
+@font-size-h3:            @font-size-large;
+@font-size-h4:            @font-size-small;
+@font-size-h5:            @font-size-h4;
+@font-size-h6:            @font-size-h5;
+
+@line-height-base:        1.412; // ~24/17
+@line-height-computed:    floor(@font-size-base * @line-height-base); // ~24px
+
+@headings-font-weight:    bold;
+
+@keyline-base-width:      1px;
+
+
+// Named colors
+// -------------------------
+
+@darkgray:            #222222;
+@darkblue:            #302e46;
+@teal:                #7cccbf;
+@sand:                #e4dcc1;
+@dust:                #f1ede0;
+@nearwhite:           #e7e7e7;
+@yellow:              #fec24d;
+@pink:                #ef968f;
+@red:                 #a42922;
+@brown:               #675141;
+
+
+// Brand colors
+// -------------------------
+
+@brand-primary:       @darkblue;
+@brand-success:       @teal;
+@brand-warning:       @yellow;
+@brand-danger:        @red;
+@brand-info:          @brown;
+
+
+// Textures
+// -------------------------
+
+@darkgray-paper:          url('../img/darkgray_paper.jpg');
+@darkblue-paper:          url('../img/darkblue_paper.jpg');
+@teal-paper:              url('../img/teal_paper.jpg');
+@sand-paper:              url('../img/sand_paper.jpg');
+@dust-paper:              url('../img/dust_paper.jpg');
+@nearwhite-paper:         url('../img/nearwhite_paper.jpg');
+@yellow-paper:            url('../img/yellow_paper.jpg');
+@pink-paper:              url('../img/pink_paper.jpg');
+@red-paper:               url('../img/red_paper.jpg');
+@brown-paper:             url('../img/brown_paper.jpg');
+
+@darkgray-grid:           url('../img/darkgray_grid.jpg');
+@darkblue-grid:           url('../img/darkblue_grid.jpg');
+@teal-grid:               url('../img/teal_grid.jpg');
+@sand-grid:               url('../img/sand_grid.jpg');
+@dust-grid:               url('../img/dust_grid.jpg');
+@nearwhite-grid:          url('../img/nearwhite_grid.jpg');
+@yellow-grid:             url('../img/yellow_grid.jpg');
+@pink-grid:               url('../img/pink_grid.jpg');
+@red-grid:                url('../img/red_grid.jpg');
+@brown-grid:              url('../img/brown_grid.jpg');
+
+
+// Dividers
+// -------------------------
+
+@darkgray-divider:        url('../img/darkgray_divider.jpg');
+@darkblue-divider:        url('../img/darkblue_divider.jpg');
+@teal-divider:            url('../img/teal_divider.jpg');
+@sand-divider:            url('../img/sand_divider.jpg');
+@dust-divider:            url('../img/dust_divider.jpg');
+@nearwhite-divider:       url('../img/nearwhite_divider.jpg');
+@yellow-divider:          url('../img/yellow_divider.jpg');
+@pink-divider:            url('../img/pink_divider.jpg');
+@red-divider:             url('../img/red_divider.jpg');
+@brown-divider:           url('../img/brown_divider.jpg');
+
+
+// Links
+// -------------------------
+
+@link-color:              @brand-primary;
+@link-hover-color:        darken(@link-color, 15%);
+
+
+// Buttons
+// -------------------------
+
+@btn-font-weight:                bold;
+@btn-border-width:               2px;
+
+@btn-default-color:              @link-color;
+@btn-default-bg:                 transparent;
+@btn-default-border:             @btn-default-color;
+
+@btn-primary-color:              @brand-primary;
+@btn-primary-bg:                 transparent;
+@btn-primary-border:             @btn-primary-color;
+
+@btn-success-color:              @brand-success;
+@btn-success-bg:                 transparent;
+@btn-success-border:             @btn-success-color;
+
+@btn-warning-color:              @brand-warning;
+@btn-warning-bg:                 transparent;
+@btn-warning-border:             @btn-warning-color;
+
+@btn-danger-color:               @brand-danger;
+@btn-danger-bg:                  transparent;
+@btn-danger-border:              @btn-danger-color;
+
+@btn-info-color:                 @brand-info;
+@btn-info-bg:                    transparent;
+@btn-info-border:                @btn-info-color;
+
+@btn-link-disabled-color:        @gray-light;
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Navbar
+// -------------------------
+
+// Basics of a navbar
+@navbar-height:                     60px;
+@navbar-font-size:                  @font-size-base;
+
+@navbar-default-color:              white;
+@navbar-default-bg:                 @teal;
+@navbar-default-border:             darken(@navbar-default-bg, 10%);
+
+// Navbar links
+@navbar-default-link-color:                @link-color;
+@navbar-default-link-hover-color:          @link-hover-color;
+@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 5%);
+@navbar-default-link-active-color:         white;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 10%);
+@navbar-default-link-disabled-color:       mix(@navbar-default-bg, @navbar-default-link-color, 40%);
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           @navbar-default-link-hover-bg;
+@navbar-default-toggle-icon-bar-bg:        @navbar-default-link-color;
+@navbar-default-toggle-border-color:       transparent;
+
+// Type
+// ------------------------
+
+@abbr-border-color:           @yellow;
+@headings-small-color:        fade(@text-color, 70%);
+@blockquote-small-color:      @red;
+@blockquote-border-color:     @red;

@@ -1,0 +1,113 @@
+
+// LAYOUT
+// ------
+
+// Position classes
+.static { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+
+.pin { top: 0; right: 0; bottom: 0; left: 0; }
+.pin-top { top: 0; }
+.pin-top-right { top: 0; right: 0; }
+.pin-bottom-right { bottom: 0; right: 0; }
+.pin-bottom { bottom: 0; }
+.pin-bottom-left { bottom: 0; left: 0; }
+.pin-left { left: 0; }
+.pin-top-left { top: 0; left: 0; }
+
+// Margin top/bottom classes
+.mt-xs { margin-top: @line-height-computed; }
+.mt-sm { margin-top: (2 * @line-height-computed); }
+.mt-md { margin-top: (3 * @line-height-computed); }
+.mt-lg { margin-top: (4 * @line-height-computed); }
+
+.mb-xs { margin-bottom: @line-height-computed; }
+.mb-sm { margin-bottom: (2 * @line-height-computed); }
+.mb-md { margin-bottom: (3 * @line-height-computed); }
+.mb-lg { margin-bottom: (4 * @line-height-computed); }
+
+// Padding top/bottom classes
+.pt-xs { padding-top: @line-height-computed; }
+.pt-sm { padding-top: (2 * @line-height-computed); }
+.pt-md { padding-top: (3 * @line-height-computed); }
+.pt-lg { padding-top: (4 * @line-height-computed); }
+
+.pb-xs { padding-bottom: @line-height-computed; }
+.pb-sm { padding-bottom: (2 * @line-height-computed); }
+.pb-md { padding-bottom: (3 * @line-height-computed); }
+.pb-lg { padding-bottom: (4 * @line-height-computed); }
+
+// Background positioning
+.background-cover { background-size: cover; }
+.background-contain { background-size: contain; }
+
+
+// KEYLINES
+// --------
+
+.keyline              { border-style: solid; border-width: @keyline-base-width; }
+.keyline-horizontal   { border-style: solid; border-width: @keyline-base-width 0; }
+.keyline-vertical     { border-style: solid; border-width: 0 @keyline-base-width; }
+.keyline-top          { border-style: solid; border-width: @keyline-base-width 0 0 0; }
+.keyline-right        { border-style: solid; border-width: 0 @keyline-base-width 0 0; }
+.keyline-bottom       { border-style: solid; border-width: 0 0 @keyline-base-width 0; }
+.keyline-left         { border-style: solid; border-width: 0 0 0 @keyline-base-width; }
+
+
+// COLORS
+// ------
+
+// Fill colors
+.darkgray         { .fill-color( @darkgray ); }
+.darkblue         { .fill-color( @darkblue ); }
+.teal             { .fill-color( @teal ); }
+.sand             { .fill-color( @sand ); }
+.dust             { .fill-color( @dust ); }
+.nearwhite        { .fill-color( @nearwhite ); }
+.yellow           { .fill-color( @yellow ); }
+.pink             { .fill-color( @pink ); }
+.red              { .fill-color( @red ); }
+.brown            { .fill-color( @brown ); }
+.gray             { .fill-color( @gray ); }
+
+
+// TEXTURES
+// --------
+
+.darkgray.paper   { background-image: @darkgray-paper; }
+.darkblue.paper   { background-image: @darkblue-paper; }
+.teal.paper       { background-image: @teal-paper; }
+.sand.paper       { background-image: @sand-paper; }
+.dust.paper       { background-image: @dust-paper; }
+.nearwhite.paper  { background-image: @nearwhite-paper; }
+.yellow.paper     { background-image: @yellow-paper; }
+.pink.paper       { background-image: @pink-paper; }
+.red.paper        { background-image: @red-paper; }
+.brown.paper      { background-image: @brown-paper; }
+
+.darkgray.grid    { background-image: @darkgray-grid; }
+.darkblue.grid    { background-image: @darkblue-grid; }
+.teal.grid        { background-image: @teal-grid; }
+.sand.grid        { background-image: @sand-grid; }
+.dust.grid        { background-image: @dust-grid; }
+.nearwhite.grid   { background-image: @nearwhite-grid; }
+.yellow.grid      { background-image: @yellow-grid; }
+.pink.grid        { background-image: @pink-grid; }
+.red.grid         { background-image: @red-grid; }
+.brown.grid       { background-image: @brown-grid; }
+
+
+// TYPOGRAPHY
+// ----------
+
+// Cursive text
+.cursive {
+  font-family: @font-family-cursive;
+  font-weight: normal !important;
+  text-transform: none !important;
+}
+
+// Uppercase text
+.uppercase { text-transform: uppercase; }

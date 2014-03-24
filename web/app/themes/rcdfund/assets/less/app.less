@@ -2,142 +2,72 @@
  * RCDFund 2.0.0
  */
 
-/* ==========================================================================
-   Bootstrap
-   ========================================================================== */
 
 // Core variables and mixins
-@import "bootstrap/variables.less";
-@import "bootstrap/mixins.less";
+@import "bootstrap/less/variables";
+@import "variables";
+@import "bootstrap/less/mixins";
+@import "mixins";
 
 // Reset
-@import "bootstrap/normalize.less";
-// @import "bootstrap/print.less";
+@import "bootstrap/less/normalize";
+// @import "bootstrap/less/print";
+
+// Fonts
+@import "fonts";
 
 // Core CSS
-@import "bootstrap/scaffolding.less";
-@import "bootstrap/type.less";
-// @import "bootstrap/code.less";
-@import "bootstrap/grid.less";
-// @import "bootstrap/tables.less";
-@import "bootstrap/forms.less";
-@import "bootstrap/buttons.less";
+@import "bootstrap/less/scaffolding";
+@import "bootstrap/less/type";
+@import "type";
+// @import "bootstrap/less/code";
+@import "bootstrap/less/grid";
+// @import "bootstrap/less/tables";
+@import "bootstrap/less/forms";
+@import "bootstrap/less/buttons";
+@import "buttons";
 
 // Components
-@import "bootstrap/component-animations.less";
-// @import "bootstrap/glyphicons.less";
-// @import "bootstrap/dropdowns.less";
-// @import "bootstrap/button-groups.less";
-// @import "bootstrap/input-groups.less";
-@import "bootstrap/navs.less";
-@import "bootstrap/navbar.less";
-// @import "bootstrap/breadcrumbs.less";
-// @import "bootstrap/pagination.less";
-// @import "bootstrap/pager.less";
-// @import "bootstrap/labels.less";
-// @import "bootstrap/badges.less";
-// @import "bootstrap/jumbotron.less";
-@import "bootstrap/thumbnails.less";
-// @import "bootstrap/alerts.less";
-// @import "bootstrap/progress-bars.less";
-// @import "bootstrap/media.less";
-// @import "bootstrap/list-group.less";
-// @import "bootstrap/panels.less";
-// @import "bootstrap/wells.less";
-@import "bootstrap/close.less";
+@import "bootstrap/less/component-animations";
+// @import "bootstrap/less/glyphicons";
+// @import "bootstrap/less/dropdowns";
+// @import "bootstrap/less/button-groups";
+// @import "bootstrap/less/input-groups";
+@import "bootstrap/less/navs";
+@import "bootstrap/less/navbar";
+@import "navbar";
+// @import "bootstrap/less/breadcrumbs";
+// @import "bootstrap/less/pagination";
+// @import "bootstrap/less/pager";
+// @import "bootstrap/less/labels";
+// @import "bootstrap/less/badges";
+// @import "bootstrap/less/jumbotron";
+@import "bootstrap/less/thumbnails";
+// @import "bootstrap/less/alerts";
+// @import "bootstrap/less/progress-bars";
+// @import "bootstrap/less/media";
+// @import "bootstrap/less/list-group";
+// @import "bootstrap/less/panels";
+// @import "bootstrap/less/wells";
+// @import "bootstrap/less/close";
 
 // Components w/ JavaScript
-// @import "bootstrap/modals.less";
-// @import "bootstrap/tooltip.less";
-// @import "bootstrap/popovers.less";
-// @import "bootstrap/carousel.less";
+// @import "bootstrap/less/modals";
+// @import "bootstrap/less/tooltip";
+// @import "bootstrap/less/popovers";
+// @import "bootstrap/less/carousel";
 
 // Utility classes
-@import "bootstrap/utilities.less";
-@import "bootstrap/responsive-utilities.less";
+@import "bootstrap/less/utilities";
+@import "utilities";
+@import "bootstrap/less/responsive-utilities";
 
 
-/* ==========================================================================
-   Base
-   ========================================================================== */
+// Main styles
+// -----------
 
-body { }
+// Default color and texture
+body { .sand; .sand > .paper; }
 
-
-
-/* ==========================================================================
-   Header
-   ========================================================================== */
-
-.banner { }
-
-
-
-/* ==========================================================================
-   Content
-   ========================================================================== */
-
-.content { }
-
-
-
-/* ==========================================================================
-   Primary Content
-   ========================================================================== */
-
-.main { }
-
-/* Gallery Shortcode */
-.gallery-row { padding: 15px 0; }
-
-
-
-/* ==========================================================================
-   Sidebar
-   ========================================================================== */
-
-.sidebar { }
-
-
-
-/* ==========================================================================
-   Posts
-   ========================================================================== */
-
-.hentry header { }
-.hentry time { }
-.hentry .byline { }
-.hentry .entry-content { }
-.hentry footer { }
-
-
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
-.content-info { }
-
-
-
-/* ==========================================================================
-   WordPress Generated Classes
-   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
-   ========================================================================== */
-
-.aligncenter { display: block; margin: 0 auto; }
-.alignleft { float: left; }
-.alignright { float: right; }
-figure.alignnone { margin-left: 0; margin-right: 0; }
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media (min-width: @screen-sm-min) { }
-
-@media (min-width: @screen-md-min) { }
-
-@media (min-width: @screen-lg-min) { }
+// Fit all images inside their containers
+img { max-width: 100%; height: auto; }
