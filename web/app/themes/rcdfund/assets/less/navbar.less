@@ -15,8 +15,8 @@
 
   // Set up buttons for using icons
   button {
-    background-size: 32px;
-    background-position: left center;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     height: @navbar-height - (2 * @padding-small-vertical);
 
@@ -27,19 +27,15 @@
     }
   }
 
-  // Display icon PNGs
   &.navicon-contact button {
     .hide-text();
     width: 32px;
     background-image: url('../img/navicon-contact.png');
   }
   &.navicon-donate button {
+    .hide-text();
+    width: 196px;
     background-image: url('../img/navicon-donate.png');
-    padding-left: 38px;
-    color: @red;
-    font-family: @font-family-cursive;
-    font-size: 18px;
-    font-weight: bold;
   }
 }
 
@@ -99,6 +95,20 @@
     &,
     img {
       .transition(~'width 230ms ease-in-out');
+    }
+  }
+}
+
+// Collapsible navbar dropdown
+#dropdown {
+  position: fixed;
+  z-index: @zindex-dropdown;
+  right: 0; left: 0;
+  top: @navbar-height;
+  body.admin-bar & {
+    top: (@wp-adminbar-height + @navbar-height);
+    @media (max-width: @wp-adminbar-mobile-breakpoint) {
+      top: (@wp-adminbar-mobile-height + @navbar-height);
     }
   }
 }

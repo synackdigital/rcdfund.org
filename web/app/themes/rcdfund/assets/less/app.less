@@ -73,13 +73,12 @@ body { .sand; .sand > .paper; }
 img { max-width: 100%; height: auto; }
 
 // Make space for fixed navbar
-// Use !important to override wp built-in rule
-html {
-  padding-top: @navbar-height !important;
+body {
+  padding-top: @navbar-height;
   &.admin-bar {
-    padding-top: (@navbar-height + @wp-adminbar-height) !important;
+    padding-top: (@navbar-height + @wp-adminbar-height);
     @media (max-width: @wp-adminbar-mobile-breakpoint) {
-      padding-top: (@navbar-height + @wp-adminbar-mobile-height) !important;
+      padding-top: (@navbar-height + @wp-adminbar-mobile-height);
     }
   }
 }
