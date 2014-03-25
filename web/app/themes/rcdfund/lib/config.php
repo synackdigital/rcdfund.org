@@ -13,7 +13,8 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
  */
 define('GOOGLE_ANALYTICS_ID', ''); // UA-XXXXX-Y (Note: Universal Analytics only, not Classic Analytics)
 define('POST_EXCERPT_LENGTH', 40); // Length in words for excerpt_length filter (http://codex.wordpress.org/Plugin_API/Filter_Reference/excerpt_length)
-define('LOGOTYPE_URL', get_stylesheet_directory_uri() . '/assets/img/rcdfund-blue-sbm.png'); // Hard URL to logotype graphic
+define('IMAGES_DIRECTORY', get_stylesheet_directory_uri() . '/assets/img');
+define('LOGOTYPE_URL', IMAGES_DIRECTORY . '/rcdfund-blue-sbm.png');
 
 /**
  * .main classes
@@ -21,10 +22,10 @@ define('LOGOTYPE_URL', get_stylesheet_directory_uri() . '/assets/img/rcdfund-blu
 function roots_main_class() {
   if (roots_display_sidebar()) {
     // Classes on pages with the sidebar
-    $class = 'col-sm-5 col-sm-offset-4';
+    $class = 'col-sm-5 col-sm-offset-3';
   } else {
     // Classes on full width pages
-    $class = 'col-sm-8 col-sm-offset-4';
+    $class = 'col-sm-7 col-sm-offset-3';
   }
 
   return $class;
