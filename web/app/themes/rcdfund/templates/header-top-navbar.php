@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand" href="<?php echo home_url(); ?>/"><img src="<?php echo LOGOTYPE_URL; ?>" alt="<?php echo get_bloginfo('name'); ?>" data-spy="affix" data-offset-top="160"></a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">

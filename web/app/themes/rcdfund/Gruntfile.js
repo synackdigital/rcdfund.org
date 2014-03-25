@@ -47,7 +47,7 @@ module.exports = function(grunt) {
             // 'bower_components/bootstrap/js/popover.js',
             // 'bower_components/bootstrap/js/scrollspy.js',
             // 'bower_components/bootstrap/js/tab.js',
-            // 'bower_components/bootstrap/js/affix.js',
+            'bower_components/bootstrap/js/affix.js',
             'bower_components/FitVids/jquery.fitvids.js',
             'assets/js/plugins/*.js',
             'assets/js/_*.js'

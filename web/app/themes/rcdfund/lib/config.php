@@ -21,10 +21,10 @@ define('LOGOTYPE_URL', get_stylesheet_directory_uri() . '/assets/img/rcdfund-blu
 function roots_main_class() {
   if (roots_display_sidebar()) {
     // Classes on pages with the sidebar
-    $class = 'col-sm-8';
+    $class = 'col-sm-5 col-sm-offset-4';
   } else {
     // Classes on full width pages
-    $class = 'col-sm-12';
+    $class = 'col-sm-8 col-sm-offset-4';
   }
 
   return $class;
@@ -34,7 +34,7 @@ function roots_main_class() {
  * .sidebar classes
  */
 function roots_sidebar_class() {
-  return 'col-sm-4';
+  return 'col-sm-3';
 }
 
 /**

@@ -1,5 +1,5 @@
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="min-height:3000px;">
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
