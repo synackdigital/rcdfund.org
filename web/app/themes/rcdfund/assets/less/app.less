@@ -71,3 +71,25 @@ body { .sand; .sand > .paper; }
 
 // Fit all images inside their containers
 img { max-width: 100%; height: auto; }
+
+// Make space for fixed navbar
+// Use !important to override wp built-in rule
+html {
+  padding-top: @navbar-height !important;
+  &.admin-bar {
+    padding-top: (@navbar-height + @wp-adminbar-height) !important;
+    @media (max-width: @wp-adminbar-mobile-breakpoint) {
+      padding-top: (@navbar-height + @wp-adminbar-mobile-height) !important;
+    }
+  }
+}
+
+// Push fixed navbar down when wp adminbar is displayed
+body.admin-bar .navbar-fixed-top {
+  top: @wp-adminbar-height;
+  @media (max-width: @wp-adminbar-mobile-breakpoint) {
+    top: @wp-adminbar-mobile-height;
+  }
+}
+
+
