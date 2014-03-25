@@ -92,16 +92,29 @@ body.admin-bar .navbar-fixed-top {
   }
 }
 
+// Wrap padding
+.wrap {
+  .pt-sm;
+  .pb-md;
+}
+
 // Featured image wrap types
 .wrap {
+  &.featured-image-left,
+  &.featured-image-right {
+    .featured-image {
+      .hidden-xs;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
   &.featured-image-left .featured-image {
-    background-repeat: no-repeat;
-    background-size: 50% auto;
+    top: 0; right: 50%; bottom: 0; left: 0;
   }
   &.featured-image-right .featured-image {
-    background-repeat: no-repeat;
-    background-size: 50% auto;
-    background-position: 100% 0;
+    top: 0; right: 0; bottom: 0; left: 50%;
   }
 }
 

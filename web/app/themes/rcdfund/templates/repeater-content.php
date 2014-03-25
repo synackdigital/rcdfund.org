@@ -13,7 +13,7 @@
     $post_thumbnail_url   = ( $post_thumbnail ) ? $post_thumbnail[0] : '';
 ?>
 
-<div class="wrap <?php echo implode(' ', array($layout, $background_color, $background_texture)); ?>">
+<div class="wrap relative <?php echo implode(' ', array($layout, $background_color, $background_texture)); ?>">
 <?php
   switch ( $layout ) :
 
@@ -43,34 +43,32 @@
 
     // Thumbnail on left
     case 'featured-image-left' : ?>
-      <div class="featured-image" style="background-image:url('<?php echo $post_thumbnail_url; ?>');">
-        <div class="container">
-          <div class="content row">
-            <div class="col-xs-12 col-sm-5 col-sm-offset-7">
-              <article class="type-content text-center">
-                <h1 class="<?php echo $post_title_class; ?>"><?php echo apply_filters( 'the_title', $post_title ); ?></h1>
-                <?php echo apply_filters( 'the_content', $post_object->post_content ); ?>
-              </article>
-            </div>
-          </div><!-- /.content -->
-        </div>
-      </div><!-- /.featured-image -->
+      <div class="featured-image" style="background-image:url('<?php echo $post_thumbnail_url; ?>');"></div><!-- /.featured-image -->
+      <div class="container">
+        <div class="content row">
+          <div class="col-xs-12 col-sm-5 col-sm-offset-7">
+            <article class="type-content text-center">
+              <h1 class="<?php echo $post_title_class; ?>"><?php echo apply_filters( 'the_title', $post_title ); ?></h1>
+              <?php echo apply_filters( 'the_content', $post_object->post_content ); ?>
+            </article>
+          </div>
+        </div><!-- /.content -->
+      </div>
     <?php break;
 
     // Thumbnail on right
     case 'featured-image-right' : ?>
-      <div class="featured-image" style="background-image:url('<?php echo $post_thumbnail_url; ?>');">
-        <div class="container">
-          <div class="content row">
-            <div class="col-xs-12 col-sm-5">
-              <article class="type-content text-center">
-                <h1 class="<?php echo $post_title_class; ?>"><?php echo apply_filters( 'the_title', $post_title ); ?></h1>
-                <?php echo apply_filters( 'the_content', $post_object->post_content ); ?>
-              </article>
-            </div>
-          </div><!-- /.content -->
-        </div>
-      </div><!-- /.featured-image -->
+      <div class="featured-image" style="background-image:url('<?php echo $post_thumbnail_url; ?>');"></div><!-- /.featured-image -->
+      <div class="container">
+        <div class="content row">
+          <div class="col-xs-12 col-sm-5">
+            <article class="type-content text-center">
+              <h1 class="<?php echo $post_title_class; ?>"><?php echo apply_filters( 'the_title', $post_title ); ?></h1>
+              <?php echo apply_filters( 'the_content', $post_object->post_content ); ?>
+            </article>
+          </div>
+        </div><!-- /.content -->
+      </div>
     <?php break;
 
   endswitch;
