@@ -73,15 +73,7 @@ body { .sand; .sand > .paper; }
 img { max-width: 100%; height: auto; }
 
 // Make space for fixed navbar
-body {
-  padding-top: @navbar-height;
-  &.admin-bar {
-    padding-top: (@navbar-height + @wp-adminbar-height);
-    @media (max-width: @wp-adminbar-mobile-breakpoint) {
-      padding-top: (@navbar-height + @wp-adminbar-mobile-height);
-    }
-  }
-}
+body { padding-top: @navbar-height; }
 
 // Push fixed navbar down when wp adminbar is displayed
 body.admin-bar .navbar-fixed-top {

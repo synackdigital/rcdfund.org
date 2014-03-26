@@ -1,5 +1,5 @@
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class(); ?> style="min-height:3000px;">
+<body <?php body_class('fullscreen'); ?>>
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
@@ -17,22 +17,11 @@
     }
   ?>
 
-  <div class="wrap" role="document">
-    <div class="container">
-      <div class="content row">
-        <main class="main <?php echo roots_main_class(); ?>" role="main">
-          <?php include roots_template_path(); ?>
-        </main><!-- /.main -->
-        <?php if (roots_display_sidebar()) : ?>
-          <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
-            <?php include roots_sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
-      </div><!-- /.content -->
-    </div>
+  <div role="document">
+    <main class="main" role="main">
+      <?php include roots_template_path(); ?>
+    </main><!-- /.main -->
   </div><!-- /.wrap -->
-
-  <?php get_template_part('templates/repeater-content'); ?>
 
   <?php get_template_part('templates/footer'); ?>
 
