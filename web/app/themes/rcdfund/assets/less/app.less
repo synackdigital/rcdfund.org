@@ -86,8 +86,8 @@ body.admin-bar .navbar-fixed-top {
 
 // Wrap padding
 .wrap {
-  .pt-sm;
-  .pb-md;
+  .pt-lg;
+  .pb-lg;
 }
 
 // Featured image wrap types
@@ -107,6 +107,14 @@ body.admin-bar .navbar-fixed-top {
   }
   &.featured-image-right .featured-image {
     top: 0; right: 0; bottom: 0; left: 50%;
+  }
+}
+
+// Side-by-side wrap type
+.wrap.side-by-side {
+  img {
+    .mb-xs;
+    max-width: 60%;
   }
 }
 

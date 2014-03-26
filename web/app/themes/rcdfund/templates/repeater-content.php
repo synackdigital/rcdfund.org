@@ -2,14 +2,17 @@
 // ACF repeater for content
 if ( have_rows('content_list') ) : while ( have_rows('content_list') ) : the_row();
 
+  // Get field data
+  $content_objects        = get_sub_field('content_objects');
+  $layout                 = get_sub_field('layout');
+  $background_color       = get_sub_field('background_color');
+  $background_texture     = get_sub_field('background_texture');
+
   // Generate a unique ID to identify this row
   $uniqid = uniqid();
 
-  // Get field data
-  $content_objects      = get_sub_field('content_objects');
-  $layout               = get_sub_field('layout');
-  $background_color     = get_sub_field('background_color');
-  $background_texture   = get_sub_field('background_texture');
+  // Count the number of objects
+  $content_objects_count  = count($content_objects)
 ?>
 <div class="wrap relative <?php echo implode(' ', array($layout, $background_color, $background_texture)); ?>">
 
@@ -50,6 +53,22 @@ foreach ( $content_objects as $key => $content_object ) :
       </div><!-- /.content -->
     <?php break;
 
+    // Side-by-side
+    case 'side-by-side' : ?>
+      <?php if ($key === 0) : ?><div class="container"><div class="content row"><?php endif; ?>
+      <?php
+      $column_max_count   = 4;
+      $column_count       = ( $content_objects_count <= $column_max_count ) ? $content_objects_count : $column_max_count;
+      $column_class       = 'col-xs-12 col-sm-'.( 12 / $column_count );
+      ?>
+      <article class="type-content text-center <?php echo $column_class; ?>">
+        <img class="center-block" src="<?php echo $content_thumbnail_url; ?>" alt="<?php echo $content_object->post_title; ?>">
+        <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
+        <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
+      </article>
+      <?php if ($key === $content_objects_count-1) : ?></div><!-- /.content --></div><?php endif; ?>
+    <?php break;
+
     // Thumbnail on left
     case 'featured-image-left' : ?>
       <div class="featured-image" style="background-image:url('<?php echo $content_thumbnail_url; ?>');"></div><!-- /.featured-image -->
@@ -85,7 +104,7 @@ foreach ( $content_objects as $key => $content_object ) :
       <?php if ($key === 0) : ?>
       <div id="carousel-<?php echo $uniqid; ?>" class="carousel slide">
         <ol class="carousel-indicators">
-          <?php for ( $i = 0; $i < count($content_objects); $i++ ) : ?>
+          <?php for ( $i = 0; $i < $content_objects_count; $i++ ) : ?>
           <li data-target="#carousel-<?php echo $uniqid; ?>" data-slide-to="<?php echo $i; ?>" class="<?php if ($i === 0) echo 'active'; ?>"></li>
           <?php endfor; ?>
         </ol>
@@ -100,7 +119,7 @@ foreach ( $content_objects as $key => $content_object ) :
         </div>
       </div><!-- /.item -->
 
-      <?php if ($key === count($content_objects)-1) : ?>
+      <?php if ($key === $content_objects_count-1) : ?>
         </div>
         <a class="left carousel-control" href="#carousel-<?php echo $uniqid; ?>" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
         <a class="right carousel-control" href="#carousel-<?php echo $uniqid; ?>" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
