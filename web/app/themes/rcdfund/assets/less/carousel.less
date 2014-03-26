@@ -1,0 +1,21 @@
+.carousel {
+  * {
+    color: white !important;
+  }
+}
+.carousel-control {
+  &.left,
+  &.right {
+    background-image: none;
+    width: 50%;
+  }
+  .icon-prev,
+  .glyphicon-chevron-left {
+    left: (2 * @padding-large-horizontal);
+  }
+  .icon-next,
+  .glyphicon-chevron-right {
+    right: (2 * @padding-large-horizontal);
+    margin-right: -15px;
+  }
+}
