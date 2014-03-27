@@ -3,7 +3,7 @@
  * Custom post types
  */
 
-// Content
+// Register post type "Content"
 add_action('init', 'rcdfund_register_cpt_content');
 function rcdfund_register_cpt_content() {
   register_post_type('content', array(
@@ -40,7 +40,7 @@ function rcdfund_register_cpt_content() {
   );
 }
 
-// Connorism
+// Register post type "Connorism"
 add_action('init', 'rcdfund_register_cpt_connorism');
 function rcdfund_register_cpt_connorism() {
   register_post_type('connorism', array(
@@ -76,3 +76,21 @@ function rcdfund_register_cpt_connorism() {
     )
   );
 }
+
+// Return a random Connorism
+function random_connorism() {
+  $connorisms = new WP_Query(array(
+    'post_type'       => 'connorism',
+    'orderby'         => 'rand',
+    'posts_per_page'  => 1
+  ));
+  while ( $connorisms->have_posts() ) : $connorisms->the_post();
+    return get_the_title();
+  endwhile;
+}
+
+// [connorism]
+function shortcode_connorism( $atts ) {
+  return random_connorism();
+}
+add_shortcode( 'connorism', 'shortcode_connorism' );
