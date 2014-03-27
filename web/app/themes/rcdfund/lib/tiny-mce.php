@@ -17,6 +17,11 @@ function tiny_mce_before_init( $settings ) {
       'title' => 'Lead paragraph',
       'selector' => 'p',
       'classes' => 'lead'
+    ),
+    array(
+      'title' => 'Cursive',
+      'selector' => 'p',
+      'classes' => 'cursive'
     )
   );
   $settings['style_formats'] = json_encode( $style_formats );
