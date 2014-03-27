@@ -7,6 +7,7 @@ if ( have_rows('content_list') ) : while ( have_rows('content_list') ) : the_row
   $layout                 = get_sub_field('layout');
   $background_color       = get_sub_field('background_color');
   $background_texture     = get_sub_field('background_texture');
+  $background_fit         = get_sub_field('background_fit');
 
   // Generate a unique ID to identify this row
   $uniqid = uniqid();
@@ -71,7 +72,7 @@ foreach ( $content_objects as $key => $content_object ) :
 
     // Thumbnail on left
     case 'featured-image-left' : ?>
-      <div class="featured-image" style="background-image:url('<?php echo $content_thumbnail_url; ?>');"></div><!-- /.featured-image -->
+      <div class="featured-image" style="background-image:url('<?php echo $content_thumbnail_url; ?>'); background-size:<?php echo $background_fit; ?>;"></div><!-- /.featured-image -->
       <div class="container">
         <div class="content row">
           <div class="col-xs-12 col-sm-5 col-sm-offset-7">
@@ -86,7 +87,7 @@ foreach ( $content_objects as $key => $content_object ) :
 
     // Thumbnail on right
     case 'featured-image-right' : ?>
-      <div class="featured-image" style="background-image:url('<?php echo $content_thumbnail_url; ?>');"></div><!-- /.featured-image -->
+      <div class="featured-image" style="background-image:url('<?php echo $content_thumbnail_url; ?>'); background-size:<?php echo $background_fit; ?>;"></div><!-- /.featured-image -->
       <div class="container">
         <div class="content row">
           <div class="col-xs-12 col-sm-5">
