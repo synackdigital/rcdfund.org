@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1b1daf4943d50a09ad0ab9740b6ff6dd",
+    "hash": "364caf40cfc611672a4b74312d424b22",
     "packages": [
         {
             "name": "composer/installers",
@@ -628,6 +628,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/simple-instagram/"
+        },
+        {
+            "name": "wpackagist/wordpress-importer",
+            "version": "0.6.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordpress-importer/",
+                "reference": "tags/0.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-importer.0.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wordpress-importer/"
         }
     ],
     "packages-dev": [
