@@ -1,4 +1,7 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<header class="page-header">
+  <h1>Brain Matters <small>Stories from the RCD Fund</small></h1>
+  <img src="<?php echo IMAGES_DIRECTORY; ?>/darkblue_divider.png" class="divider">
+</header>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
@@ -8,7 +11,7 @@
 <?php endif; ?>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/content', get_post_format()); ?>
+  <?php get_template_part('templates/content-post', get_post_format()); ?>
 <?php endwhile; ?>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
