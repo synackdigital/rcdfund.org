@@ -29,18 +29,21 @@
 @font-family-cursive:     "Sacramento", cursive;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          17px;
-@font-size-large:         ceil(@font-size-base * 1.176); // ~20px
-@font-size-small:         ceil(@font-size-base * 0.823); // ~14px
+// 5:8 minor-sixth modular scale based on 15 and 18
+@font-size-small:         15px;
+@font-size-base:          18px;
+@font-size-large:         24px;
+@font-size-xlarge:        29px;
+@font-size-xxlarge:       38px;
 
-@font-size-h1:            floor(@font-size-base * 2.353); // ~40px
-@font-size-h2:            floor(@font-size-base * 1.765); // ~30px
+@font-size-h1:            @font-size-xxlarge;
+@font-size-h2:            @font-size-xlarge;
 @font-size-h3:            @font-size-large;
 @font-size-h4:            @font-size-small;
 @font-size-h5:            @font-size-h4;
 @font-size-h6:            @font-size-h5;
 
-@line-height-base:        1.412; // ~24/17
+@line-height-base:        1.333333; // ~24/18
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~24px
 
 @headings-font-weight:    bold;
