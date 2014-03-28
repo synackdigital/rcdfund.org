@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "364caf40cfc611672a4b74312d424b22",
+    "hash": "752af36d2099a650e3ca18692c68d38b",
     "packages": [
         {
             "name": "composer/installers",
@@ -628,6 +628,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/simple-instagram/"
+        },
+        {
+            "name": "wpackagist/infinite-scroll",
+            "version": "2.6.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/infinite-scroll/",
+                "reference": "tags/2.6.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/infinite-scroll.2.6.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/infinite-scroll/"
         },
         {
             "name": "wpackagist/wordpress-importer",
