@@ -46,12 +46,16 @@ foreach ( $content_objects as $key => $content_object ) :
 
     // Full-width
     case 'full-width' : ?>
-      <div class="content">
-        <article class="type-content text-center">
-          <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
-          <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
-        </article>
-      </div><!-- /.content -->
+      <div class="container">
+        <div class="content row">
+          <div class="col-xs-12">
+            <article class="type-content text-center">
+              <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
+              <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
+            </article>
+          </div>
+        </div><!-- /.content -->
+      </div>
     <?php break;
 
     // Side-by-side
