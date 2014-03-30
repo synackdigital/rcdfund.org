@@ -1,8 +1,18 @@
-<footer class="content-info" role="contentinfo">
+<footer class="contentinfo" role="contentinfo">
   <div class="container">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
-    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+    <div class="row">
+      <div class="col-sm-2">
+        <img src="<?php echo LOGOTYPE_URL; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+      </div>
+      <div class="col-sm-4">
+        <h1 class="h3">The RCD Fund</h1>
+        <p>In memory of Robert Connor Dawes. Supporting brain matters in the areas of Research, Care and Development.</p>
+      </div>
+      <div class="col-sm-5">
+        <?php mailchimpSF_signup_form(); ?>
+      </div>
+    </div>
   </div>
-</footer>
 
-<?php wp_footer(); ?>
+  <?php wp_footer(); ?>
+</footer>
