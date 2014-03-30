@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "752af36d2099a650e3ca18692c68d38b",
+    "hash": "bcecebeae0449aa853e62e396b68a06d",
     "packages": [
         {
             "name": "composer/installers",
@@ -648,6 +648,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/infinite-scroll/"
+        },
+        {
+            "name": "wpackagist/redirection",
+            "version": "2.3.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/redirection/",
+                "reference": "tags/2.3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/redirection.2.3.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/redirection/"
         },
         {
             "name": "wpackagist/wordpress-importer",

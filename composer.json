@@ -56,7 +56,8 @@
     "wpackagist-plugin/mailchimp": "1.4.1",
     "wpackagist-plugin/simple-instagram": "1.1.1",
     "wpackagist/wordpress-importer": "0.6.1",
-    "wpackagist/infinite-scroll": "2.6.2"
+    "wpackagist/infinite-scroll": "2.6.2",
+    "wpackagist/redirection": "2.3.4"
   },
   "extra": {
     "installer-paths": {
