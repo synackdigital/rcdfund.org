@@ -4,6 +4,8 @@
  */
 
 // [posts]
+// Returns a list of posts where included
+// Accepts the same arguments as get_posts()
 function shortcode_posts( $atts ) {
 
   // Extract attributes from shortcode, or set defaults
@@ -61,3 +63,17 @@ function shortcode_posts( $atts ) {
   wp_reset_postdata();
 }
 add_shortcode( 'posts', 'shortcode_posts' );
+
+
+// [template]
+// Requires a page template where included
+function shortcode_template( $atts ) {
+
+  // Extract attributes from shortcode, or set defaults
+  extract( shortcode_atts( array(
+    'name'           => ''
+  ), $atts ) );
+
+  get_template_part('templates/'.$name);
+}
+add_shortcode( 'template', 'shortcode_template' );
