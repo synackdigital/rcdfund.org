@@ -52,12 +52,11 @@
     "vlucas/phpdotenv": "~1.0.6",
     "wpackagist-plugin/advanced-custom-fields": "4.3.5",
     "wpackagist-plugin/iframe": "2.8",
-    "wpackagist-plugin/insert-pages": "1.3",
     "wpackagist-plugin/mailchimp": "1.4.1",
-    "wpackagist-plugin/simple-instagram": "1.1.1",
-    "wpackagist/wordpress-importer": "0.6.1",
-    "wpackagist/infinite-scroll": "2.6.2",
-    "wpackagist/redirection": "2.3.4"
+    "wpackagist-plugin/wordpress-importer": "0.6.1",
+    "wpackagist-plugin/infinite-scroll": "2.6.2",
+    "wpackagist-plugin/redirection": "2.3.4",
+    "wpackagist-plugin/alpine-photo-tile-for-instagram": "1.2.7"
   },
   "extra": {
     "installer-paths": {

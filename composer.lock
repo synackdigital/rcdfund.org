@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "bcecebeae0449aa853e62e396b68a06d",
+    "hash": "643bc46e9c405469f19a7338c3cafe8a",
     "packages": [
         {
             "name": "composer/installers",
@@ -538,6 +538,29 @@
             "homepage": "http://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
+            "name": "wpackagist-plugin/alpine-photo-tile-for-instagram",
+            "version": "1.2.7",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/alpine-photo-tile-for-instagram/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/alpine-photo-tile-for-instagram.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/alpine-photo-tile-for-instagram": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/alpine-photo-tile-for-instagram/"
+        },
+        {
             "name": "wpackagist-plugin/iframe",
             "version": "2.8",
             "source": {
@@ -561,16 +584,16 @@
             "homepage": "http://wordpress.org/plugins/iframe/"
         },
         {
-            "name": "wpackagist-plugin/insert-pages",
-            "version": "1.3",
+            "name": "wpackagist-plugin/infinite-scroll",
+            "version": "2.6.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/insert-pages/",
-                "reference": "trunk"
+                "url": "http://plugins.svn.wordpress.org/infinite-scroll/",
+                "reference": "tags/2.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/insert-pages.zip",
+                "url": "http://downloads.wordpress.org/plugin/infinite-scroll.2.6.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -578,10 +601,10 @@
                 "composer/installers": "~1.0"
             },
             "replace": {
-                "wpackagist/insert-pages": "self.version"
+                "wpackagist/infinite-scroll": "self.version"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/insert-pages/"
+            "homepage": "http://wordpress.org/plugins/infinite-scroll/"
         },
         {
             "name": "wpackagist-plugin/mailchimp",
@@ -607,50 +630,7 @@
             "homepage": "http://wordpress.org/plugins/mailchimp/"
         },
         {
-            "name": "wpackagist-plugin/simple-instagram",
-            "version": "1.1.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/simple-instagram/",
-                "reference": "tags/1.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/simple-instagram.1.1.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/simple-instagram": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/simple-instagram/"
-        },
-        {
-            "name": "wpackagist/infinite-scroll",
-            "version": "2.6.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/infinite-scroll/",
-                "reference": "tags/2.6.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/infinite-scroll.2.6.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/infinite-scroll/"
-        },
-        {
-            "name": "wpackagist/redirection",
+            "name": "wpackagist-plugin/redirection",
             "version": "2.3.4",
             "source": {
                 "type": "svn",
@@ -666,11 +646,14 @@
             "require": {
                 "composer/installers": "~1.0"
             },
+            "replace": {
+                "wpackagist/redirection": "self.version"
+            },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/redirection/"
         },
         {
-            "name": "wpackagist/wordpress-importer",
+            "name": "wpackagist-plugin/wordpress-importer",
             "version": "0.6.1",
             "source": {
                 "type": "svn",
@@ -685,6 +668,9 @@
             },
             "require": {
                 "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wordpress-importer": "self.version"
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/wordpress-importer/"
