@@ -12,7 +12,7 @@ function shortcode_posts( $atts ) {
   extract( shortcode_atts( array(
     'posts_per_page'   => get_option( 'posts_per_page' ),
     'offset'           => 0,
-    'category'         => '', // this is expected to be supplied as category slug
+    'category'         => '',
     'orderby'          => 'post_date',
     'order'            => 'DESC',
     'include'          => '',
@@ -24,14 +24,14 @@ function shortcode_posts( $atts ) {
     'post_parent'      => '',
     'post_status'      => 'publish',
     'suppress_filters' => true
-  ), $atts ) );
+  ), $atts, 'shortcode_posts' ) );
 
   // Enable the global $post object on pages
   global $post;
 
-  // Get category id based on slug
-  $category = get_category_by_slug( $category );
-  $category = $category->term_id;
+  // TODO: Get category id based on slug
+  // $category = get_category_by_slug( $category );
+  // $category = $category->term_id;
 
   // Get posts
   $posts = get_posts( array(
@@ -72,7 +72,7 @@ function shortcode_template( $atts ) {
   // Extract attributes from shortcode, or set defaults
   extract( shortcode_atts( array(
     'name'           => ''
-  ), $atts ) );
+  ), $atts, 'shortcode_template' ) );
 
   get_template_part('templates/'.$name);
 }
