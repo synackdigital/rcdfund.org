@@ -58,6 +58,16 @@ foreach ( $content_objects as $key => $content_object ) :
       </div>
     <?php break;
 
+    // Full-bleed
+    case 'full-bleed' : ?>
+      <div class="content">
+        <article class="type-content text-center">
+          <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
+          <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
+        </article>
+      </div><!-- /.content -->
+    <?php break;
+
     // Side-by-side
     case 'side-by-side' : ?>
       <?php if ($key === 0) : ?><div class="container"><div class="content row"><?php endif; ?>
