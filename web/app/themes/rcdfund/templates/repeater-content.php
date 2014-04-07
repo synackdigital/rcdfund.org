@@ -79,7 +79,7 @@ foreach ( $content_objects as $key => $content_object ) :
       <div class="featured-image" style="background-image:url('<?php echo $content_thumbnail_url; ?>'); background-size:<?php echo $background_fit; ?>;"></div><!-- /.featured-image -->
       <div class="container">
         <div class="content row">
-          <div class="col-xs-12 col-sm-5 col-sm-offset-7">
+          <div class="col-xs-12 col-sm-5 col-sm-offset-7 keyline-right">
             <article class="type-content text-center">
               <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
               <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
@@ -94,7 +94,7 @@ foreach ( $content_objects as $key => $content_object ) :
       <div class="featured-image" style="background-image:url('<?php echo $content_thumbnail_url; ?>'); background-size:<?php echo $background_fit; ?>;"></div><!-- /.featured-image -->
       <div class="container">
         <div class="content row">
-          <div class="col-xs-12 col-sm-5">
+          <div class="col-xs-12 col-sm-5 keyline-left">
             <article class="type-content text-center">
               <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
               <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
