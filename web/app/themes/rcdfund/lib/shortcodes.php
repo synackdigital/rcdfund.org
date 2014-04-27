@@ -10,20 +10,21 @@ function shortcode_posts( $atts ) {
 
   // Extract attributes from shortcode, or set defaults
   extract( shortcode_atts( array(
-    'posts_per_page'   => get_option( 'posts_per_page' ),
-    'offset'           => 0,
-    'category'         => '',
-    'orderby'          => 'post_date',
-    'order'            => 'DESC',
-    'include'          => '',
-    'exclude'          => '',
-    'meta_key'         => '',
-    'meta_value'       => '',
-    'post_type'        => 'post',
-    'post_mime_type'   => '',
-    'post_parent'      => '',
-    'post_status'      => 'publish',
-    'suppress_filters' => true
+    'posts_per_page'    => get_option( 'posts_per_page' ),
+    'offset'            => 0,
+    'category'          => '',
+    'orderby'           => 'post_date',
+    'order'             => 'DESC',
+    'include'           => '',
+    'exclude'           => '',
+    'meta_key'          => '',
+    'meta_value'        => '',
+    'post_type'         => 'post',
+    'post_mime_type'    => '',
+    'post_parent'       => '',
+    'post_status'       => 'publish',
+    'suppress_filters'  => true,
+    'as_thumbnail'      => false
   ), $atts, 'shortcode_posts' ) );
 
   // Enable the global $post object on pages
@@ -54,7 +55,11 @@ function shortcode_posts( $atts ) {
   // Loop posts
   foreach ( $posts as $key => $post ) :
     setup_postdata( $post );
-    get_template_part( 'templates/content', $post_type );
+    if ( $as_thumbnail ) :
+      get_template_part( 'templates/content', $post_type.'-thumbnail' );
+    else :
+      get_template_part( 'templates/content', $post_type );
+    endif;
   endforeach;
 
   // Clean up
