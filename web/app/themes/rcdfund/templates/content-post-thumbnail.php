@@ -13,13 +13,13 @@ switch ( $category ) :
 
   // All other categories
   default : ?>
-  <article <?php post_class('mb-md mt-lg relative'); ?>>
+  <article <?php post_class('post-thumbnail'); ?>>
     <a href="<?php the_permalink(); ?>">
       <?php if ( has_post_thumbnail() ) : ?>
-        <figure><?php the_post_thumbnail('large', array( 'class' => 'thumbnail fullwidth' ) ); ?></figure>
+        <figure><?php the_post_thumbnail('large', array( 'class' => '' ) ); ?></figure>
       <?php endif; ?>
-      <header class="absolute pin">
-        <h1 class="entry-title text-center h3 absolute pin-bottom"><?php the_title(); ?></h1>
+      <header>
+        <h1 class="entry-title text-center h3"><?php the_title(); ?></h1>
       </header>
     </a>
   </article>
