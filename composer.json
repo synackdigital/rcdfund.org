@@ -56,7 +56,7 @@
     "wpackagist-plugin/wordpress-importer": "0.6.1",
     "wpackagist-plugin/infinite-scroll": "2.6.2",
     "wpackagist-plugin/redirection": "2.3.4",
-    "wpackagist-plugin/alpine-photo-tile-for-instagram": "1.2.7"
+    "wpackagist-plugin/alpine-photo-tile-for-instagram": "1.2.7.1"
   },
   "extra": {
     "installer-paths": {

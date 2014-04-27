@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2c44b673714d746dddd9c24e52ae491d",
+    "hash": "b11fe4abdaf3ad40a130826be44bb5a2",
     "packages": [
         {
             "name": "composer/installers",
@@ -539,7 +539,7 @@
         },
         {
             "name": "wpackagist-plugin/alpine-photo-tile-for-instagram",
-            "version": "1.2.7",
+            "version": "1.2.7.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/alpine-photo-tile-for-instagram/",
