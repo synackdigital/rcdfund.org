@@ -98,9 +98,8 @@
           <div class="col-sm-2">
             <h2 class="h3">USA</h2>
             <p class="text-center">
-              <a href="#" target="_blank" class="btn btn-default btn-block disabled mb-xs">Make a donation</a>
-              <a href="#" target="_blank" class="btn btn-default btn-block disabled mb-xs">Start a fundraiser</a>
-              (available soon)
+              <a href="http://usa.rcdfund.org/donate/" target="_blank" class="btn btn-default btn-block mb-xs">Make a donation</a>
+              <a href="http://usa.rcdfund.org/fundraising/" target="_blank" class="btn btn-default btn-block mb-xs">Start a fundraiser</a>
             </p>
           </div>
         </div>
