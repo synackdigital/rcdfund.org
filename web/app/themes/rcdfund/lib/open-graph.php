@@ -17,7 +17,7 @@ function opengraph_meta() {
   $og_type = ( is_singular() ) ? "article" : "website";
 
   if (has_post_thumbnail( $post->ID )) :
-    $post_thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+    $post_thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
     $og_image = esc_attr( $post_thumbnail[0] );
   else :
     $og_image = LOGOTYPE_URL;
