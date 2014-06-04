@@ -54,11 +54,13 @@ endif;
 // Loop through each content object individually
 foreach ( $content_objects as $key => $content_object ) :
 
-  $content_title           = ( get_field('title_html', $content_object->ID) ) ? get_field('title_html', $content_object->ID) : $content_object->post_title;
+  $content_title           = ( get_field('title_html', $content_object->ID) ) ? get_field('title_html', $content_object->ID) : apply_filters( 'the_title', $content_object->post_title);
   $content_title_class     = ( get_field('title_class', $content_object->ID) ) ? get_field('title_class', $content_object->ID) : '';
 
   $content_thumbnail       = ( has_post_thumbnail($content_object->ID) ) ? wp_get_attachment_image_src( get_post_thumbnail_id( $content_object->ID ), 'large' ) : null;
   $content_thumbnail_url   = ( $content_thumbnail ) ? $content_thumbnail[0] : '';
+
+  $content_content         = apply_filters( 'the_content', $content_object->post_content );
 
   // Serve different layouts
   switch ( $layout ) :
@@ -69,8 +71,8 @@ foreach ( $content_objects as $key => $content_object ) :
         <div class="content row">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
             <article class="type-content text-center">
-              <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
-              <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
+              <h1 class="<?php echo $content_title_class; ?>"><?php echo $content_title; ?></h1>
+              <?php echo $content_content; ?>
             </article>
           </div>
         </div><!-- /.content -->
@@ -83,8 +85,8 @@ foreach ( $content_objects as $key => $content_object ) :
         <div class="content row">
           <div class="col-xs-12">
             <article class="type-content text-center">
-              <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
-              <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
+              <h1 class="<?php echo $content_title_class; ?>"><?php echo $content_title; ?></h1>
+              <?php echo $content_content; ?>
             </article>
           </div>
         </div><!-- /.content -->
@@ -95,8 +97,8 @@ foreach ( $content_objects as $key => $content_object ) :
     case 'full-bleed' : ?>
       <div class="content">
         <article class="type-content text-center">
-          <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
-          <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
+          <h1 class="<?php echo $content_title_class; ?>"><?php echo $content_title; ?></h1>
+          <?php echo $content_content; ?>
         </article>
       </div><!-- /.content -->
     <?php break;
@@ -108,11 +110,12 @@ foreach ( $content_objects as $key => $content_object ) :
       $column_max_count   = 4;
       $column_count       = ( $content_objects_count <= $column_max_count ) ? $content_objects_count : $column_max_count;
       $column_class       = 'col-xs-12 col-sm-'.( 12 / $column_count );
+      $column_class       = ( $key < $content_objects_count-1 ) ? $column_class.' keyline-right' : $column_class;
       ?>
       <article class="type-content text-center <?php echo $column_class; ?>">
         <?php if ( $content_thumbnail_url != '' ): ?><img class="center-block" src="<?php echo $content_thumbnail_url; ?>" alt="<?php echo $content_object->post_title; ?>"><?php endif; ?>
-        <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
-        <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
+        <h1 class="<?php echo $content_title_class; ?>"><?php echo $content_title; ?></h1>
+        <?php echo $content_content; ?>
       </article>
       <?php if ($key === $content_objects_count-1) : ?></div><!-- /.content --></div><?php endif; ?>
     <?php break;
@@ -124,8 +127,8 @@ foreach ( $content_objects as $key => $content_object ) :
         <div class="content row">
           <div class="col-xs-12 col-sm-5 col-sm-offset-7 keyline-right">
             <article class="type-content text-center">
-              <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
-              <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
+              <h1 class="<?php echo $content_title_class; ?>"><?php echo $content_title; ?></h1>
+              <?php echo $content_content; ?>
             </article>
           </div>
         </div><!-- /.content -->
@@ -139,8 +142,8 @@ foreach ( $content_objects as $key => $content_object ) :
         <div class="content row">
           <div class="col-xs-12 col-sm-5 keyline-left">
             <article class="type-content text-center">
-              <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
-              <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
+              <h1 class="<?php echo $content_title_class; ?>"><?php echo $content_title; ?></h1>
+              <?php echo $content_content; ?>
             </article>
           </div>
         </div><!-- /.content -->
@@ -162,8 +165,8 @@ foreach ( $content_objects as $key => $content_object ) :
       <div class="item <?php if ($key === 0) echo 'active'; ?>">
         <img class="thumbnail center-block" src="<?php echo $content_thumbnail_url; ?>" alt="<?php echo $content_object->post_title; ?>">
         <div class="carousel-caption">
-          <div class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></div>
-          <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
+          <div class="<?php echo $content_title_class; ?>"><?php echo $content_title; ?></div>
+          <?php echo $content_content; ?>
         </div>
       </div><!-- /.item -->
 
