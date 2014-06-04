@@ -4,6 +4,7 @@ if ( have_rows('content_list') ) : while ( have_rows('content_list') ) : the_row
 
   // Get field data
   $content_objects        = get_sub_field('content_objects');
+  $sort_order             = get_sub_field('sort_order');
   $layout                 = get_sub_field('layout');
   $background_color       = get_sub_field('background_color');
   $background_texture     = get_sub_field('background_texture');
@@ -18,6 +19,38 @@ if ( have_rows('content_list') ) : while ( have_rows('content_list') ) : the_row
 <div class="wrap relative <?php echo implode(' ', array($layout, $background_color, $background_texture)); ?>">
 
 <?php
+
+// Rearrange content objects if sort order is specified
+// $sort_order is expected to be a csv of post IDs
+if ( $sort_order ) :
+
+  // Convert csv to array, in inverse order
+  str_replace(' ', '', $sort_order);
+  $sort_order = explode(',', $sort_order);
+  $sort_order = array_reverse($sort_order);
+
+  // Loop array of sort values
+  foreach ( $sort_order as $sort_order_key => $sort_order_value ) :
+
+    // Find the corresponding content object
+    $content_objects_clone = $content_objects;
+    foreach ( $content_objects as $content_object_key => $content_object ) :
+      if ( $content_object->ID == $sort_order_value ) :
+
+        // Move content object to top
+        $matched_content_object = $content_objects_clone[$content_object_key];
+        unset( $content_objects_clone[$content_object_key] );
+        $content_objects_clone = array_merge( array( $content_object_key => $matched_content_object ), $content_objects_clone );
+
+        unset( $matched_content_object );
+      endif;
+    endforeach;
+    $content_objects = $content_objects_clone;
+    unset( $content_objects_clone );
+
+  endforeach;
+endif;
+
 // Loop through each content object individually
 foreach ( $content_objects as $key => $content_object ) :
 
