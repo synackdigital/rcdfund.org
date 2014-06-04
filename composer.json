@@ -51,7 +51,7 @@
     "wp-cli/wp-cli": "v0.14.1",
     "vlucas/phpdotenv": "~1.0.6",
     "wpackagist-plugin/advanced-custom-fields": "4.3.8",
-    "wpackagist-plugin/iframe": "2.8",
+    "wpackagist-plugin/iframe": "2.9",
     "wpackagist-plugin/mailchimp": "1.4.1",
     "wpackagist-plugin/wordpress-importer": "0.6.1",
     "wpackagist-plugin/infinite-scroll": "2.6.2",
