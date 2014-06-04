@@ -13,8 +13,10 @@ function opengraph_language_attributes($language_attributes) {
 add_action( 'wp_head', 'opengraph_meta', 5 );
 function opengraph_meta() {
   global $post;
+  setup_postdata( $post );
 
-  $og_type = ( is_singular() ) ? "article" : "website";
+  $og_type          = ( is_singular() ) ? "article" : "website";
+  $og_description   = ( is_singular() && !is_front_page() && !is_home() ) ? get_the_excerpt() : get_bloginfo('description');;
 
   if (has_post_thumbnail( $post->ID )) :
     $post_thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
@@ -28,5 +30,7 @@ function opengraph_meta() {
   echo '<meta property="og:url" content="'. get_permalink() .'">';
   echo '<meta property="og:type" content="'. $og_type .'">';
   echo '<meta property="og:title" content="'. get_the_title() .'">';
+  echo '<meta property="og:description" content="'. $og_description .'">';
   echo '<meta property="og:image" content="'. $og_image .'">';
+
 }
