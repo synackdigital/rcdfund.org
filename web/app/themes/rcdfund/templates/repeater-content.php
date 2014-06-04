@@ -110,7 +110,7 @@ foreach ( $content_objects as $key => $content_object ) :
       $column_class       = 'col-xs-12 col-sm-'.( 12 / $column_count );
       ?>
       <article class="type-content text-center <?php echo $column_class; ?>">
-        <img class="center-block" src="<?php echo $content_thumbnail_url; ?>" alt="<?php echo $content_object->post_title; ?>">
+        <?php if ( $content_thumbnail_url != '' ): ?><img class="center-block" src="<?php echo $content_thumbnail_url; ?>" alt="<?php echo $content_object->post_title; ?>"><?php endif; ?>
         <h1 class="<?php echo $content_title_class; ?>"><?php echo apply_filters( 'the_title', $content_title ); ?></h1>
         <?php echo apply_filters( 'the_content', $content_object->post_content ); ?>
       </article>
