@@ -16,7 +16,7 @@ function opengraph_meta() {
   setup_postdata( $post );
 
   $og_type          = ( is_singular() ) ? "article" : "website";
-  $og_description   = ( is_singular() && !is_front_page() && !is_home() ) ? get_the_excerpt() : get_bloginfo('description');;
+  $og_description   = ( is_singular() && !is_front_page() && !is_home() ) ? wp_strip_all_tags(get_the_excerpt()) : get_bloginfo('description');
 
   if (has_post_thumbnail( $post->ID )) :
     $post_thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
