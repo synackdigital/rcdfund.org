@@ -20,7 +20,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 // Make <cite> inside <blockquote> behave like <small>
-blockquote cite { font-size: @font-size-base; }
+blockquote cite { font-size: @font-size-base; display: block; }
 
 // Line up small inside h* with vertical rhythm
 h1 small, .h1 small { font-size: @font-size-large; }
@@ -41,6 +41,9 @@ dl dt:not(:first-of-type) {
 // Page header
 .page-header {
   border-bottom: none;
+  &, small {
+    color: white;
+  }
 }
 
 // Cursive text
