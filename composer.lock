@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e12e7f5a4d063ac584e7d443811f524f",
+    "hash": "3952f5cc30860dad159fc33ba25db781",
     "packages": [
         {
             "name": "composer/installers",
@@ -538,7 +538,7 @@
         },
         {
             "name": "wpackagist-plugin/alpine-photo-tile-for-instagram",
-            "version": "1.2.7.1",
+            "version": "1.2.7.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/alpine-photo-tile-for-instagram/",
@@ -679,6 +679,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
+    "prefer-stable": false,
     "platform": {
         "php": ">=5.3.2"
     },
