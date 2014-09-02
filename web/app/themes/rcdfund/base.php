@@ -30,6 +30,9 @@
         <?php endif; ?>
       </div><!-- /.content -->
     </div>
+
+    <?php get_template_part('parts'); ?>
+
   </div><!-- /.wrap -->
 
   <?php get_template_part('templates/repeater-content'); ?>
