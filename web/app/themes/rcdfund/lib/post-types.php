@@ -3,7 +3,45 @@
  * Custom post types
  */
 
+// Register post type "Part"
+add_action('init', 'rcdfund_register_cpt_part');
+function rcdfund_register_cpt_part() {
+  register_post_type('part', array(
+    'label' => 'Parts',
+    'description' => 'Parts offer a way of organizing content within pages with layout templates.',
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'capability_type' => 'page',
+    'map_meta_cap' => true,
+    'hierarchical' => false,
+    'rewrite' => array('slug' => 'part', 'with_front' => true),
+    'query_var' => true,
+    'exclude_from_search' => true,
+    'menu_position' => '20',
+    'supports' => array('title','editor','revisions','thumbnail'),
+    'labels' => array (
+      'name' => 'Parts',
+      'singular_name' => 'Part',
+      'menu_name' => 'Parts',
+      'add_new' => 'Add Part',
+      'add_new_item' => 'Add New Part',
+      'edit' => 'Edit',
+      'edit_item' => 'Edit Part',
+      'new_item' => 'New Part',
+      'view' => 'View Parts',
+      'view_item' => 'View Part',
+      'search_items' => 'Search Parts',
+      'not_found' => 'No Parts Found',
+      'not_found_in_trash' => 'No Parts Found in Trash',
+      'parent' => 'Parent Part',
+      )
+    )
+  );
+}
+
 // Register post type "Content"
+// TO BE REPLACED BY "PART"
 add_action('init', 'rcdfund_register_cpt_content');
 function rcdfund_register_cpt_content() {
   register_post_type('content', array(
