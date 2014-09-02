@@ -12,9 +12,6 @@ if ( have_rows('part_blocks') ) : while ( have_rows('part_blocks') ) : the_row()
   $background_size        = get_sub_field('background_size');
   $min_height             = get_sub_field('min_height');
 
-  // Generate a unique ID to identify this block
-  $uniqid = uniqid();
-
   // Store the number of parts for quick access
   $parts_count = count( $parts );
 
