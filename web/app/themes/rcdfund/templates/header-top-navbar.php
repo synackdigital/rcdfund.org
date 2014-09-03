@@ -1,7 +1,7 @@
 <header class="banner navbar navbar-default navbar-fixed-top" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -15,11 +15,11 @@
         if (has_nav_menu('primary_navigation')) :
           wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
         endif;
+
+        if (has_nav_menu('secondary_navigation')) :
+          wp_nav_menu(array('theme_location' => 'secondary_navigation', 'menu_class' => 'nav navbar-nav navbar-right'));
+        endif;
       ?>
-      <ul id="menu-secondary-navigation" class="nav nav-secondary navbar-nav pull-right">
-        <li class="navicon navicon-contact"><button class="btn-link" type="button" data-toggle="collapse" data-target="#contact" data-parent="#dropdown">Contact us</button></li>
-        <li class="navicon navicon-donate"><button class="btn-link" type="button" data-toggle="collapse" data-target="#donate" data-parent="#dropdown">Make a donation!</button></li>
-      </ul>
     </nav>
   </div>
 </header>

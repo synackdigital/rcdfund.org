@@ -10,40 +10,37 @@
 // E.g. <li class="navicon navicon-contact">
 .navbar .navicon {
 
-  // Padding works as spacing between icons
-  padding: 4px;
-
-  // Set up buttons for using icons
-  button {
+  a {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: @navbar-height - (2 * @padding-small-vertical);
 
-    &:focus,
-    &:hover {
-      background-color: transparent !important;
-      opacity: .8;
-    }
+    .hide-text();
+    height: @navbar-height;
   }
 
-  &.navicon-contact button {
-    .hide-text();
-    width: 32px;
+  &.navicon-contact a {
+    width: 62px;
+    background-size: 32px auto;
     background-image: url('../img/navicon-contact.png');
   }
-  &.navicon-donate button {
-    .hide-text();
-    width: 196px;
+  &.navicon-donate a {
+    width: 226px;
+    background-size: 196px auto;
     background-image: url('../img/navicon-donate.png');
   }
 }
 
 // Logotype graphic
-.navbar .navbar-header {
+.navbar-brand {
+
+  padding-right: 0;
+  padding-left: 0;
+
 
   // Image appearance
-  img {
+  &,
+  & img {
     width: @logo-sm-width;
   }
 
@@ -55,18 +52,8 @@
   // Responsive widths
   @media (min-width: @screen-sm-min) {
     img {
-      &,
-      &.affix {
-        position: fixed;
-      }
-    }
-    &,
-    img {
+      position: fixed;
       width: @logo-sm-width;
-    }
-    &.affix,
-    img.affix {
-      width: @logo-sm-affix-width;
     }
   }
   @media (min-width: @screen-md-min) {
@@ -90,25 +77,17 @@
     }
   }
 
-  // Animated width change
-  @media (min-width: @screen-sm-min) {
+  // Float logo to the right on small screens
+  @media (max-width: @grid-float-breakpoint) {
+    float: right;
+    padding-right: 15px;
+  }
+
+  // Animations
+  @media (min-width: @grid-float-breakpoint) {
     &,
     img {
       .transition(~'width 230ms ease-in-out');
-    }
-  }
-}
-
-// Collapsible navbar dropdown
-#dropdown {
-  position: fixed;
-  z-index: @zindex-dropdown;
-  right: 0; left: 0;
-  top: @navbar-height;
-  body.admin-bar & {
-    top: (@wp-adminbar-height + @navbar-height);
-    @media (max-width: @wp-adminbar-mobile-breakpoint) {
-      top: (@wp-adminbar-mobile-height + @navbar-height);
     }
   }
 }
