@@ -24,6 +24,26 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on all pages
 
+      // Cache jQuery selectors
+      $navbarToggle = $('.navbar-toggle', '.banner');
+
+      // Click events for special nav items in secondary nav (donate, contact)
+      $('#menu-secondary-navigation a').on('click', function() {
+
+        // Collapse mobile nav
+        if ($navbarToggle.css('display') !== 'none') {
+          $navbarToggle.trigger('click');
+        }
+        // Open the corresponding modal
+        if ( $(this).parent().hasClass('menu-contact-us') ) {
+          $('#modal-contact-us').modal('toggle');
+        }
+        if ( $(this).parent().hasClass('menu-make-a-donation') ) {
+          $('#modal-donate').modal('toggle');
+        }
+
+      });
+
       // Run FitVids on embedded media
       $(".entry-content-asset").fitVids();
     }

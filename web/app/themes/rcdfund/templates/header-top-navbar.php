@@ -24,19 +24,29 @@
   </div>
 </header>
 
-<div id="dropdown">
-
-  <div class="panel">
-    <aside class="dust paper keyline-bottom collapse" id="contact">
-      <div class="container">
-        <div class="row pt-xs pb-sm">
-          <div class="col-xs-12 col-sm-2 col-sm-offset-3">
-            <h1 class="h3">Contact</h1>
+<div class="modal fade" id="modal-contact-us">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <h4 class="modal-title">Contact the RCD Fund</h4>
+    </div>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <h1 class="h3">General</h1>
             <p>
               <a href="mailto:info@rcdfund.org">info@rcdfund.org</a><br>
+              <strong>Facebook</strong>
+              <a href="http://fb.me/RCDFund" target="_blank">fb.me/RCDFund</a><br>
+              <strong>Twitter</strong>
+              <a href="http://twitter.com/RCDFund" target="_blank">@RCDFund</a><br>
+              <strong>Instagram</strong>
+              @RCDFund
+              #AternumFortis<br>
             </p>
           </div>
-          <div class="col-xs-12 col-sm-2">
+          <div class="col-xs-12 col-sm-4">
             <h2 class="h3">Australia</h2>
             <p>
               <a href="mailto:liz@rcdfund.org">Liz Dawes</a><br>
@@ -51,7 +61,7 @@
               ABN 49 126 106 682
             </p>
           </div>
-          <div class="col-xs-12 col-sm-2">
+          <div class="col-xs-12 col-sm-4">
             <h2 class="h3">USA</h2>
             <p>
               <a href="mailto:debbie@rcdfund.org">Debbie Clark Dawes</a><br>
@@ -63,39 +73,34 @@
               United States
             </p>
           </div>
-          <div class="col-xs-12 col-sm-3">
-            <h2 class="h3">Social</h2>
-            <dl>
-              <dt class="h5">Facebook</dt>
-              <dd><a href="http://fb.me/RCDFund" target="_blank">fb.me/RCDFund</a></dd>
-              <dt class="h5">Twitter</dt>
-              <dd><a href="http://twitter.com/RCDFund" target="_blank">@RCDFund</a></dd>
-              <dt class="h5">Instagram</dt>
-              <dd>@RCDFund</dd>
-              <dd>#AternumFortis</dd>
-            </dl>
-          </div>
         </div>
-      </div>
-    </aside>
-  </div>
 
-  <div class="panel">
-    <aside class="dust paper keyline-bottom collapse" id="donate">
-      <div class="container">
-        <div class="row pt-xs pb-sm">
-          <div class="col-sm-5 col-sm-offset-3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-donate">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <h4 class="modal-title">Make a donation</h4>
+    </div>
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
             <h1 class="h3">Big hearts make for big brain changes</h1>
             <p>Your donation helps in so many ways. Whether it’ll be the contribution that is the tipping point in tomorrow’s research breakthroughs. Whether it’ll provide a heartwarming brain stimulating music or yoga therapy session. Whether it’ll help keep the mind sharp through education support during rehab. You’ll make a difference supporting brain matters. Thank you.</p>
           </div>
-          <div class="col-sm-2">
+          <div class="col-xs-12 col-sm-4">
             <h2 class="h3">Australia</h2>
             <p>
               <a href="http://au.rcdfund.org/donate/" target="_blank" class="btn btn-default btn-block mb-xs">Make a donation</a>
               <a href="http://au.rcdfund.org/fundraising/" target="_blank" class="btn btn-default btn-block mb-xs">Start a fundraiser</a>
             </p>
           </div>
-          <div class="col-sm-2">
+          <div class="col-xs-12 col-sm-4">
             <h2 class="h3">USA</h2>
             <p class="text-center">
               <a href="http://usa.rcdfund.org/donate/" target="_blank" class="btn btn-default btn-block mb-xs">Make a donation</a>
@@ -103,8 +108,8 @@
             </p>
           </div>
         </div>
-      </div>
-    </aside>
-  </div>
 
+      </div>
+    </div>
+  </div>
 </div>
