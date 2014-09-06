@@ -5,7 +5,10 @@ $webroot_dir = $root_dir . '/web';
 /**
  * Use Dotenv to set required environment variables and load .env file in root
  */
-Dotenv::load($root_dir);
+if (file_exists($root_dir . '/.env')) {
+  Dotenv::load($root_dir);
+}
+
 Dotenv::required(array('DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL'));
 
 /**
@@ -32,7 +35,7 @@ define('WP_CONTENT_URL', WP_HOME . CONTENT_DIR);
  */
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
-$table_prefix = 'wp_';
+$table_prefix = getenv('DB_PREFIX') ? getenv('DB_PREFIX') : 'wp_';
 
 /**
  * WordPress Localized Language
@@ -58,7 +61,7 @@ define('NONCE_SALT',       getenv('NONCE_SALT'));
  * Custom Settings
  */
 define('AUTOMATIC_UPDATER_DISABLED', true);
-// define('DISABLE_WP_CRON', true);
+define('DISABLE_WP_CRON', true);
 define('DISALLOW_FILE_EDIT', true);
 
 /**
