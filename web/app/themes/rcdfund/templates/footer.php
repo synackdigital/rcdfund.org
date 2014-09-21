@@ -1,14 +1,13 @@
 <footer class="contentinfo mb-lg" role="contentinfo">
   <div class="container">
     <div class="row">
-      <div class="col-sm-2">
-        <img src="<?php echo LOGOTYPE_URL; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+      <div class="col-sm-4">
+        <?php dynamic_sidebar('sidebar-footer-1') ?>
+      </div>
+      <div class="col-sm-4 text-center">
+        <?php dynamic_sidebar('sidebar-footer-2') ?>
       </div>
       <div class="col-sm-4">
-        <h1 class="h3">The RCD Fund</h1>
-        <p>In memory of Robert Connor Dawes. Supporting brain matters in the areas of Research, Care and Development.</p>
-      </div>
-      <div class="col-sm-5">
         <?php mailchimpSF_signup_form(); ?>
       </div>
     </div>
