@@ -5,7 +5,7 @@ set :branch, :master
 
 set :deploy_to, -> { "/var/www/#{fetch(:application)}" }
 
-set :log_level, :debug
+set :log_level, :info
 
 set :linked_files, %w{.env web/.htaccess}
 set :linked_dirs, %w{web/app/uploads web/app/upgrade}
