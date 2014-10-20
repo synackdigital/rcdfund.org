@@ -1,34 +1,18 @@
 set :application, 'rcdfund.org'
+
 set :repo_url, 'git@github.com:synackdigital/rcdfund.org.git'
-
-# Branch options
-# Prompts for the branch name (defaults to current branch)
-#ask :branch, -> { `git rev-parse --abbrev-ref HEAD`.chomp }
-
-# Hardcodes branch to always be master
-# This could be overridden in a stage config file
-set :branch, :master
+set :branch, :deploy
 
 set :deploy_to, -> { "/var/www/#{fetch(:application)}" }
 
-set :log_level, :info
+set :log_level, :debug
 
-# Apache users with .htaccess files:
-# it needs to be added to linked_files so it persists across deploys:
 set :linked_files, %w{.env web/.htaccess}
-# set :linked_files, %w{.env}
-set :linked_dirs, %w{web/app/uploads}
+set :linked_dirs, %w{web/app/uploads web/app/upgrade}
 
-namespace :deploy do
-  desc 'Restart application'
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      # execute :service, :nginx, :reload
-    end
-  end
-end
+set :npm_target_path, -> { release_path.join('web/app/themes/rcdfund') }
+set :npm_flags, '--silent'
 
-# The above restart task is not run by default
-# Uncomment the following line to run it on deploys if needed
-# after 'deploy:publishing', 'deploy:restart'
+set :grunt_file, -> { release_path.join('web/app/themes/rcdfund/Gruntfile.js') }
+set :grunt_tasks, 'build'
+before 'deploy:updated', 'grunt'

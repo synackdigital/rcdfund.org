@@ -11,7 +11,9 @@
       "homepage": "https://github.com/synackdigital"
     }
   ],
-  "issues": "https://github.com/synackdigital/rcdfund.org/issues",
+  "support": {
+    "issues": "https://github.com/synackdigital/rcdfund.org/issues"
+  },
   "config": {
     "preferred-install": "dist",
     "generate-salts": true
@@ -20,7 +22,7 @@
     "psr-0": {"Bedrock\\Installer": "scripts"}
   },
   "scripts": {
-    "post-install-cmd": ["Bedrock\\Installer::addSalts"]
+    "post-root-package-install": ["Bedrock\\Installer::addSalts"]
   },
   "repositories": [
     {

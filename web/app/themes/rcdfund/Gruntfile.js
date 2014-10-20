@@ -119,8 +119,13 @@ module.exports = function(grunt) {
     'uglify',
     'version'
   ]);
+
+  // Legacy
+  grunt.registerTask('build', [
+    'default'
+  ]);
   grunt.registerTask('dev', [
-    'watch'
+    'build'
   ]);
 
 };
