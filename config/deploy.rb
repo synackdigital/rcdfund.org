@@ -1,7 +1,7 @@
 set :application, 'rcdfund.org'
 
 set :repo_url, 'git@github.com:synackdigital/rcdfund.org.git'
-set :branch, :deploy
+set :branch, :master
 
 set :deploy_to, -> { "/var/www/#{fetch(:application)}" }
 
