@@ -15,4 +15,4 @@ set :npm_flags, '--silent'
 
 set :grunt_file, -> { release_path.join('web/app/themes/rcdfund/Gruntfile.js') }
 set :grunt_tasks, 'build'
-before 'deploy:updated', 'grunt'
+# before 'deploy:updated', 'grunt'
