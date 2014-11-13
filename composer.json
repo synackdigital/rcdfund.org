@@ -56,7 +56,7 @@
     "wpackagist-plugin/mailchimp": "1.4.2",
     "wpackagist-plugin/wordpress-importer": "0.6.1",
     "wpackagist-plugin/infinite-scroll": "2.6.2",
-    "wpackagist-plugin/redirection": "2.3.6",
+    "wpackagist-plugin/redirection": "2.3.10",
     "wpackagist-plugin/alpine-photo-tile-for-instagram": "1.2.7.3"
   },
   "extra": {
