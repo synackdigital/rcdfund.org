@@ -15,6 +15,7 @@ sql-dump-*.sql
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 !web/app/plugins/acf-repeater
+!web/app/plugins/wordpress-importer
 web/app/themes/*
 !web/app/themes/.gitkeep
 web/app/upgrade/*
